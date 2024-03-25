@@ -1,5 +1,5 @@
 import pygame
-from motor import Motor
+from RCFunctionality.motor import Motor
 from pygame.locals import (
     QUIT,
     K_UP,
@@ -7,6 +7,7 @@ from pygame.locals import (
     K_LEFT,
     K_RIGHT,
     K_ESCAPE,
+    K_SPACE,
     KEYDOWN,
 )
 
@@ -14,12 +15,18 @@ from gpiozero import Button
 from picamera2 import Picamera2, Preview
 from datetime import datetime
 from signal import pause
+import time
 
-camera = Picamera2()
-camera_config = camera.create_still_configuration(main={"size": (1920, 1080)}, lores={"size": (640, 480)}, display="lores")
-camera.configure(camera_config)
-camera.start_preview(Preview.QTGL)
-camera.start()
+picam2 = Picamera2()
+preview_config = picam2.create_preview_configuration(main={"size": (640, 480)})
+picam2.configure(preview_config)
+
+# Start camera preview (optional, helps with camera warm up and focus)
+picam2.start_preview(Preview.QTGL)
+time.sleep(2)  # Give the camera some time to auto-adjust
+
+# Start camera
+picam2.start()
 
 pygame.init()
 window = pygame.display.set_mode((100, 100))
@@ -37,6 +44,13 @@ while running:
             running = False
 
     keys_pressed = pygame.key.get_pressed()
+
+    if (keys_pressed[K_SPACE]):
+        file_name = './TrainingImages/' + datetime.now().strftime('%Y-%m-%dT%H:%M:%S') + '.jpg'
+        picam2.capture_file(file_name)
+        time.sleep(1)
+        print('Captured: ' + file_name)
+
 
     if (not (keys_pressed[K_UP] ^ keys_pressed[K_DOWN]) or (keys_pressed[K_UP] and keys_pressed[K_DOWN])):
         speed = 0
