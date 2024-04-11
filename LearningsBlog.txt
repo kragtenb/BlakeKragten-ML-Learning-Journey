@@ -1,0 +1,223 @@
+Robotics/AI Learning Blog
+Building CNN & Allowing The RC Car To See The Environment
+3/25:
+Researched using Chat4 how to setup CNN for my use case and with using pytorch.
+Started by adding capturing picture functionality to my KeyboardControl script for the car.
+Took pictures with the car around the house to get some training data to allow the car to decide what is drivable places and what are objects and walls.
+Started down the path of doing a binary classifier and used Makesense.ai to use rectangular boxes to determine what objects are. 
+After working on labeling the data, I came to the conclusion that a binary classifier is the not right solution for the problem. Yes it could give me a confidence of the entire picture if it is drivable or not but it doesn’t really give me any information on where the car can drive.
+I switched to using semantic segmentation for my solution and started up CVAT to segment my training data.
+3/27:
+Using CVAT to label areas in my image as drivable, obstacles and walls.
+Labeling takes a long time….
+Finished labeling for the first time. Looking to now make my data set and train my model.
+
+
+
+During this time I was setting up my new PC with a new CPU and graphics card so I can do LLMs and Model Training locally. I ran into a lot of issues getting my AMD graphics card to be detected by linux and Pytorch. Took a day or so to figure out the issues but luckily AMD just set a repo to pytorch using ROCm so I was able to get this all working.
+4/1-4/2:
+Add initial model training for semantic segmentation. Model is not performing as expected.                                 
+After training the model basically predicts all pixels are basically drivable.   
+
+I have tried the deeplab neural net and the fully connected network and still getting the same issue.
+
+Currently not understanding how to improve and move forward so I think I will try to do an object detection model          
+first. This seems like an easier problem than my current project.  
+
+4/3-4/4:
+After struggling to understand how to modify my CNN, I decided to take a step back from the projects and understand the underlying code and concepts a bit more. I decided to create a training plan to understand more fully base concepts like numpy, pandas, opencv, edge detection concepts and much more. Then after having a better understanding I will move back to trying to get the bot working.
+Here is the lesson plan I made for myself.
+
+
+Week
+Topic
+Subtopic
+Status
+Notes
+1
+Python Fundamentals
+Variables, Data Types, Operators
+Completed
+Covered basic examples
+1
+Python Fundamentals
+Control Flow (if/else)
+Completed
+Created a number guessing game
+1
+Python Fundamentals
+Control Flow (loops)
+Completed
+Started on Fizzbuzz practice
+1
+Python Fundamentals
+Functions
+Completed
+
+
+2
+Core Scientific Libraries
+NumPy
+Completed
+Need additional practice with indexing
+2
+Core Scientific Libraries
+Pandas
+Completed
+
+
+2
+Core Scientific Libraries
+Matplotlib
+Completed
+
+
+3
+Image Processing & Computer Vision
+OpenCV Basics
+In Progress
+Review tutorials on loading/saving images
+3
+Image Processing & Computer Vision
+Color Spaces
+Not Started
+
+
+3
+Image Processing & Computer Vision
+Filtering, Thresholding, Blurring
+Not Started
+
+
+4
+Image Processing & Computer Vision
+Feature Detection (SIFT, SURF)
+Not Started
+
+
+4
+OOP & Scikit-Learn
+OOP in Python
+Not Started
+
+
+4
+OOP & Scikit-Learn
+Scikit-learn Intro
+Not Started
+
+
+4
+OOP & Scikit-Learn
+Image Classifiers
+Not Started
+
+
+5
+Deep Learning
+Intro to PyTorch/TensorFlow
+Not Started
+Choose one framework to focus on
+5
+Deep Learning
+Neural Networks Basics
+Not Started
+
+
+5
+Deep Learning
+Building Small CNNs
+Not Started
+
+
+6-8
+Deep Learning for Computer Vision
+Object Detection (YOLO/SSD)
+Not Started
+
+
+6-8
+Deep Learning for Computer Vision
+Semantic Segmentation
+Not Started
+
+
+9-12
+RC Car Projects
+Project 1: Advanced Line Following
+Not Started
+
+
+9-12
+RC Car Projects
+Project 2: Object Recognition
+Not Started
+
+
+9-12
+RC Car Projects
+Project 3: Visual SLAM
+Not Started
+
+
+9-12
+RC Car Projects
+Project 4: NLP Integration (Optional)
+Not Started
+
+
+
+
+Absolutely! Here's a restructured course with a strong emphasis on Python for computer vision and AI-focused roles, keeping the Tesla Bot applications in mind.
+
+3-Month Python-Focused Learning Course
+
+Important Considerations:
+
+Project Emphasis: Your RC car projects become even more essential, as they'll be your primary showcase for potential employers.
+Tesla's Python Use: Tesla does utilize Python extensively for computer vision and AI tasks.
+Beyond Tesla: This plan makes you versatile for many computer vision and AI roles.
+Course Structure
+
+Weeks 1-4: Python and Computer Vision Foundations
+
+Python Mastery: Dive deep into NumPy, Pandas, Matplotlib, and Scikit-image. Focus on efficient data manipulation and image processing.
+OpenCV: Master its tools: image transformations, filtering, feature detection (SIFT, SURF, ORB), object detection.
+Machine Learning Basics with Scikit-learn: Start with decision trees, random forests, and SVMs for a broader context.
+Linear Algebra & Calculus: A strong foundation is still essential.
+Test Questions (Week 4):
+
+Explain how image transformations (scaling, rotation, translation) are performed using NumPy.
+Compare and contrast different feature detection algorithms (SIFT, SURF, ORB).
+Describe the intuition behind how a Support Vector Machine (SVM) classifies data.
+Weeks 5-8: Deep Learning for Computer Vision
+
+PyTorch or TensorFlow: Choose one, master its data loading, model building, and training workflows.
+CNN Architectures: Implement and compare classic CNNs (AlexNet, VGG, ResNet). Experiment with transfer learning.
+Object Detection: Focus on YOLO or SSD variants. Learn bounding box representations and non-max suppression.
+Semantic Segmentation: Explore U-Net architectures for pixel-level labeling.
+Test Questions (Week 8):
+
+How does a convolutional layer differ from a fully connected layer in a neural network?
+Explain the concept of receptive fields in CNNs.
+Describe how you would fine-tune a pre-trained object detection model for a custom dataset.
+Weeks 9-12: Raspberry Pi RC Car Projects
+
+Project 1: Advanced Line Following & Obstacle Avoidance: Use CNNs for better lane detection, build more robust path planning.
+Project 2: Object Recognition & Task Execution: Train object classifiers to execute commands like "pick up the blue object".
+Project 3: Visual SLAM with Localization: Implement a simplified version of ORB-SLAM to give your RC car spatial awareness.
+Project 4: (Optional) NLP Integration: Add a basic voice command processing system to expand interaction possibilities.
+Always Remember
+
+Showcase: Document projects with exceptional detail like a portfolio.
+Tesla News: Stay informed about their projects and directions in AI
+Community: Participate in computer vision forums and groups.
+Let me know if you'd like recommendations for libraries, tutorials, datasets, or anything specific to help you achieve your goals!
+
+
+4/3-4/6:
+Understanding OpenCV image processing and computer vision. Will plan a project to prove understanding of ideas before moving to the next topic.
+
+Talked about SIFT, SURF and ORB for feature key pointing a and descriptor vectors. Going through feature matching strategies.
+
+
