@@ -45,25 +45,30 @@ while running:
 
     keys_pressed = pygame.key.get_pressed()
 
-    if (keys_pressed[K_SPACE]):
-        file_name = './TrainingImages/' + datetime.now().strftime('%Y-%m-%dT%H:%M:%S') + '.jpg'
+    if keys_pressed[K_SPACE]:
+        file_name = (
+            "./TrainingImages/" + datetime.now().strftime("%Y-%m-%dT%H:%M:%S") + ".jpg"
+        )
         picam2.capture_file(file_name)
         time.sleep(1)
-        print('Captured: ' + file_name)
+        print("Captured: " + file_name)
 
-
-    if (not (keys_pressed[K_UP] ^ keys_pressed[K_DOWN]) or (keys_pressed[K_UP] and keys_pressed[K_DOWN])):
+    if not (keys_pressed[K_UP] ^ keys_pressed[K_DOWN]) or (
+        keys_pressed[K_UP] and keys_pressed[K_DOWN]
+    ):
         speed = 0
-    elif (keys_pressed[K_UP]):
+    elif keys_pressed[K_UP]:
         speed = max_speed
-    elif (keys_pressed[K_DOWN]):
+    elif keys_pressed[K_DOWN]:
         speed = max_speed * -1
 
-    if (not (keys_pressed[K_LEFT] ^ keys_pressed[K_RIGHT]) or (keys_pressed[K_LEFT] and keys_pressed[K_RIGHT])):
+    if not (keys_pressed[K_LEFT] ^ keys_pressed[K_RIGHT]) or (
+        keys_pressed[K_LEFT] and keys_pressed[K_RIGHT]
+    ):
         turning = 0
-    elif (keys_pressed[K_RIGHT]):
+    elif keys_pressed[K_RIGHT]:
         turning = max_turning
-    elif (keys_pressed[K_LEFT]):
+    elif keys_pressed[K_LEFT]:
         turning = max_turning * -1
 
     if speed == 0 and not turning == 0:
