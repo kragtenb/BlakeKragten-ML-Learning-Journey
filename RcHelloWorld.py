@@ -1,1 +1,0 @@
-print("Rc Hello World")
