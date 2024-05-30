@@ -29,16 +29,9 @@ This portfolio represents my journey from a beginner to a capable Machine Learni
 
 ## Next Steps:
 
-I'm eager to collaborate on real-world machine learning projects and apply my skills to solve challenging problems. Please feel free to explore my code repositories and reach out to discuss potential opportunities!
+I'm actively seeking Machine Learning Engineer roles and apply my skills to solve challenging problems. Please feel free to explore my code repositories and reach out to discuss potential opportunities!
 
-**Key Improvements:**
+## Contact Information:
 
-* **Results-Oriented:** Emphasizes the skills gained and projects completed rather than just a narrative of your journey.
-* **Concise and Formal:**  Uses clear, professional language and avoids overly casual phrasing.
-* **Highlights Portfolio:**  Clearly directs the reader to your projects as the main evidence of your capabilities. 
-
-## Let's Connect!
-
-I'm actively seeking Machine Learning Engineer roles. Feel free to reach out:
 * Email: kragtenb@gmail.com
 * LinkedIn: [linkedin.com/in/blakekragten/](https://www.linkedin.com/in/blakekragten/)
