@@ -4,7 +4,7 @@
 2. Digits_MNISTS: MNIST Digit Classification with PyTorch
 3. Kal_And_Jinse_Identification: Dog Identification with Mask R-CNN
 4. Open_CV_Practice: Exploring Image Transformations and HOG-based Object Detection
-5. RC_Drivable_Space:
+5. RC_Drivable_Space: Blue Line Following Robot with Drivable Space Identification (In Progress)
 6. TorchVIsion_Fine_Tuning:
 
 ## Project Brief Descriptions
@@ -41,3 +41,6 @@ This project showcases a custom-trained Mask R-CNN model designed to identify an
 
 This project explores fundamental image manipulation techniques, including resizing, cropping, flipping, rotation, and color space conversions. It also delves into gradient calculations and edge detection using Sobel filters and the Canny algorithm. Additionally, the project demonstrates how to use Histogram of Oriented Gradients (HOG) features and a Support Vector Machine (SVM) classifier for detecting objects (in this case, license plates) in images. This serves as a foundational exploration of computer vision principles and techniques.
 
+### 5. **Blue Line Following Robot with Drivable Space Identification (In Progress)**
+
+This project features a Raspberry Pi-powered robot capable of autonomously following a blue line using computer vision. It incorporates the initial development of a neural network model designed to identify drivable terrain for enhanced navigation. Future work involves refining the neural network for accurate drivable space classification.
