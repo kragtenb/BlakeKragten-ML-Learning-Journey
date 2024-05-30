@@ -1,4 +1,4 @@
-# **Project: Car Detection using Histogram of Oriented Gradients (HOG) and Support Vector Machines (SVM)**
+# Project: Car Detection using Histogram of Oriented Gradients (HOG) and Support Vector Machines (SVM)
 
 This project explores using traditional computer vision techniques (HOG features) and a machine learning classifier (SVM) to identify cars in images. 
 
