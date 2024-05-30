@@ -2,7 +2,7 @@
 
 1. Car_Image_Detection: Car Detection using HOG Features and SVM
 2. Digits_MNISTS: MNIST Digit Classification with PyTorch
-3. Kal_And_Jinse_Identification:
+3. Kal_And_Jinse_Identification: Dog Identification with Mask R-CNN
 4. Open_CV_Practice:
 5. RC_Drivable_Space:
 6. TorchVIsion_Fine_Tuning:
@@ -33,3 +33,6 @@ This project demonstrates how to build and train a neural network using PyTorch 
 
 This project serves as a foundational example for understanding image classification and working with PyTorch.
 
+### 3. **Dog Identification with Mask R-CNN**
+
+This project showcases a custom-trained Mask R-CNN model designed to identify and distinguish between my two dogs, Kal and Jinse. It involves fine-tuning a pre-trained deep learning model on a labeled dataset of dog images to achieve accurate detection and segmentation. The project demonstrates the potential of adapting powerful object recognition models for specific tasks.
