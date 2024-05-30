@@ -40,5 +40,5 @@ I'm eager to collaborate on real-world machine learning projects and apply my sk
 ## Let's Connect!
 
 I'm actively seeking Machine Learning Engineer roles. Feel free to reach out:
-Email: kragtenb@gmail.com
-LinkedIn: [linkedin.com/in/blakekragten/](https://www.linkedin.com/in/blakekragten/)
+* Email: kragtenb@gmail.com
+* LinkedIn: [linkedin.com/in/blakekragten/](https://www.linkedin.com/in/blakekragten/)
