@@ -1,11 +1,11 @@
 ## Projects Directory List
 
-### 1. Car_Image_Detection: Car Detection using HOG Features and SVM
-### 2. Digits_MNISTS:
-### 3. Kal_And_Jinse_Identification:
-### 4. Open_CV_Practice:
-### 5. RC_Drivable_Space:
-### 6. TorchVIsion_Fine_Tuning:
+1. Car_Image_Detection: Car Detection using HOG Features and SVM
+2. Digits_MNISTS:
+3. Kal_And_Jinse_Identification:
+4. Open_CV_Practice:
+5. RC_Drivable_Space:
+6. TorchVIsion_Fine_Tuning:
 
 ## Project Brief Descriptions
 
