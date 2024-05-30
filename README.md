@@ -17,7 +17,7 @@ This portfolio represents my journey from a beginner to a capable Machine Learni
 2. **Digits_MNISTS:** Built and trained a PyTorch neural network for accurate digit classification on the MNIST dataset.
 3. **Kal_And_Jinse_Identification:** Fine-tuned a Mask R-CNN model to distinguish between my two dogs, showcasing model adaptation for specific tasks.
 4. **Open_CV_Practice:** Explored fundamental image processing techniques (transformations, gradient calculations, edge detection) and HOG-based object detection.
-5. **RC_Drivable_Space (In Progress):** Developing an autonomous line-following robot with planned drivable terrain detection using neural networks.
+5. **RC_Drivable_Space (In Progress):** Developed an autonomous line-following robot with next steps adding drivable terrain detection using neural networks to drive without the line.
 6. **TorchVIsion_Fine_Tuning:** Fine-tuned a Mask R-CNN model to detect and segment pedestrians, demonstrating proficiency in advanced deep learning techniques.
 
 ## Learning Journey:
