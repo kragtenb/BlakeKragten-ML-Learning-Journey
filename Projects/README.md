@@ -1,7 +1,15 @@
-# Projects Directory List
-1. 
-# Project Brief Descriptions
-## 1. **Car Detection using HOG Features and SVM**
+## Projects Directory List
+
+### 1. Car_Image_Detection: Car Detection using HOG Features and SVM
+### 2. Digits_MNISTS:
+### 3. Kal_And_Jinse_Identification:
+### 4. Open_CV_Practice:
+### 5. RC_Drivable_Space:
+### 6. TorchVIsion_Fine_Tuning:
+
+## Project Brief Descriptions
+
+### 1. **Car Detection using HOG Features and SVM**
 
 This project demonstrates the use of Histogram of Oriented Gradients (HOG) features and a Support Vector Machine (SVM) classifier to detect cars in images. It includes:
 
