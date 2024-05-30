@@ -1,14 +1,14 @@
-# Machine Learning Portfolio: From Software Engineer to ML Practitioner
+# Machine Learning Portfolio: From Software Engineer to Machnine Learning Engineer
 
-During my time as a Google Software Engineer on the Assistant team, I developed a keen interest in the machine learning technologies powering modern applications. After being laid off during parental leave, I seized the opportunity to dive deep into ML while balancing childcare responsibilities.
+During my time as a Google Software Engineer on the Assistant team, I developed a keen interest in the machine learning technologies powering modern applications. After being laid off during parental leave, I seized the opportunity to dive deep into Machine Learning while balancing childcare responsibilities.
 
-This portfolio represents my journey from a beginner to a capable ML practitioner. I've focused on building a strong foundation in theory and applying my knowledge to diverse projects, with a particular emphasis on computer vision.
+This portfolio represents my journey from a beginner to a capable Machine Learning Engineer. I've focused on building a strong foundation in theory and applying my knowledge to diverse projects, with a particular emphasis on computer vision.
 
 ## Key Skills:
 
 * **Core ML:** Python, scikit-learn, neural networks (CNNs, RNNs), object detection, image segmentation
 * **Frameworks:** PyTorch, TensorFlow, OpenCV
-* **Tools:** ChatGPT, Gemini Pro (utilized for learning support and code debugging)
+* **Tools:** ChatGPT-4, Gemini Pro (utilized for learning support and code debugging)
 * **Projects:** Experience across diverse areas including image classification, object detection, autonomous navigation, and fine-tuning pre-trained models.
 
 ## Project Highlights:
@@ -24,13 +24,12 @@ This portfolio represents my journey from a beginner to a capable ML practitione
 
 * Self-guided learning using "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow" (Aurélien Géron).
 * Leveraged large language models (ChatGPT, Gemini Pro) to accelerate learning and problem-solving.
-* Actively engaged with online ML communities.
+* Utilized online tutorials anda other online ML communities pages like Kaggle and Reddit.
 * Currently enrolled in Andrew Ng's "Machine Learning Specialization" to deepen my understanding of ML algorithms and mathematical foundations.
 
 ## Next Steps:
 
 I'm eager to collaborate on real-world machine learning projects and apply my skills to solve challenging problems. Please feel free to explore my code repositories and reach out to discuss potential opportunities!
-
 
 **Key Improvements:**
 
@@ -41,6 +40,5 @@ I'm eager to collaborate on real-world machine learning projects and apply my sk
 ## Let's Connect!
 
 I'm actively seeking Machine Learning Engineer roles. Feel free to reach out:
-
 Email: kragtenb@gmail.com
 LinkedIn: [linkedin.com/in/blakekragten/](https://www.linkedin.com/in/blakekragten/)
