@@ -5,7 +5,7 @@
 3. Kal_And_Jinse_Identification: Dog Identification with Mask R-CNN
 4. Open_CV_Practice: Exploring Image Transformations and HOG-based Object Detection
 5. RC_Drivable_Space: Blue Line Following Robot with Drivable Space Identification (In Progress)
-6. TorchVIsion_Fine_Tuning:
+6. TorchVIsion_Fine_Tuning: Pedestrian Detection & Segmentation with Mask R-CNN
 
 ## Project Brief Descriptions
 
@@ -44,3 +44,7 @@ This project explores fundamental image manipulation techniques, including resiz
 ### 5. **Blue Line Following Robot with Drivable Space Identification (In Progress)**
 
 This project features a Raspberry Pi-powered robot capable of autonomously following a blue line using computer vision. It incorporates the initial development of a neural network model designed to identify drivable terrain for enhanced navigation. Future work involves refining the neural network for accurate drivable space classification.
+
+### 6. **Pedestrian Detection & Segmentation with Mask R-CNN**
+
+This project demonstrates how to use a Mask R-CNN model to accurately detect and segment pedestrians within images. It leverages the Penn-Fudan dataset for training and evaluation, showcasing the model's ability to not only identify pedestrians but also precisely outline them in the images. The project includes custom data loading, fine-tuning of a pre-trained model, and visualization of the results.
