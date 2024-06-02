@@ -12,7 +12,7 @@ This portfolio represents my journey from a beginner to a capable Machine Learni
 * **Projects:** Experience across diverse areas including image classification, object detection, autonomous navigation, and fine-tuning pre-trained models.
 
 ## Project Highlights:
-
+[Project Video & Photo Highlights:](https://photos.app.goo.gl/3fAxFvL1wRNHpS4T6)
 1. **Car_Image_Detection:** Implemented a car detection system using HOG features and SVM classification.
 2. **Digits_MNISTS:** Built and trained a PyTorch neural network for accurate digit classification on the MNIST dataset.
 3. **Kal_And_Jinse_Identification:** Fine-tuned a Mask R-CNN model to distinguish between my two dogs, showcasing model adaptation for specific tasks.
