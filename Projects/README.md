@@ -7,6 +7,8 @@
 5. RC_Drivable_Space: Blue Line Following Robot with Drivable Space Identification (In Progress)
 6. TorchVIsion_Fine_Tuning: Pedestrian Detection & Segmentation with Mask R-CNN
 
+## (Project Videos And Photos)[https://photos.app.goo.gl/3fAxFvL1wRNHpS4T6]
+
 ## Project Brief Descriptions
 
 ### 1. **Car Detection using HOG Features and SVM**
