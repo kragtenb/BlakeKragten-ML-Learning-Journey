@@ -2,6 +2,8 @@
 
 This project focuses on building a custom model to identify and distinguish between my two dogs, Kal and Jinse, using a fine-tuned Mask R-CNN architecture.
 
+[Video Link](https://photos.app.goo.gl/rAepD1wVMe8wfirz8)
+
 **1. Data Preparation**
 
 * **Image Collection:** I gathered approximately 80 photos of my dogs in various poses, lighting conditions, and environments.
