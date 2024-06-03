@@ -1,4 +1,4 @@
-# Machine Learning Portfolio: From Software Engineer to Machnine Learning Engineer
+# Machine Learning Portfolio: From Software Engineer to Machine Learning Engineer
 
 During my time as a Google Software Engineer on the Assistant team, I developed a keen interest in the machine learning technologies powering modern applications. After being laid off during parental leave, I seized the opportunity to dive deep into Machine Learning while balancing childcare responsibilities.
 
