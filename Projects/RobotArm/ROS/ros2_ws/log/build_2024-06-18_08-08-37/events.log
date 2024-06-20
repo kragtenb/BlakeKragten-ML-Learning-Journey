@@ -1,0 +1,195 @@
+[0.000000] (-) TimerEvent: {}
+[0.001656] (robot_arm) JobQueued: {'identifier': 'robot_arm', 'dependencies': OrderedDict()}
+[0.002271] (robot_arm) JobStarted: {'identifier': 'robot_arm'}
+[0.036922] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'cmake'}
+[0.040036] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'build'}
+[0.043194] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/robot_arm', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 54424 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-611f9bfce64f25108829dd295f54a6894e87339d/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-611f9bfce64f25108829dd295f54a6894e87339d/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('TERM_PROGRAM_VERSION', '1.90.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6d8346bd-6e51-44ee-a92e-9d653a59394a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-611f9bfce64f25108829dd295f54a6894e87339d/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-611f9bfce64f25108829dd295f54a6894e87339d/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '108'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX7mjueB/agent.65487'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 54424 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble')]), 'shell': False}
+[0.099110] (-) TimerEvent: {}
+[0.200034] (-) TimerEvent: {}
+[0.226895] (robot_arm) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bluetooth_node\x1b[0m\n'}
+[0.285065] (robot_arm) StdoutLine: {'line': b'[ 33%] Built target servo_publisher_node\n'}
+[0.300272] (-) TimerEvent: {}
+[0.309621] (robot_arm) StdoutLine: {'line': b'[ 66%] Built target servo_node\n'}
+[0.321364] (robot_arm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o\x1b[0m\n'}
+[0.400447] (-) TimerEvent: {}
+[0.501394] (-) TimerEvent: {}
+[0.604521] (-) TimerEvent: {}
+[0.705460] (-) TimerEvent: {}
+[0.806786] (-) TimerEvent: {}
+[0.907665] (-) TimerEvent: {}
+[1.008586] (-) TimerEvent: {}
+[1.109497] (-) TimerEvent: {}
+[1.210255] (-) TimerEvent: {}
+[1.310990] (-) TimerEvent: {}
+[1.411797] (-) TimerEvent: {}
+[1.512811] (-) TimerEvent: {}
+[1.613810] (-) TimerEvent: {}
+[1.714778] (-) TimerEvent: {}
+[1.815522] (-) TimerEvent: {}
+[1.916260] (-) TimerEvent: {}
+[2.017000] (-) TimerEvent: {}
+[2.117845] (-) TimerEvent: {}
+[2.218732] (-) TimerEvent: {}
+[2.319558] (-) TimerEvent: {}
+[2.420435] (-) TimerEvent: {}
+[2.521282] (-) TimerEvent: {}
+[2.622254] (-) TimerEvent: {}
+[2.723271] (-) TimerEvent: {}
+[2.824101] (-) TimerEvent: {}
+[2.924922] (-) TimerEvent: {}
+[3.025688] (-) TimerEvent: {}
+[3.126543] (-) TimerEvent: {}
+[3.227548] (-) TimerEvent: {}
+[3.328387] (-) TimerEvent: {}
+[3.429232] (-) TimerEvent: {}
+[3.530043] (-) TimerEvent: {}
+[3.630922] (-) TimerEvent: {}
+[3.731924] (-) TimerEvent: {}
+[3.832772] (-) TimerEvent: {}
+[3.933813] (-) TimerEvent: {}
+[4.034851] (-) TimerEvent: {}
+[4.135800] (-) TimerEvent: {}
+[4.236777] (-) TimerEvent: {}
+[4.337747] (-) TimerEvent: {}
+[4.438697] (-) TimerEvent: {}
+[4.539880] (-) TimerEvent: {}
+[4.640748] (-) TimerEvent: {}
+[4.741697] (-) TimerEvent: {}
+[4.843335] (-) TimerEvent: {}
+[4.944250] (-) TimerEvent: {}
+[5.045519] (-) TimerEvent: {}
+[5.146471] (-) TimerEvent: {}
+[5.247373] (-) TimerEvent: {}
+[5.348261] (-) TimerEvent: {}
+[5.449077] (-) TimerEvent: {}
+[5.550025] (-) TimerEvent: {}
+[5.650855] (-) TimerEvent: {}
+[5.752429] (-) TimerEvent: {}
+[5.853350] (-) TimerEvent: {}
+[5.954315] (-) TimerEvent: {}
+[6.055176] (-) TimerEvent: {}
+[6.156469] (-) TimerEvent: {}
+[6.257439] (-) TimerEvent: {}
+[6.358952] (-) TimerEvent: {}
+[6.461673] (-) TimerEvent: {}
+[6.563307] (-) TimerEvent: {}
+[6.664993] (-) TimerEvent: {}
+[6.767714] (-) TimerEvent: {}
+[6.870138] (-) TimerEvent: {}
+[6.971943] (-) TimerEvent: {}
+[7.074860] (-) TimerEvent: {}
+[7.176539] (-) TimerEvent: {}
+[7.278294] (-) TimerEvent: {}
+[7.380269] (-) TimerEvent: {}
+[7.482027] (-) TimerEvent: {}
+[7.583814] (-) TimerEvent: {}
+[7.686591] (-) TimerEvent: {}
+[7.789723] (-) TimerEvent: {}
+[7.892933] (-) TimerEvent: {}
+[7.994890] (-) TimerEvent: {}
+[8.096823] (-) TimerEvent: {}
+[8.198693] (-) TimerEvent: {}
+[8.300903] (-) TimerEvent: {}
+[8.401788] (-) TimerEvent: {}
+[8.504987] (-) TimerEvent: {}
+[8.606782] (-) TimerEvent: {}
+[8.708674] (-) TimerEvent: {}
+[8.810595] (-) TimerEvent: {}
+[8.912523] (-) TimerEvent: {}
+[9.015784] (-) TimerEvent: {}
+[9.118804] (-) TimerEvent: {}
+[9.223226] (-) TimerEvent: {}
+[9.327214] (-) TimerEvent: {}
+[9.430224] (-) TimerEvent: {}
+[9.532105] (-) TimerEvent: {}
+[9.634097] (-) TimerEvent: {}
+[9.736087] (-) TimerEvent: {}
+[9.839663] (-) TimerEvent: {}
+[9.940762] (-) TimerEvent: {}
+[10.041674] (-) TimerEvent: {}
+[10.142571] (-) TimerEvent: {}
+[10.243543] (-) TimerEvent: {}
+[10.347339] (-) TimerEvent: {}
+[10.451114] (-) TimerEvent: {}
+[10.555162] (-) TimerEvent: {}
+[10.658994] (-) TimerEvent: {}
+[10.762062] (-) TimerEvent: {}
+[10.863053] (-) TimerEvent: {}
+[10.964167] (-) TimerEvent: {}
+[11.065326] (-) TimerEvent: {}
+[11.166377] (-) TimerEvent: {}
+[11.269088] (-) TimerEvent: {}
+[11.371700] (-) TimerEvent: {}
+[11.474363] (-) TimerEvent: {}
+[11.576541] (-) TimerEvent: {}
+[11.678598] (-) TimerEvent: {}
+[11.780533] (-) TimerEvent: {}
+[11.882817] (-) TimerEvent: {}
+[11.984963] (-) TimerEvent: {}
+[12.087895] (-) TimerEvent: {}
+[12.189909] (-) TimerEvent: {}
+[12.292692] (-) TimerEvent: {}
+[12.395153] (-) TimerEvent: {}
+[12.469185] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Ksockaddr_rc::rc_bdaddr\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.470473] (robot_arm) StderrLine: {'line': b'   34 |     struct sockaddr_rc local_addr = { 0 \x1b[01;35m\x1b[K}\x1b[m\x1b[K, rem_addr = { 0 };\n'}
+[12.471232] (robot_arm) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.471879] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Ksockaddr_rc::rc_channel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.472527] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Ksockaddr_rc::rc_bdaddr\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.473168] (robot_arm) StderrLine: {'line': b'   34 |     struct sockaddr_rc local_addr = { 0 }, rem_addr = { 0 \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[12.473904] (robot_arm) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.474539] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Ksockaddr_rc::rc_channel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.495723] (-) TimerEvent: {}
+[12.508864] (robot_arm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:2\x1b[m\x1b[K:\n'}
+[12.509848] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BluetoothNode::initializeBluetooth()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.510494] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:68:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktaking address of rvalue [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.511134] (robot_arm) StderrLine: {'line': b'   68 |         bdaddr_t any = *\x1b[01;31m\x1b[KBDADDR_ANY\x1b[m\x1b[K;\n'}
+[12.511742] (robot_arm) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.595941] (-) TimerEvent: {}
+[12.696932] (-) TimerEvent: {}
+[12.797964] (-) TimerEvent: {}
+[12.899050] (-) TimerEvent: {}
+[13.000163] (-) TimerEvent: {}
+[13.101085] (-) TimerEvent: {}
+[13.202270] (-) TimerEvent: {}
+[13.303199] (-) TimerEvent: {}
+[13.404116] (-) TimerEvent: {}
+[13.504993] (-) TimerEvent: {}
+[13.606853] (-) TimerEvent: {}
+[13.708037] (-) TimerEvent: {}
+[13.809430] (-) TimerEvent: {}
+[13.910457] (-) TimerEvent: {}
+[14.011435] (-) TimerEvent: {}
+[14.112555] (-) TimerEvent: {}
+[14.213535] (-) TimerEvent: {}
+[14.314369] (-) TimerEvent: {}
+[14.415333] (-) TimerEvent: {}
+[14.516166] (-) TimerEvent: {}
+[14.617143] (-) TimerEvent: {}
+[14.718193] (-) TimerEvent: {}
+[14.819155] (-) TimerEvent: {}
+[14.920132] (-) TimerEvent: {}
+[15.021098] (-) TimerEvent: {}
+[15.122093] (-) TimerEvent: {}
+[15.223249] (-) TimerEvent: {}
+[15.324205] (-) TimerEvent: {}
+[15.425036] (-) TimerEvent: {}
+[15.526032] (-) TimerEvent: {}
+[15.626968] (-) TimerEvent: {}
+[15.727962] (-) TimerEvent: {}
+[15.828975] (-) TimerEvent: {}
+[15.929932] (-) TimerEvent: {}
+[16.030917] (-) TimerEvent: {}
+[16.131809] (-) TimerEvent: {}
+[16.232986] (-) TimerEvent: {}
+[16.333840] (-) TimerEvent: {}
+[16.434734] (-) TimerEvent: {}
+[16.535930] (-) TimerEvent: {}
+[16.636879] (-) TimerEvent: {}
+[16.651301] (robot_arm) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1\n'}
+[16.652968] (robot_arm) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2\n'}
+[16.653805] (robot_arm) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.661086] (robot_arm) CommandEnded: {'returncode': 2}
+[16.737062] (-) TimerEvent: {}
+[16.837957] (-) TimerEvent: {}
+[16.882141] (robot_arm) JobEnded: {'identifier': 'robot_arm', 'rc': 2}
+[16.894647] (-) EventReactorShutdown: {}

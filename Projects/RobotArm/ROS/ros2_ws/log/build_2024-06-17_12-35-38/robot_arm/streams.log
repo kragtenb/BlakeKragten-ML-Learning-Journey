@@ -1,0 +1,10 @@
+[0.056s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.286s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[12.892s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In constructor ‘[01m[KMultiServoController::MultiServoController()[m[K’:
+[12.893s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kservo_init_position_[m[K’ was not declared in this scope
+[12.894s]    27 |         [01;31m[Kservo_init_position_[m[K = {
+[12.895s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[21.974s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[21.975s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/servo_node.dir/all] Error 2
+[21.976s] gmake: *** [Makefile:146: all] Error 2
+[21.982s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

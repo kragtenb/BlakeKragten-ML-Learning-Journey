@@ -1,0 +1,13 @@
+[0.051s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.218s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.278s] [ 33%] Built target servo_publisher_node
+[0.310s] [ 66%] Built target bluetooth_node
+[0.317s] [ 83%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[11.878s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.879s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:106:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<MultiServoController>[m[K’ has no member named ‘[01m[Kinit_position[m[K’
+[11.880s]   106 |     node.[01;31m[Kinit_position[m[K();
+[11.880s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[20.600s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[20.601s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[20.602s] gmake: *** [Makefile:146: all] Error 2
+[20.609s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

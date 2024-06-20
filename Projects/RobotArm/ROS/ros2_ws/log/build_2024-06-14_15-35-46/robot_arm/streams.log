@@ -1,0 +1,12 @@
+[0.048s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.216s] [35m[1mConsolidate compiler generated dependencies of target minimal_cpp_node[0m
+[0.299s] [ 50%] [32mBuilding CXX object CMakeFiles/minimal_cpp_node.dir/src/test_node.cpp.o[0m
+[9.513s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:[m[K In constructor ‘[01m[KTestNode::TestNode()[m[K’:
+[9.514s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:6:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TestNode[m[K’ has no member named ‘[01m[Kcreate_wall_time[m[K’; did you mean ‘[01m[Kcreate_wall_timer[m[K’?
+[9.514s]     6 |             timer_ = this->[01;31m[Kcreate_wall_time[m[K(
+[9.515s]       |                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[9.515s]       |                            [32m[Kcreate_wall_timer[m[K
+[11.077s] gmake[2]: *** [CMakeFiles/minimal_cpp_node.dir/build.make:76: CMakeFiles/minimal_cpp_node.dir/src/test_node.cpp.o] Error 1
+[11.079s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/minimal_cpp_node.dir/all] Error 2
+[11.079s] gmake: *** [Makefile:146: all] Error 2
+[11.086s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

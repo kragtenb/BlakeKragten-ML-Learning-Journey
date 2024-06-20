@@ -1,0 +1,40 @@
+[0.054s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.152s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.827s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.998s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.011s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.039s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.092s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.409s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.416s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.968s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.631s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.108s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.109s] -- Configured cppcheck include dirs: 
+[3.109s] -- Configured cppcheck exclude dirs and/or files: 
+[3.127s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.162s] -- Added test 'lint_cmake' to check CMake code style
+[3.180s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.313s] -- Added test 'uncrustify' to check C / C++ code style
+[3.316s] -- Configured uncrustify additional arguments: 
+[3.332s] -- Added test 'xmllint' to check XML markup files
+[3.339s] -- Configuring done
+[3.520s] -- Generating done
+[3.545s] -- Build files have been written to: /home/blakepi/ros2_ws/build/robot_arm
+[3.725s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[3.734s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[3.754s] [ 16%] [32mBuilding CXX object CMakeFiles/servo_publisher_node.dir/src/servo_publisher_node.cpp.o[0m
+[3.982s] [ 50%] Built target servo_node
+[4.019s] [ 66%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[5.611s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float64.hpp: No such file or directory
+[5.612s]     6 | #include [01;31m[K<std_msgs/msg/float64.hpp>[m[K // Include the message type for servo control
+[5.613s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.614s] compilation terminated.
+[5.626s] gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+[5.628s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+[5.628s] gmake[1]: *** Waiting for unfinished jobs....
+[33.452s] [ 83%] [32m[1mLinking CXX executable servo_publisher_node[0m
+[34.511s] [ 83%] Built target servo_publisher_node
+[34.516s] gmake: *** [Makefile:146: all] Error 2
+[34.523s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

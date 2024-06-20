@@ -1,0 +1,162 @@
+[0.000000] (-) TimerEvent: {}
+[0.001184] (robot_arm) JobQueued: {'identifier': 'robot_arm', 'dependencies': OrderedDict()}
+[0.001435] (robot_arm) JobStarted: {'identifier': 'robot_arm'}
+[0.033843] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'cmake'}
+[0.036992] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'build'}
+[0.040012] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/robot_arm', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blakepi'), ('SSH_CLIENT', '192.168.86.41 33084 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('OLDPWD', '/home/blakepi/ros2_ws/src/robot_arm'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-902f4e14-9a34-4745-8107-e5ccf516d773.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'blakepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4368db9fd1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX0UNE3X/agent.1887'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 33084 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble')]), 'shell': False}
+[0.098306] (-) TimerEvent: {}
+[0.199180] (-) TimerEvent: {}
+[0.214153] (robot_arm) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target minimal_cpp_node\x1b[0m\n'}
+[0.297459] (robot_arm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/minimal_cpp_node.dir/src/test_node.cpp.o\x1b[0m\n'}
+[0.299364] (-) TimerEvent: {}
+[0.400096] (-) TimerEvent: {}
+[0.500759] (-) TimerEvent: {}
+[0.601403] (-) TimerEvent: {}
+[0.702054] (-) TimerEvent: {}
+[0.802749] (-) TimerEvent: {}
+[0.903433] (-) TimerEvent: {}
+[1.004197] (-) TimerEvent: {}
+[1.105102] (-) TimerEvent: {}
+[1.205751] (-) TimerEvent: {}
+[1.306455] (-) TimerEvent: {}
+[1.407115] (-) TimerEvent: {}
+[1.507792] (-) TimerEvent: {}
+[1.608437] (-) TimerEvent: {}
+[1.709135] (-) TimerEvent: {}
+[1.809863] (-) TimerEvent: {}
+[1.910640] (-) TimerEvent: {}
+[2.011349] (-) TimerEvent: {}
+[2.112057] (-) TimerEvent: {}
+[2.212749] (-) TimerEvent: {}
+[2.313487] (-) TimerEvent: {}
+[2.414258] (-) TimerEvent: {}
+[2.514974] (-) TimerEvent: {}
+[2.615671] (-) TimerEvent: {}
+[2.716399] (-) TimerEvent: {}
+[2.817125] (-) TimerEvent: {}
+[2.917814] (-) TimerEvent: {}
+[3.018544] (-) TimerEvent: {}
+[3.119240] (-) TimerEvent: {}
+[3.219905] (-) TimerEvent: {}
+[3.320680] (-) TimerEvent: {}
+[3.421452] (-) TimerEvent: {}
+[3.522255] (-) TimerEvent: {}
+[3.623011] (-) TimerEvent: {}
+[3.723705] (-) TimerEvent: {}
+[3.824460] (-) TimerEvent: {}
+[3.925212] (-) TimerEvent: {}
+[4.026003] (-) TimerEvent: {}
+[4.126766] (-) TimerEvent: {}
+[4.227717] (-) TimerEvent: {}
+[4.328650] (-) TimerEvent: {}
+[4.429681] (-) TimerEvent: {}
+[4.530434] (-) TimerEvent: {}
+[4.631149] (-) TimerEvent: {}
+[4.731880] (-) TimerEvent: {}
+[4.832635] (-) TimerEvent: {}
+[4.933352] (-) TimerEvent: {}
+[5.034156] (-) TimerEvent: {}
+[5.134903] (-) TimerEvent: {}
+[5.235604] (-) TimerEvent: {}
+[5.336310] (-) TimerEvent: {}
+[5.437085] (-) TimerEvent: {}
+[5.537949] (-) TimerEvent: {}
+[5.638705] (-) TimerEvent: {}
+[5.739422] (-) TimerEvent: {}
+[5.840157] (-) TimerEvent: {}
+[5.940962] (-) TimerEvent: {}
+[6.041682] (-) TimerEvent: {}
+[6.142484] (-) TimerEvent: {}
+[6.243370] (-) TimerEvent: {}
+[6.344109] (-) TimerEvent: {}
+[6.444851] (-) TimerEvent: {}
+[6.545587] (-) TimerEvent: {}
+[6.646279] (-) TimerEvent: {}
+[6.746977] (-) TimerEvent: {}
+[6.847672] (-) TimerEvent: {}
+[6.948448] (-) TimerEvent: {}
+[7.049173] (-) TimerEvent: {}
+[7.149908] (-) TimerEvent: {}
+[7.250710] (-) TimerEvent: {}
+[7.351443] (-) TimerEvent: {}
+[7.452234] (-) TimerEvent: {}
+[7.552953] (-) TimerEvent: {}
+[7.653658] (-) TimerEvent: {}
+[7.754383] (-) TimerEvent: {}
+[7.855098] (-) TimerEvent: {}
+[7.955847] (-) TimerEvent: {}
+[8.056590] (-) TimerEvent: {}
+[8.157331] (-) TimerEvent: {}
+[8.258038] (-) TimerEvent: {}
+[8.358773] (-) TimerEvent: {}
+[8.459499] (-) TimerEvent: {}
+[8.560227] (-) TimerEvent: {}
+[8.660949] (-) TimerEvent: {}
+[8.761756] (-) TimerEvent: {}
+[8.862590] (-) TimerEvent: {}
+[8.963324] (-) TimerEvent: {}
+[9.064039] (-) TimerEvent: {}
+[9.164759] (-) TimerEvent: {}
+[9.265697] (-) TimerEvent: {}
+[9.366608] (-) TimerEvent: {}
+[9.467451] (-) TimerEvent: {}
+[9.568162] (-) TimerEvent: {}
+[9.668905] (-) TimerEvent: {}
+[9.769614] (-) TimerEvent: {}
+[9.870440] (-) TimerEvent: {}
+[9.971145] (-) TimerEvent: {}
+[10.071875] (-) TimerEvent: {}
+[10.172585] (-) TimerEvent: {}
+[10.273302] (-) TimerEvent: {}
+[10.374051] (-) TimerEvent: {}
+[10.474817] (-) TimerEvent: {}
+[10.575560] (-) TimerEvent: {}
+[10.676286] (-) TimerEvent: {}
+[10.777043] (-) TimerEvent: {}
+[10.877806] (-) TimerEvent: {}
+[10.978551] (-) TimerEvent: {}
+[11.079249] (-) TimerEvent: {}
+[11.179946] (-) TimerEvent: {}
+[11.280684] (-) TimerEvent: {}
+[11.381399] (-) TimerEvent: {}
+[11.482186] (-) TimerEvent: {}
+[11.582911] (-) TimerEvent: {}
+[11.683640] (-) TimerEvent: {}
+[11.784380] (-) TimerEvent: {}
+[11.885211] (-) TimerEvent: {}
+[11.961801] (robot_arm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable minimal_cpp_node\x1b[0m\n'}
+[11.985417] (-) TimerEvent: {}
+[12.086190] (-) TimerEvent: {}
+[12.187072] (-) TimerEvent: {}
+[12.287910] (-) TimerEvent: {}
+[12.388746] (-) TimerEvent: {}
+[12.479619] (robot_arm) StdoutLine: {'line': b'[100%] Built target minimal_cpp_node\n'}
+[12.488929] (-) TimerEvent: {}
+[12.515198] (robot_arm) CommandEnded: {'returncode': 0}
+[12.589167] (-) TimerEvent: {}
+[12.648116] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'install'}
+[12.686021] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blakepi/ros2_ws/build/robot_arm'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blakepi'), ('SSH_CLIENT', '192.168.86.41 33084 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('OLDPWD', '/home/blakepi/ros2_ws/src/robot_arm'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-902f4e14-9a34-4745-8107-e5ccf516d773.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'blakepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/blakepi/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4368db9fd1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX0UNE3X/agent.1887'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 33084 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/opt/ros/humble')]), 'shell': False}
+[12.689283] (-) TimerEvent: {}
+[12.711239] (robot_arm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.712313] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/minimal_cpp_node\n'}
+[12.716074] (robot_arm) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/minimal_cpp_node" to ""\n'}
+[12.716671] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/package_run_dependencies/robot_arm\n'}
+[12.717136] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/parent_prefix_path/robot_arm\n'}
+[12.717587] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.sh\n'}
+[12.717956] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.dsv\n'}
+[12.718392] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.sh\n'}
+[12.718774] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.dsv\n'}
+[12.719147] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.bash\n'}
+[12.719514] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.sh\n'}
+[12.719937] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.zsh\n'}
+[12.720254] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.dsv\n'}
+[12.720554] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv\n'}
+[12.721154] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/packages/robot_arm\n'}
+[12.721559] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig.cmake\n'}
+[12.721946] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig-version.cmake\n'}
+[12.722404] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.xml\n'}
+[12.727075] (robot_arm) CommandEnded: {'returncode': 0}
+[12.789504] (-) TimerEvent: {}
+[12.890330] (-) TimerEvent: {}
+[12.936968] (robot_arm) JobEnded: {'identifier': 'robot_arm', 'rc': 0}
+[12.939575] (-) EventReactorShutdown: {}

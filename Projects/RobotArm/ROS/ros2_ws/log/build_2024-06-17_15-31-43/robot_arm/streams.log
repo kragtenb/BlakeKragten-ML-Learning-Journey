@@ -1,0 +1,38 @@
+[0.055s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.166s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.796s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.932s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.942s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.965s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.010s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.072s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.314s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.321s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.861s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.476s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.889s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.890s] -- Configured cppcheck include dirs: 
+[2.890s] -- Configured cppcheck exclude dirs and/or files: 
+[2.906s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.936s] -- Added test 'lint_cmake' to check CMake code style
+[2.953s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.074s] -- Added test 'uncrustify' to check C / C++ code style
+[3.075s] -- Configured uncrustify additional arguments: 
+[3.090s] -- Added test 'xmllint' to check XML markup files
+[3.095s] -- Configuring done
+[3.119s] [31mCMake Error at CMakeLists.txt:33 (add_executable):
+[3.119s]   Cannot find source file:
+[3.122s] 
+[3.122s]     src/servo_publisher_node.cpp
+[3.123s] 
+[3.123s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[3.124s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[3.124s] 
+[3.126s] [0m
+[3.129s] [31mCMake Error at CMakeLists.txt:33 (add_executable):
+[3.130s]   No SOURCES given to target: servo_publisher_node
+[3.131s] 
+[3.131s] [0m
+[3.132s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[3.147s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+[3.153s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

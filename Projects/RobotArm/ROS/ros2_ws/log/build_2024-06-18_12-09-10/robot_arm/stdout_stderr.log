@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[ 50%] Built target servo_publisher_node
+[ 66%] Built target servo_node
+[ 83%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:32:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   32 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+      |                                       [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:32:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:54:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   54 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:54:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::advertiseService()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:118:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kuuid_t[m[K’ was not declared in this scope; did you mean ‘[01m[Kuid_t[m[K’?
+  118 |         [01;31m[Kuuid_t[m[K uuid;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kuid_t[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:119:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kuuid[m[K’ was not declared in this scope
+  119 |         sdp_uuid128_create(&[01;31m[Kuuid[m[K, (uint8_t *)"00001101-0000-1000-8000-00805f9b34fb");
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:119:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_uuid128_create[m[K’ was not declared in this scope
+  119 |         [01;31m[Ksdp_uuid128_create[m[K(&uuid, (uint8_t *)"00001101-0000-1000-8000-00805f9b34fb");
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_session_t[m[K’ was not declared in this scope
+  122 |         [01;31m[Ksdp_session_t[m[K *session = sdp_connect(BDADDR_ANY, BDADDR_LOCAL, SDP_RETRY_IF_BUSY);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksession[m[K’ was not declared in this scope
+  122 |         sdp_session_t *[01;31m[Ksession[m[K = sdp_connect(BDADDR_ANY, BDADDR_LOCAL, SDP_RETRY_IF_BUSY);
+      |                        [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:2[m[K:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:46:[m[K [01;31m[Kerror: [m[Ktaking address of rvalue [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  122 |         sdp_session_t *session = sdp_connect([01;31m[KBDADDR_ANY[m[K, BDADDR_LOCAL, SDP_RETRY_IF_BUSY);
+      |                                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:58:[m[K [01;31m[Kerror: [m[Ktaking address of rvalue [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  122 |         sdp_session_t *session = sdp_connect(BDADDR_ANY, [01;31m[KBDADDR_LOCAL[m[K, SDP_RETRY_IF_BUSY);
+      |                                                          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:72:[m[K [01;31m[Kerror: [m[K‘[01m[KSDP_RETRY_IF_BUSY[m[K’ was not declared in this scope
+  122 |         sdp_session_t *session = sdp_connect(BDADDR_ANY, BDADDR_LOCAL, [01;31m[KSDP_RETRY_IF_BUSY[m[K);
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:122:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_connect[m[K’ was not declared in this scope
+  122 |         sdp_session_t *session = [01;31m[Ksdp_connect[m[K(BDADDR_ANY, BDADDR_LOCAL, SDP_RETRY_IF_BUSY);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:129:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_record_t[m[K’ was not declared in this scope
+  129 |         [01;31m[Ksdp_record_t[m[K record = { 0 };
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:130:39:[m[K [01;31m[Kerror: [m[K‘[01m[Krecord[m[K’ was not declared in this scope
+  130 |         sdp_record_register(session, &[01;31m[Krecord[m[K, 0);
+      |                                       [01;31m[K^~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:130:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_record_register[m[K’ was not declared in this scope
+  130 |         [01;31m[Ksdp_record_register[m[K(session, &record, 0);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:131:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksdp_close[m[K’ was not declared in this scope; did you mean ‘[01m[Kpclose[m[K’?
+  131 |         [01;31m[Ksdp_close[m[K(session);
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Kpclose[m[K
+gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/slidersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/connected_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_disconnected"
+            android:paddingTop="8dp"/>
+        <Button
+            android:id="@+id/connectButton"
+            android:text="@string/connect_to_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Repeat this block for each servo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hand"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wrist_up_down"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarWristUpDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wrist_rotation"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarWristRotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elbow"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarElbow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoulder"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarShoulder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/base"
+            android:paddingTop="16dp"/>
+        <SeekBar
+            android:id="@+id/seekBarBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180" />
+
+        <!-- Add similar blocks for other servos: Shoulder, Wrist, etc. -->
+    </LinearLayout>
+
+</RelativeLayout>

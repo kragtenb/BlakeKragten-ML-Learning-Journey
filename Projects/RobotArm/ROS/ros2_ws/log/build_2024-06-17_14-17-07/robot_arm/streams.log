@@ -1,0 +1,12 @@
+[0.054s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.215s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[0.278s] [ 50%] Built target servo_node
+[0.322s] [ 75%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[13.133s] [100%] [32m[1mLinking CXX executable bluetooth_node[0m
+[13.568s] /usr/bin/ld: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o: in function `BluetoothNode::BluetoothNode()':
+[13.568s] bluetooth_node.cpp:(.text._ZN13BluetoothNodeC2Ev[_ZN13BluetoothNodeC5Ev]+0x1fc): undefined reference to `hci_get_route'
+[13.607s] collect2: error: ld returned 1 exit status
+[13.614s] gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:151: bluetooth_node] Error 1
+[13.617s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/bluetooth_node.dir/all] Error 2
+[13.618s] gmake: *** [Makefile:146: all] Error 2
+[13.627s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

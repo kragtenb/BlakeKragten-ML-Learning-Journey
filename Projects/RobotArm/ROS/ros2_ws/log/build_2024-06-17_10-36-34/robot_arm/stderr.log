@@ -1,0 +1,10 @@
+/usr/bin/ld: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o: in function `MultiServoController::MultiServoController()':
+servo_controller.cpp:(.text._ZN20MultiServoControllerC2Ev[_ZN20MultiServoControllerC5Ev]+0xdc): undefined reference to `gpioInitialise'
+/usr/bin/ld: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o: in function `MultiServoController::~MultiServoController()':
+servo_controller.cpp:(.text._ZN20MultiServoControllerD2Ev[_ZN20MultiServoControllerD5Ev]+0x1c): undefined reference to `gpioTerminate'
+/usr/bin/ld: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o: in function `MultiServoController::adjustServo(int, double)':
+servo_controller.cpp:(.text._ZN20MultiServoController11adjustServoEid[_ZN20MultiServoController11adjustServoEid]+0x1b4): undefined reference to `gpioServo'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:159: servo_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/servo_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

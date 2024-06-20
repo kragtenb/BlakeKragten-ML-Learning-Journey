@@ -1,0 +1,16 @@
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:[m[K In constructor ‘[01m[KTestNode::TestNode()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:6:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+    6 |             [01;31m[Ktimer_[m[K = this->create_wall_time(
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Ktimer_t[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:6:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TestNode[m[K’ has no member named ‘[01m[Kcreate_wall_time[m[K’; did you mean ‘[01m[Kcreate_wall_timer[m[K’?
+    6 |             timer_ = this->[01;31m[Kcreate_wall_time[m[K(
+      |                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                            [32m[Kcreate_wall_timer[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:[m[K In member function ‘[01m[Kvoid TestNode::timerCallback()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/test_node.cpp:15:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   15 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/minimal_cpp_node.dir/build.make:76: CMakeFiles/minimal_cpp_node.dir/src/test_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/minimal_cpp_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

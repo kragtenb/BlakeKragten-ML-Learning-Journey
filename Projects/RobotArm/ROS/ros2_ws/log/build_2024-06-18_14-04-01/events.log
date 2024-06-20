@@ -1,0 +1,13 @@
+[0.000000] (-) TimerEvent: {}
+[0.001713] (bluetooth_communication) JobQueued: {'identifier': 'bluetooth_communication', 'dependencies': OrderedDict()}
+[0.002043] (python_pkgs) JobQueued: {'identifier': 'python_pkgs', 'dependencies': OrderedDict()}
+[0.002149] (robot_arm) JobQueued: {'identifier': 'robot_arm', 'dependencies': OrderedDict()}
+[0.003409] (bluetooth_communication) JobStarted: {'identifier': 'bluetooth_communication'}
+[0.087917] (bluetooth_communication) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 40, in build\n    additional_hooks = create_environment_hook(\n  File "/usr/lib/python3/dist-packages/colcon_core/shell/__init__.py", line 444, in create_environment_hook\n    raise RuntimeError(\nRuntimeError: Could not find a primary shell extension for creating an environment hook\n'}
+[0.093521] (bluetooth_communication) JobEnded: {'identifier': 'bluetooth_communication', 'rc': 1}
+[0.106750] (-) TimerEvent: {}
+[0.107269] (python_pkgs) JobStarted: {'identifier': 'python_pkgs'}
+[0.122079] (robot_arm) JobStarted: {'identifier': 'robot_arm'}
+[0.146464] (python_pkgs) JobEnded: {'identifier': 'python_pkgs', 'rc': 'SIGINT'}
+[0.150942] (robot_arm) JobEnded: {'identifier': 'robot_arm', 'rc': 'SIGINT'}
+[0.162687] (-) EventReactorShutdown: {}

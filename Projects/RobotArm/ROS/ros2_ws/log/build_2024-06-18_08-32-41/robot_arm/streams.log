@@ -1,0 +1,21 @@
+[0.054s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.223s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[0.281s] [ 33%] Built target servo_publisher_node
+[0.296s] [ 66%] Built target servo_node
+[0.316s] [ 83%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[11.944s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:35:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.945s]    35 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+[11.945s]       |                                       [01;35m[K^[m[K
+[11.946s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:35:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.968s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[11.969s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:80:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.970s]    80 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+[11.970s]       |                                             [01;35m[K^[m[K
+[11.971s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:80:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.974s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:105:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[11.975s]   105 |     [01;31m[K}[m[K
+[11.975s]       |     [01;31m[K^[m[K
+[15.227s] gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+[15.228s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+[15.229s] gmake: *** [Makefile:146: all] Error 2
+[15.236s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

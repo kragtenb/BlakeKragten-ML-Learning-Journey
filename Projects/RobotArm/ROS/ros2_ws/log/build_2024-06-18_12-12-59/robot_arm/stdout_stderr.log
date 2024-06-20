@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[ 33%] Built target servo_publisher_node
+[ 66%] Built target servo_node
+[ 83%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   34 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+      |                                       [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:34:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:56:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   56 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:56:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+In file included from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:2[m[K:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::advertiseService()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:124:46:[m[K [01;31m[Kerror: [m[Ktaking address of rvalue [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  124 | sdp_session_t *session = sdp_connect([01;31m[KBDADDR_ANY[m[K, BDADDR_LOCAL, SDP_RETRY_IF_BUSY);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:124:58:[m[K [01;31m[Kerror: [m[Ktaking address of rvalue [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  124 | t *session = sdp_connect(BDADDR_ANY, [01;31m[KBDADDR_LOCAL[m[K, SDP_RETRY_IF_BUSY);
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:131:35:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksdp_record_t::pattern[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  131 |         sdp_record_t record = { 0 [01;35m[K}[m[K;
+      |                                   [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:131:35:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksdp_record_t::attrlist[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:131:35:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksdp_record_t::svclass[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

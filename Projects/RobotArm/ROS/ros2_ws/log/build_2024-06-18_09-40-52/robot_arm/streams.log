@@ -1,0 +1,45 @@
+[0.046s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.217s] [35m[1mConsolidate compiler generated dependencies of target servo_publisher_node[0m
+[0.219s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.221s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[0.352s] [ 33%] Built target servo_publisher_node
+[0.361s] [ 50%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[0.364s] [ 83%] Built target servo_node
+[11.435s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:36:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.435s]    36 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+[11.436s]       |                                       [01;35m[K^[m[K
+[11.436s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:36:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.454s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[11.455s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:59:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.455s]    59 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+[11.455s]       |                                             [01;35m[K^[m[K
+[11.456s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:59:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[11.472s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::pairAndTrustDevice(const string&)[m[K’:
+[11.472s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:141:22:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kreply[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[11.473s]   141 |         DBusMessage* [01;35m[Kreply[m[K = dbus_connection_send_with_reply_and_block(conn, msg, -1, &err);
+[11.473s]       |                      [01;35m[K^~~~~[m[K
+[19.146s] [100%] [32m[1mLinking CXX executable bluetooth_node[0m
+[20.189s] [100%] Built target bluetooth_node
+[20.227s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[20.419s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm
+[20.442s] -- Install configuration: ""
+[20.444s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_node
+[20.446s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_publisher_node
+[20.448s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node
+[20.459s] -- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node" to ""
+[20.460s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/package_run_dependencies/robot_arm
+[20.461s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/parent_prefix_path/robot_arm
+[20.462s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.sh
+[20.462s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.dsv
+[20.463s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.sh
+[20.464s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.dsv
+[20.464s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.bash
+[20.465s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.sh
+[20.466s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.zsh
+[20.466s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.dsv
+[20.467s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv
+[20.467s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/packages/robot_arm
+[20.468s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig.cmake
+[20.468s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig-version.cmake
+[20.469s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.xml
+[20.475s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm

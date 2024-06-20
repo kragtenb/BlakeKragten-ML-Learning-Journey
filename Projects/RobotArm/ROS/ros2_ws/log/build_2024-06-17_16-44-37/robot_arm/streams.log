@@ -1,0 +1,19 @@
+[0.065s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.435s] [ 33%] Built target servo_publisher_node
+[0.449s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[0.482s] [ 66%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[2.235s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Krobot_arm/servo_config.hpp: No such file or directory
+[2.235s]     9 | #include [01;31m[K"robot_arm/servo_config.hpp"[m[K
+[2.236s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.236s] compilation terminated.
+[2.254s] gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+[2.255s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+[2.256s] gmake[1]: *** Waiting for unfinished jobs....
+[2.280s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Krobot_arm/servo_config.hpp: No such file or directory
+[2.280s]     7 | #include [01;31m[K"robot_arm/servo_config.hpp"[m[K
+[2.281s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.282s] compilation terminated.
+[2.297s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[2.298s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[2.304s] gmake: *** [Makefile:146: all] Error 2
+[2.306s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
