@@ -1,243 +1,173 @@
-[0.414s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
-[0.414s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa5b8af80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa5d04580>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa5d04580>>)
-[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
-[1.060s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
-[1.060s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
-[1.060s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
-[1.060s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
-[1.061s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[1.061s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blakepi/ros2_ws'
-[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
-[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
-[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
-[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
-[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
-[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
-[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
-[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
-[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
-[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
-[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
-[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
-[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
-[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
-[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
-[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
-[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
-[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
-[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
-[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
-[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
-[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
-[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
-[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
-[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
-[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
-[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
-[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
-[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
-[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
-[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
-[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
-[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extensions ['ignore', 'ignore_ament_install']
-[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extension 'ignore'
-[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extension 'ignore_ament_install'
-[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extensions ['colcon_pkg']
-[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extension 'colcon_pkg'
-[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extensions ['colcon_meta']
-[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extension 'colcon_meta'
-[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extensions ['ros']
-[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth_communication) by extension 'ros'
-[1.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bluetooth_communication' with type 'ros.ament_python' and name 'bluetooth_communication'
-[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['ignore', 'ignore_ament_install']
-[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ignore'
-[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ignore_ament_install'
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['colcon_pkg']
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'colcon_pkg'
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['colcon_meta']
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'colcon_meta'
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['ros']
-[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ros'
-[1.132s] DEBUG:colcon.colcon_core.package_identification:Package 'src/python_pkgs' with type 'ros.ament_python' and name 'python_pkgs'
-[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['ignore', 'ignore_ament_install']
-[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ignore'
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ignore_ament_install'
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['colcon_pkg']
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'colcon_pkg'
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['colcon_meta']
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'colcon_meta'
-[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['ros']
-[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ros'
-[1.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_arm' with type 'ros.ament_cmake' and name 'robot_arm'
-[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
-[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
-[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
-[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
-[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
-[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
-[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
-[1.226s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/blakepi/ros2_ws/install
-[1.232s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
-[1.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
-[1.346s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_args' from command line to 'None'
-[1.346s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_target' from command line to 'None'
-[1.346s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_target_skip_unavailable' from command line to 'False'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_clean_cache' from command line to 'False'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_clean_first' from command line to 'False'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'cmake_force_configure' from command line to 'False'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'ament_cmake_args' from command line to 'None'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'catkin_cmake_args' from command line to 'None'
-[1.347s] Level 5:colcon.colcon_core.verb:set package 'bluetooth_communication' build argument 'catkin_skip_building_tests' from command line to 'False'
-[1.347s] DEBUG:colcon.colcon_core.verb:Building package 'bluetooth_communication' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blakepi/ros2_ws/build/bluetooth_communication', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blakepi/ros2_ws/install/bluetooth_communication', 'merge_install': False, 'path': '/home/blakepi/ros2_ws/src/bluetooth_communication', 'symlink_install': False, 'test_result_base': None}
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_args' from command line to 'None'
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_target' from command line to 'None'
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_clean_cache' from command line to 'False'
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_clean_first' from command line to 'False'
-[1.349s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_force_configure' from command line to 'False'
-[1.350s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'ament_cmake_args' from command line to 'None'
-[1.350s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'catkin_cmake_args' from command line to 'None'
-[1.350s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'catkin_skip_building_tests' from command line to 'False'
-[1.350s] DEBUG:colcon.colcon_core.verb:Building package 'python_pkgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blakepi/ros2_ws/build/python_pkgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blakepi/ros2_ws/install/python_pkgs', 'merge_install': False, 'path': '/home/blakepi/ros2_ws/src/python_pkgs', 'symlink_install': False, 'test_result_base': None}
-[1.351s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_args' from command line to 'None'
-[1.351s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_target' from command line to 'None'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_clean_cache' from command line to 'False'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_clean_first' from command line to 'False'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_force_configure' from command line to 'False'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'ament_cmake_args' from command line to 'None'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'catkin_cmake_args' from command line to 'None'
-[1.352s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
-[1.352s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blakepi/ros2_ws/build/robot_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blakepi/ros2_ws/install/robot_arm', 'merge_install': False, 'path': '/home/blakepi/ros2_ws/src/robot_arm', 'symlink_install': False, 'test_result_base': None}
-[1.353s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
-[1.356s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[1.357s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/blakepi/ros2_ws/src/bluetooth_communication' with build type 'ament_python'
-[1.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluetooth_communication', 'ament_prefix_path')
-[1.368s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
-[1.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/ament_prefix_path.ps1'
-[1.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/ament_prefix_path.dsv'
-[1.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/ament_prefix_path.sh'
-[1.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
-[1.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[1.428s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/blakepi/ros2_ws/src/python_pkgs' with build type 'ament_python'
-[1.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_pkgs', 'ament_prefix_path')
-[1.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.ps1'
-[1.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.dsv'
-[1.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.sh'
-[1.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
-[1.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[1.453s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blakepi/ros2_ws/src/robot_arm' with build type 'ament_cmake'
-[1.453s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blakepi/ros2_ws/src/robot_arm'
-[1.455s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
-[1.455s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[2.557s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/blakepi/ros2_ws/src/bluetooth_communication'
-[2.558s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
-[2.558s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[3.600s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/blakepi/ros2_ws/src/python_pkgs'
-[3.601s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
-[3.601s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[3.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
-[6.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/src/python_pkgs': PYTHONPATH=/home/blakepi/ros2_ws/build/python_pkgs/prefix_override:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_pkgs build --build-base /home/blakepi/ros2_ws/build/python_pkgs/build install --record /home/blakepi/ros2_ws/build/python_pkgs/install.log --single-version-externally-managed install_data
-[6.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/src/bluetooth_communication': PYTHONPATH=/home/blakepi/ros2_ws/build/bluetooth_communication/prefix_override:/home/blakepi/ros2_ws/install/bluetooth_communication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bluetooth_communication build --build-base /home/blakepi/ros2_ws/build/bluetooth_communication/build install --record /home/blakepi/ros2_ws/build/bluetooth_communication/install.log --single-version-externally-managed install_data
-[8.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/src/bluetooth_communication' returned '0': PYTHONPATH=/home/blakepi/ros2_ws/build/bluetooth_communication/prefix_override:/home/blakepi/ros2_ws/install/bluetooth_communication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bluetooth_communication build --build-base /home/blakepi/ros2_ws/build/bluetooth_communication/build install --record /home/blakepi/ros2_ws/build/bluetooth_communication/install.log --single-version-externally-managed install_data
-[8.252s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication' for CMake module files
-[8.258s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication' for CMake config files
-[8.265s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication/lib'
-[8.267s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication/bin'
-[8.268s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication/lib/pkgconfig/bluetooth_communication.pc'
-[8.270s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication/lib/python3.10/site-packages'
-[8.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluetooth_communication', 'pythonpath')
-[8.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/pythonpath.ps1'
-[8.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/pythonpath.dsv'
-[8.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/hook/pythonpath.sh'
-[8.286s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/bluetooth_communication/bin'
-[8.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluetooth_communication)
-[8.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/package.ps1'
-[8.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/package.dsv'
-[8.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/package.sh'
-[8.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/package.bash'
-[8.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/bluetooth_communication/share/bluetooth_communication/package.zsh'
-[8.314s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/bluetooth_communication/share/colcon-core/packages/bluetooth_communication)
-[8.321s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs' for CMake module files
-[8.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/src/python_pkgs' returned '0': PYTHONPATH=/home/blakepi/ros2_ws/build/python_pkgs/prefix_override:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_pkgs build --build-base /home/blakepi/ros2_ws/build/python_pkgs/build install --record /home/blakepi/ros2_ws/build/python_pkgs/install.log --single-version-externally-managed install_data
-[8.326s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs' for CMake config files
-[8.333s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib'
-[8.335s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/bin'
-[8.335s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib/pkgconfig/python_pkgs.pc'
-[8.337s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages'
-[8.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_pkgs', 'pythonpath')
-[8.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.ps1'
-[8.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.dsv'
-[8.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.sh'
-[8.349s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/bin'
-[8.350s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_pkgs)
-[8.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.ps1'
-[8.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.dsv'
-[8.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.sh'
-[8.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.bash'
-[8.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.zsh'
-[8.367s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/python_pkgs/share/colcon-core/packages/python_pkgs)
-[26.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
-[27.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm
-[27.279s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm)
-[27.282s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake module files
-[27.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm
-[27.288s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake config files
-[27.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm', 'cmake_prefix_path')
-[27.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.ps1'
-[27.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.dsv'
-[27.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.sh'
-[27.299s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib'
-[27.300s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
-[27.300s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/pkgconfig/robot_arm.pc'
-[27.301s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/python3.10/site-packages'
-[27.303s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
-[27.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.ps1'
-[27.307s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv'
-[27.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.sh'
-[27.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.bash'
-[27.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.zsh'
-[27.316s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/robot_arm/share/colcon-core/packages/robot_arm)
-[27.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm)
-[27.512s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake module files
-[27.515s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake config files
-[27.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm', 'cmake_prefix_path')
-[27.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.ps1'
-[27.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.dsv'
-[27.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.sh'
-[27.524s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib'
-[27.524s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
-[27.525s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/pkgconfig/robot_arm.pc'
-[27.525s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/python3.10/site-packages'
-[27.526s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
-[27.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.ps1'
-[27.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv'
-[27.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.sh'
-[27.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.bash'
-[27.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.zsh'
-[27.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/robot_arm/share/colcon-core/packages/robot_arm)
-[27.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
-[27.542s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
-[27.543s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
-[27.543s] DEBUG:colcon.colcon_core.event_reactor:joining thread
-[27.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
-[27.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
-[27.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
-[27.567s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
-[27.568s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
-[27.569s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[27.570s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.ps1'
-[27.573s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blakepi/ros2_ws/install/_local_setup_util_ps1.py'
-[27.579s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.ps1'
-[27.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.sh'
-[27.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blakepi/ros2_ws/install/_local_setup_util_sh.py'
-[27.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.sh'
-[27.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.bash'
-[27.598s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.bash'
-[27.603s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.zsh'
-[27.605s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.zsh'
+[0.535s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.536s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa001af50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa0194550>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa0194550>>)
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.354s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blakepi/ros2_ws'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.413s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.413s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.414s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.423s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.423s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.424s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['ignore', 'ignore_ament_install']
+[1.424s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ignore'
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ignore_ament_install'
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['colcon_pkg']
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'colcon_pkg'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['colcon_meta']
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'colcon_meta'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extensions ['ros']
+[1.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/python_pkgs) by extension 'ros'
+[1.437s] DEBUG:colcon.colcon_core.package_identification:Package 'src/python_pkgs' with type 'ros.ament_python' and name 'python_pkgs'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['ignore', 'ignore_ament_install']
+[1.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ignore'
+[1.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ignore_ament_install'
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['colcon_pkg']
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'colcon_pkg'
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['colcon_meta']
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'colcon_meta'
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extensions ['ros']
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_arm) by extension 'ros'
+[1.444s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_arm' with type 'ros.ament_cmake' and name 'robot_arm'
+[1.444s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.553s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/blakepi/ros2_ws/install
+[1.559s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[1.564s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_args' from command line to 'None'
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_target' from command line to 'None'
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.708s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.709s] Level 5:colcon.colcon_core.verb:set package 'python_pkgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.709s] DEBUG:colcon.colcon_core.verb:Building package 'python_pkgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blakepi/ros2_ws/build/python_pkgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blakepi/ros2_ws/install/python_pkgs', 'merge_install': False, 'path': '/home/blakepi/ros2_ws/src/python_pkgs', 'symlink_install': False, 'test_result_base': None}
+[1.711s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_args' from command line to 'None'
+[1.711s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_target' from command line to 'None'
+[1.711s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_clean_first' from command line to 'False'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'cmake_force_configure' from command line to 'False'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'ament_cmake_args' from command line to 'None'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.712s] Level 5:colcon.colcon_core.verb:set package 'robot_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.712s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blakepi/ros2_ws/build/robot_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blakepi/ros2_ws/install/robot_arm', 'merge_install': False, 'path': '/home/blakepi/ros2_ws/src/robot_arm', 'symlink_install': False, 'test_result_base': None}
+[1.713s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.717s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.718s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/blakepi/ros2_ws/src/python_pkgs' with build type 'ament_python'
+[1.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_pkgs', 'ament_prefix_path')
+[1.731s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.ps1'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.dsv'
+[1.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/ament_prefix_path.sh'
+[1.780s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.780s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.797s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blakepi/ros2_ws/src/robot_arm' with build type 'ament_cmake'
+[1.798s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blakepi/ros2_ws/src/robot_arm'
+[1.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.152s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/blakepi/ros2_ws/src/python_pkgs'
+[3.154s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[5.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blakepi/ros2_ws/src/python_pkgs': PYTHONPATH=/home/blakepi/ros2_ws/build/python_pkgs/prefix_override:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_pkgs build --build-base /home/blakepi/ros2_ws/build/python_pkgs/build install --record /home/blakepi/ros2_ws/build/python_pkgs/install.log --single-version-externally-managed install_data
+[7.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/src/python_pkgs' returned '0': PYTHONPATH=/home/blakepi/ros2_ws/build/python_pkgs/prefix_override:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_pkgs build --build-base /home/blakepi/ros2_ws/build/python_pkgs/build install --record /home/blakepi/ros2_ws/build/python_pkgs/install.log --single-version-externally-managed install_data
+[7.254s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs' for CMake module files
+[7.256s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs' for CMake config files
+[7.261s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib'
+[7.263s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/bin'
+[7.264s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib/pkgconfig/python_pkgs.pc'
+[7.265s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages'
+[7.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_pkgs', 'pythonpath')
+[7.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.ps1'
+[7.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.dsv'
+[7.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/hook/pythonpath.sh'
+[7.275s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/python_pkgs/bin'
+[7.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_pkgs)
+[7.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.ps1'
+[7.282s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.dsv'
+[7.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.sh'
+[7.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.bash'
+[7.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/python_pkgs/share/python_pkgs/package.zsh'
+[7.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/python_pkgs/share/colcon-core/packages/python_pkgs)
+[15.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[15.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm)
+[15.941s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake module files
+[15.945s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm' for CMake config files
+[15.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm', 'cmake_prefix_path')
+[15.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.ps1'
+[15.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.dsv'
+[15.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/hook/cmake_prefix_path.sh'
+[15.957s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib'
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/pkgconfig/robot_arm.pc'
+[15.959s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/lib/python3.10/site-packages'
+[15.960s] Level 1:colcon.colcon_core.environment:checking '/home/blakepi/ros2_ws/install/robot_arm/bin'
+[15.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.ps1'
+[15.965s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv'
+[15.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.sh'
+[15.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.bash'
+[15.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.zsh'
+[15.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blakepi/ros2_ws/install/robot_arm/share/colcon-core/packages/robot_arm)
+[15.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.989s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.990s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[15.991s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.017s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.017s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.018s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.018s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.020s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[16.021s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.022s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.ps1'
+[16.026s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blakepi/ros2_ws/install/_local_setup_util_ps1.py'
+[16.032s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.ps1'
+[16.038s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.sh'
+[16.041s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/blakepi/ros2_ws/install/_local_setup_util_sh.py'
+[16.043s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.sh'
+[16.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.bash'
+[16.051s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.bash'
+[16.057s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blakepi/ros2_ws/install/local_setup.zsh'
+[16.060s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blakepi/ros2_ws/install/setup.zsh'

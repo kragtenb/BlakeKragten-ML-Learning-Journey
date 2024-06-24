@@ -1,0 +1,31 @@
+[1.410s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[1.658s] [35m[1mConsolidate compiler generated dependencies of target robot_arm__rosidl_generator_c[0m
+[1.704s] [  2%] Built target robot_arm__cpp
+[1.737s] [ 10%] Built target robot_arm__rosidl_generator_c
+[1.793s] [ 10%] Built target ament_cmake_python_copy_robot_arm
+[1.815s] [35m[1mConsolidate compiler generated dependencies of target servo_publisher_node[0m
+[1.923s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[1.959s] [ 13%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[2.021s] [ 18%] Built target servo_publisher_node
+[2.212s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.213s] [ 27%] Built target bluetooth_node
+[2.363s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.358s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.722s] [ 35%] [32mBuilding CXX object CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_arm/msg/servo_motor_state__type_support.cpp.o[0m
+[4.309s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Krobot_arm/msg/ServoMotorState.msg: No such file or directory
+[4.310s]     8 | #include [01;31m[K"robot_arm/msg/ServoMotorState.msg"[m[K
+[4.310s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.311s] compilation terminated.
+[4.369s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[4.370s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/servo_node.dir/all] Error 2
+[4.371s] gmake[1]: *** Waiting for unfinished jobs....
+[4.852s] [ 37%] [32mBuilding CXX object CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_arm/msg/detail/servo_motor_state__type_support_c.cpp.o[0m
+[5.543s] [ 40%] [32mBuilding CXX object CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_arm/msg/detail/dds_fastrtps/servo_motor_state__type_support.cpp.o[0m
+[6.499s] [ 43%] [32m[1mLinking CXX shared library librobot_arm__rosidl_typesupport_cpp.so[0m
+[6.781s] [ 43%] Built target robot_arm__rosidl_typesupport_cpp
+[11.130s] [ 45%] [32m[1mLinking CXX shared library librobot_arm__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.135s] [ 48%] [32m[1mLinking CXX shared library librobot_arm__rosidl_typesupport_fastrtps_c.so[0m
+[11.466s] [ 48%] Built target robot_arm__rosidl_typesupport_fastrtps_cpp
+[13.306s] [ 48%] Built target robot_arm__rosidl_typesupport_fastrtps_c
+[13.311s] gmake: *** [Makefile:146: all] Error 2
+[13.317s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
