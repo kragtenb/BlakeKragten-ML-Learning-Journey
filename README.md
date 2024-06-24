@@ -7,9 +7,10 @@ This portfolio represents my journey from a beginner to a capable Machine Learni
 ## Key Skills:
 
 * **Core ML:** Python, scikit-learn, neural networks (CNNs, RNNs), object detection, image segmentation
-* **Frameworks:** PyTorch, TensorFlow, OpenCV
+* **Frameworks:** PyTorch, TensorFlow, OpenCV, ROS
 * **Tools:** ChatGPT-4, Gemini Pro (utilized for learning support and code debugging)
 * **Projects:** Experience across diverse areas including image classification, object detection, autonomous navigation, and fine-tuning pre-trained models.
+* **Programming Languages:** Python, Kotlin, Java, C/C++
 
 ## Project Highlights:
 [Project Video & Photo Highlights:](https://photos.app.goo.gl/3fAxFvL1wRNHpS4T6)
@@ -19,6 +20,7 @@ This portfolio represents my journey from a beginner to a capable Machine Learni
 4. **Open_CV_Practice:** Explored fundamental image processing techniques (transformations, gradient calculations, edge detection) and HOG-based object detection.
 5. **RC_Drivable_Space (In Progress):** Developed an autonomous line-following robot with next steps adding drivable terrain detection using neural networks to drive without the line.
 6. **TorchVIsion_Fine_Tuning:** Fine-tuned a Mask R-CNN model to detect and segment pedestrians, demonstrating proficiency in advanced deep learning techniques.
+7. **RobotArm:** This project develops a robotic arm using ROS, machine learning, and an Android app to identify and sort different shaped blocks into corresponding holes, aiming to create an educational tool while enhancing robotics expertise.
 
 ## Learning Journey:
 
