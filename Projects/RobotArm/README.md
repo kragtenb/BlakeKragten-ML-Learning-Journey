@@ -1,4 +1,4 @@
-![Robot Arm](https://github.com/kragtenb/BlakeKragten-ML-Learning-Journey/blob/main/Projects/RobotArm/RobotArmImage.jpg?raw=true)
+<img src="https://github.com/kragtenb/BlakeKragten-ML-Learning-Journey/blob/main/Projects/RobotArm/RobotArmImage.jpg" width="250">
 
 # Project Goal:
 
