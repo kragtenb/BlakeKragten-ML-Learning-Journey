@@ -2,6 +2,8 @@
 
 The end goal of this project is to have a robot arm be able to grab my daughter’s different shaped blocks and move them into the corresponding holes that the block fits in. 
 
+![Robot Current Design](https://photos.app.goo.gl/rtesDEdvBparHBok9)
+
 # Project Milestones:
 1. Find and print the 3D printed parts for the robot arm (Completed)
 2. Assemble Robot arm with servo motors and raspberry pi. (Completed)
