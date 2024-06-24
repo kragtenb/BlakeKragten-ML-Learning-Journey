@@ -6,6 +6,7 @@
 4. Open_CV_Practice: Exploring Image Transformations and HOG-based Object Detection
 5. RC_Drivable_Space: Blue Line Following Robot with Drivable Space Identification (In Progress)
 6. TorchVIsion_Fine_Tuning: Pedestrian Detection & Segmentation with Mask R-CNN
+7. RobotArm: Robot Arm With ROS, Motion Planning & Autonomous Task Completion.
 
 ## [Project Videos And Photos](https://photos.app.goo.gl/3fAxFvL1wRNHpS4T6)
 
@@ -50,3 +51,7 @@ This project features a Raspberry Pi-powered robot capable of autonomously follo
 ### 6. **Pedestrian Detection & Segmentation with Mask R-CNN**
 
 This project demonstrates how to use a Mask R-CNN model to accurately detect and segment pedestrians within images. It leverages the Penn-Fudan dataset for training and evaluation, showcasing the model's ability to not only identify pedestrians but also precisely outline them in the images. The project includes custom data loading, fine-tuning of a pre-trained model, and visualization of the results.
+
+### 7. **Robot Arm With ROS, Motion Planning & Autonomous Task Completion.**
+
+This project involves developing a robotic arm capable of identifying and sorting various shaped blocks into their corresponding holes. Using a Raspberry Pi 4, six servo motors, a camera, and an ultrasonic sensor, the arm processes visual and distance data to execute precise movements. The system integrates ROS for functionality and control, an Android app for remote operation, and advanced machine learning models for object recognition and motion planning. The ultimate goal is to create an interactive, educational tool for my daughter while enhancing my expertise in robotics and machine learning.
