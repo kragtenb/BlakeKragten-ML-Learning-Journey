@@ -1,0 +1,567 @@
+[0.000000] (-) TimerEvent: {}
+[0.002286] (interface) JobQueued: {'identifier': 'interface', 'dependencies': OrderedDict()}
+[0.005023] (python_pkgs) JobQueued: {'identifier': 'python_pkgs', 'dependencies': OrderedDict()}
+[0.008948] (robot_arm) JobQueued: {'identifier': 'robot_arm', 'dependencies': OrderedDict([('interface', '/home/blakepi/ros2_ws/install/interface')])}
+[0.009920] (interface) JobStarted: {'identifier': 'interface'}
+[0.060078] (python_pkgs) JobStarted: {'identifier': 'python_pkgs'}
+[0.096483] (-) TimerEvent: {}
+[0.135012] (interface) JobProgress: {'identifier': 'interface', 'progress': 'cmake'}
+[0.147685] (interface) JobProgress: {'identifier': 'interface', 'progress': 'build'}
+[0.152785] (interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/interface', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/interface', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 34694 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d5d31f61-4ec7-4158-bab2-991a5f746a99.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '57'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX7VK9HL/agent.110077'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 34694 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble')]), 'shell': False}
+[0.200501] (-) TimerEvent: {}
+[0.302713] (-) TimerEvent: {}
+[0.404540] (-) TimerEvent: {}
+[0.507687] (-) TimerEvent: {}
+[0.614664] (-) TimerEvent: {}
+[0.717224] (-) TimerEvent: {}
+[0.819509] (-) TimerEvent: {}
+[0.924676] (-) TimerEvent: {}
+[1.027781] (-) TimerEvent: {}
+[1.130550] (-) TimerEvent: {}
+[1.233996] (-) TimerEvent: {}
+[1.279742] (interface) StdoutLine: {'line': b'[  2%] Built target interface__cpp\n'}
+[1.335071] (-) TimerEvent: {}
+[1.436634] (-) TimerEvent: {}
+[1.540716] (-) TimerEvent: {}
+[1.644331] (-) TimerEvent: {}
+[1.747142] (-) TimerEvent: {}
+[1.849082] (-) TimerEvent: {}
+[1.950728] (-) TimerEvent: {}
+[2.037703] (interface) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_interface\n'}
+[2.051834] (-) TimerEvent: {}
+[2.156963] (-) TimerEvent: {}
+[2.261695] (-) TimerEvent: {}
+[2.365446] (-) TimerEvent: {}
+[2.468042] (-) TimerEvent: {}
+[2.492434] (interface) StdoutLine: {'line': b'[ 12%] Built target interface__rosidl_typesupport_fastrtps_cpp\n'}
+[2.568785] (-) TimerEvent: {}
+[2.670509] (-) TimerEvent: {}
+[2.776204] (-) TimerEvent: {}
+[2.878227] (-) TimerEvent: {}
+[2.986739] (-) TimerEvent: {}
+[3.055720] (interface) StdoutLine: {'line': b'[ 23%] Built target interface__rosidl_typesupport_introspection_cpp\n'}
+[3.087080] (-) TimerEvent: {}
+[3.190365] (-) TimerEvent: {}
+[3.291975] (-) TimerEvent: {}
+[3.395012] (-) TimerEvent: {}
+[3.498699] (-) TimerEvent: {}
+[3.600858] (-) TimerEvent: {}
+[3.701827] (-) TimerEvent: {}
+[3.803513] (-) TimerEvent: {}
+[3.905988] (-) TimerEvent: {}
+[4.008671] (-) TimerEvent: {}
+[4.110772] (-) TimerEvent: {}
+[4.213495] (-) TimerEvent: {}
+[4.316603] (-) TimerEvent: {}
+[4.420244] (-) TimerEvent: {}
+[4.521931] (-) TimerEvent: {}
+[4.625368] (-) TimerEvent: {}
+[4.730137] (-) TimerEvent: {}
+[4.834272] (-) TimerEvent: {}
+[4.938136] (-) TimerEvent: {}
+[5.042920] (-) TimerEvent: {}
+[5.149711] (-) TimerEvent: {}
+[5.252975] (-) TimerEvent: {}
+[5.357137] (-) TimerEvent: {}
+[5.462169] (-) TimerEvent: {}
+[5.567379] (-) TimerEvent: {}
+[5.671823] (-) TimerEvent: {}
+[5.815643] (-) TimerEvent: {}
+[5.918277] (-) TimerEvent: {}
+[6.025696] (-) TimerEvent: {}
+[6.127657] (-) TimerEvent: {}
+[6.229433] (-) TimerEvent: {}
+[6.331034] (-) TimerEvent: {}
+[6.435488] (-) TimerEvent: {}
+[6.538545] (-) TimerEvent: {}
+[6.640169] (-) TimerEvent: {}
+[6.741650] (-) TimerEvent: {}
+[6.843511] (-) TimerEvent: {}
+[6.946065] (-) TimerEvent: {}
+[7.047691] (-) TimerEvent: {}
+[7.149622] (-) TimerEvent: {}
+[7.252520] (-) TimerEvent: {}
+[7.353720] (-) TimerEvent: {}
+[7.394309] (interface) StdoutLine: {'line': b'running egg_info\n'}
+[7.401059] (interface) StdoutLine: {'line': b'writing interface.egg-info/PKG-INFO\n'}
+[7.404548] (interface) StdoutLine: {'line': b'writing dependency_links to interface.egg-info/dependency_links.txt\n'}
+[7.407846] (interface) StdoutLine: {'line': b'writing top-level names to interface.egg-info/top_level.txt\n'}
+[7.427560] (interface) StdoutLine: {'line': b"reading manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[7.432806] (interface) StdoutLine: {'line': b"writing manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[7.455602] (-) TimerEvent: {}
+[7.559319] (-) TimerEvent: {}
+[7.661433] (-) TimerEvent: {}
+[7.733270] (interface) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_interface_egg\n'}
+[7.761724] (-) TimerEvent: {}
+[7.862983] (-) TimerEvent: {}
+[7.936429] (interface) StdoutLine: {'line': b'[ 33%] Built target interface__rosidl_typesupport_cpp\n'}
+[7.963379] (-) TimerEvent: {}
+[8.068151] (-) TimerEvent: {}
+[8.077032] (interface) StdoutLine: {'line': b'[ 43%] Built target interface__rosidl_generator_c\n'}
+[8.172582] (-) TimerEvent: {}
+[8.251765] (interface) StdoutLine: {'line': b'[ 53%] Built target interface__rosidl_typesupport_fastrtps_c\n'}
+[8.272804] (-) TimerEvent: {}
+[8.379606] (-) TimerEvent: {}
+[8.443483] (interface) StdoutLine: {'line': b'[ 64%] Built target interface__rosidl_typesupport_c\n'}
+[8.479863] (-) TimerEvent: {}
+[8.577209] (interface) StdoutLine: {'line': b'[ 74%] Built target interface__rosidl_typesupport_introspection_c\n'}
+[8.580042] (-) TimerEvent: {}
+[8.683668] (-) TimerEvent: {}
+[8.786883] (-) TimerEvent: {}
+[8.840990] (interface) StdoutLine: {'line': b'[ 74%] Built target interface\n'}
+[8.887409] (-) TimerEvent: {}
+[8.999491] (-) TimerEvent: {}
+[9.103973] (-) TimerEvent: {}
+[9.116512] (interface) StdoutLine: {'line': b'[ 76%] Built target interface__py\n'}
+[9.204262] (-) TimerEvent: {}
+[9.305674] (-) TimerEvent: {}
+[9.407353] (-) TimerEvent: {}
+[9.509064] (-) TimerEvent: {}
+[9.619635] (-) TimerEvent: {}
+[9.712126] (interface) StdoutLine: {'line': b'[ 84%] Built target interface__rosidl_generator_py\n'}
+[9.720118] (-) TimerEvent: {}
+[9.824413] (-) TimerEvent: {}
+[9.927049] (-) TimerEvent: {}
+[10.030847] (-) TimerEvent: {}
+[10.095893] (interface) StdoutLine: {'line': b'[ 89%] Built target interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.131303] (-) TimerEvent: {}
+[10.236132] (-) TimerEvent: {}
+[10.338357] (-) TimerEvent: {}
+[10.439943] (-) TimerEvent: {}
+[10.543004] (-) TimerEvent: {}
+[10.651469] (-) TimerEvent: {}
+[10.753074] (-) TimerEvent: {}
+[10.810451] (interface) StdoutLine: {'line': b'[ 94%] Built target interface__rosidl_typesupport_c__pyext\n'}
+[10.853399] (-) TimerEvent: {}
+[10.955562] (-) TimerEvent: {}
+[11.057090] (-) TimerEvent: {}
+[11.161073] (-) TimerEvent: {}
+[11.213228] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_introspection_c__pyext\n'}
+[11.261441] (-) TimerEvent: {}
+[11.368652] (-) TimerEvent: {}
+[11.473452] (-) TimerEvent: {}
+[11.579212] (-) TimerEvent: {}
+[11.680595] (-) TimerEvent: {}
+[11.781928] (-) TimerEvent: {}
+[11.883423] (-) TimerEvent: {}
+[11.985293] (-) TimerEvent: {}
+[12.089919] (-) TimerEvent: {}
+[12.142105] (interface) CommandEnded: {'returncode': 0}
+[12.191523] (-) TimerEvent: {}
+[12.297702] (-) TimerEvent: {}
+[12.407622] (-) TimerEvent: {}
+[12.515802] (python_pkgs) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/python_pkgs', 'build', '--build-base', '/home/blakepi/ros2_ws/build/python_pkgs/build', 'install', '--record', '/home/blakepi/ros2_ws/build/python_pkgs/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/blakepi/ros2_ws/src/python_pkgs', 'env': {'SUDO_GID': '1003', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'SSH_CLIENT': '192.168.86.41 34694 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/blakepi', 'TERM_PROGRAM_VERSION': '1.90.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d5d31f61-4ec7-4158-bab2-991a5f746a99.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/blakepi/ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '57', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-499b90c930.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXX7VK9HL/agent.110077', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/interface:/opt/ros/humble', 'SHELL': '/bin/bash', 'SUDO_USER': 'blakepi', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/blakepi/ros2_ws/build/python_pkgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.86.41 34694 192.168.86.46 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/blakepi/ros2_ws/build/python_pkgs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/interface'}, 'shell': False}
+[12.533883] (-) TimerEvent: {}
+[12.671355] (-) TimerEvent: {}
+[12.780413] (-) TimerEvent: {}
+[12.884113] (-) TimerEvent: {}
+[12.988911] (-) TimerEvent: {}
+[13.093269] (-) TimerEvent: {}
+[13.201194] (-) TimerEvent: {}
+[13.313623] (-) TimerEvent: {}
+[13.417083] (-) TimerEvent: {}
+[13.518634] (-) TimerEvent: {}
+[13.620364] (-) TimerEvent: {}
+[13.724906] (-) TimerEvent: {}
+[13.830161] (-) TimerEvent: {}
+[13.938126] (-) TimerEvent: {}
+[14.044100] (-) TimerEvent: {}
+[14.152637] (-) TimerEvent: {}
+[14.257380] (-) TimerEvent: {}
+[14.361820] (-) TimerEvent: {}
+[14.465330] (-) TimerEvent: {}
+[14.566768] (-) TimerEvent: {}
+[14.670403] (-) TimerEvent: {}
+[14.774614] (-) TimerEvent: {}
+[14.876361] (-) TimerEvent: {}
+[14.977882] (-) TimerEvent: {}
+[15.079407] (-) TimerEvent: {}
+[15.182017] (-) TimerEvent: {}
+[15.273377] (interface) JobProgress: {'identifier': 'interface', 'progress': 'install'}
+[15.284279] (-) TimerEvent: {}
+[15.388965] (-) TimerEvent: {}
+[15.485201] (interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blakepi/ros2_ws/build/interface'], 'cwd': '/home/blakepi/ros2_ws/build/interface', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 34694 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d5d31f61-4ec7-4158-bab2-991a5f746a99.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '57'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX7VK9HL/agent.110077'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 34694 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble')]), 'shell': False}
+[15.490660] (-) TimerEvent: {}
+[15.620352] (-) TimerEvent: {}
+[15.633323] (interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.637578] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/rosidl_interfaces/interface\n'}
+[15.643133] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[15.646517] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[15.653534] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state_change.h\n'}
+[15.659760] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[15.666027] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.h\n'}
+[15.679967] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.h\n'}
+[15.683931] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__functions.h\n'}
+[15.688579] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.h\n'}
+[15.692089] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__functions.c\n'}
+[15.695016] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__struct.h\n'}
+[15.701414] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__functions.h\n'}
+[15.710464] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__functions.c\n'}
+[15.720727] (-) TimerEvent: {}
+[15.724258] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.h\n'}
+[15.726539] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.732149] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/library_path.sh\n'}
+[15.733472] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/library_path.dsv\n'}
+[15.734659] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_c.so\n'}
+[15.744597] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[15.748996] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[15.750784] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.755644] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[15.763587] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_fastrtps_c.h\n'}
+[15.773064] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_fastrtps_c.h\n'}
+[15.774147] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so\n'}
+[15.780970] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[15.782451] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[15.783991] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp\n'}
+[15.785223] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state_change.hpp\n'}
+[15.786320] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[15.787529] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp\n'}
+[15.788640] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__builder.hpp\n'}
+[15.793667] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__traits.hpp\n'}
+[15.794915] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__traits.hpp\n'}
+[15.804595] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__builder.hpp\n'}
+[15.814069] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__struct.hpp\n'}
+[15.832284] (-) TimerEvent: {}
+[15.836729] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[15.838073] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[15.863776] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.865171] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[15.866299] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.887855] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.889359] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/dds_fastrtps\n'}
+[15.892018] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.941626] (-) TimerEvent: {}
+[15.952674] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[15.954048] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[15.968191] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[15.970376] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_introspection_c.h\n'}
+[15.988410] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_introspection_c.h\n'}
+[15.989662] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.c\n'}
+[15.990764] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.c\n'}
+[16.015125] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.016485] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so\n'}
+[16.017627] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_c.so\n'}
+[16.028726] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[16.029810] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[16.030891] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[16.060463] (-) TimerEvent: {}
+[16.068372] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.070016] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.079944] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.cpp\n'}
+[16.082801] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.cpp\n'}
+[16.120163] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so\n'}
+[16.139949] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_cpp.so\n'}
+[16.141334] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/pythonpath.sh\n'}
+[16.142530] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/pythonpath.dsv\n'}
+[16.163611] (-) TimerEvent: {}
+[16.175530] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info\n'}
+[16.181365] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.196107] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.197450] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.198689] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.206033] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface\n'}
+[16.209194] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.220985] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py\n'}
+[16.225364] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.226639] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_c.c\n'}
+[16.227910] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/libinterface__rosidl_generator_py.so\n'}
+[16.232249] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.240207] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.242225] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg\n'}
+[16.249493] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_change_s.c\n'}
+[16.250810] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/__init__.py\n'}
+[16.263799] (-) TimerEvent: {}
+[16.283652] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_change.py\n'}
+[16.287322] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_s.c\n'}
+[16.288544] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state.py\n'}
+[16.290098] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.366233] (-) TimerEvent: {}
+[16.471493] (-) TimerEvent: {}
+[16.575371] (-) TimerEvent: {}
+[16.679646] (-) TimerEvent: {}
+[16.737981] (interface) StdoutLine: {'line': b"Listing '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface'...\n"}
+[16.740385] (interface) StdoutLine: {'line': b"Listing '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg'...\n"}
+[16.780023] (-) TimerEvent: {}
+[16.800664] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.811444] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.824485] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[16.842492] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_py.so\n'}
+[16.852029] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorState.idl\n'}
+[16.856660] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorStateChange.idl\n'}
+[16.858229] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorState.msg\n'}
+[16.859760] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorStateChange.msg\n'}
+[16.868037] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/package_run_dependencies/interface\n'}
+[16.869206] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/parent_prefix_path/interface\n'}
+[16.870261] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/ament_prefix_path.sh\n'}
+[16.879522] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/ament_prefix_path.dsv\n'}
+[16.895603] (-) TimerEvent: {}
+[16.899146] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/path.sh\n'}
+[16.910971] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/path.dsv\n'}
+[16.917947] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.bash\n'}
+[16.923005] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.sh\n'}
+[16.936153] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.zsh\n'}
+[16.937581] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.dsv\n'}
+[16.939046] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/package.dsv\n'}
+[16.964657] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/packages/interface\n'}
+[16.965744] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport.cmake\n'}
+[16.966674] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.996151] (-) TimerEvent: {}
+[16.999620] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.001248] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.002694] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cppExport.cmake\n'}
+[17.037481] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.055482] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.056829] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.080299] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.082657] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport.cmake\n'}
+[17.084945] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.086241] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.119098] (-) TimerEvent: {}
+[17.139845] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.143138] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport.cmake\n'}
+[17.144699] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.145907] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport.cmake\n'}
+[17.157720] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.159322] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake-extras.cmake\n'}
+[17.160999] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.185829] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.187337] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.188546] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.189645] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.190851] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.243366] (-) TimerEvent: {}
+[17.245474] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interfaceConfig.cmake\n'}
+[17.246805] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interfaceConfig-version.cmake\n'}
+[17.248631] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/package.xml\n'}
+[17.249815] (interface) CommandEnded: {'returncode': 0}
+[17.483787] (-) TimerEvent: {}
+[17.492633] (python_pkgs) StdoutLine: {'line': b'running egg_info\n'}
+[17.527077] (python_pkgs) StdoutLine: {'line': b'writing ../../build/python_pkgs/python_pkgs.egg-info/PKG-INFO\n'}
+[17.528714] (python_pkgs) StdoutLine: {'line': b'writing dependency_links to ../../build/python_pkgs/python_pkgs.egg-info/dependency_links.txt\n'}
+[17.529943] (python_pkgs) StdoutLine: {'line': b'writing entry points to ../../build/python_pkgs/python_pkgs.egg-info/entry_points.txt\n'}
+[17.531145] (python_pkgs) StdoutLine: {'line': b'writing requirements to ../../build/python_pkgs/python_pkgs.egg-info/requires.txt\n'}
+[17.534936] (python_pkgs) StdoutLine: {'line': b'writing top-level names to ../../build/python_pkgs/python_pkgs.egg-info/top_level.txt\n'}
+[17.548240] (python_pkgs) StdoutLine: {'line': b"reading manifest file '../../build/python_pkgs/python_pkgs.egg-info/SOURCES.txt'\n"}
+[17.550939] (python_pkgs) StdoutLine: {'line': b"writing manifest file '../../build/python_pkgs/python_pkgs.egg-info/SOURCES.txt'\n"}
+[17.558951] (python_pkgs) StdoutLine: {'line': b'running build\n'}
+[17.566387] (python_pkgs) StdoutLine: {'line': b'running build_py\n'}
+[17.567866] (python_pkgs) StdoutLine: {'line': b'running install\n'}
+[17.569190] (python_pkgs) StdoutLine: {'line': b'running install_lib\n'}
+[17.595459] (python_pkgs) StdoutLine: {'line': b'running install_data\n'}
+[17.596699] (-) TimerEvent: {}
+[17.598524] (python_pkgs) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.615984] (python_pkgs) StdoutLine: {'line': b"removing '/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages/python_pkgs-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[17.617289] (python_pkgs) StdoutLine: {'line': b'Copying ../../build/python_pkgs/python_pkgs.egg-info to /home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages/python_pkgs-0.0.0-py3.10.egg-info\n'}
+[17.635586] (python_pkgs) StdoutLine: {'line': b'running install_scripts\n'}
+[17.700187] (-) TimerEvent: {}
+[17.801762] (-) TimerEvent: {}
+[17.903295] (-) TimerEvent: {}
+[17.909337] (python_pkgs) StdoutLine: {'line': b'Installing bluetooth_node script to /home/blakepi/ros2_ws/install/python_pkgs/lib/python_pkgs\n'}
+[17.916547] (python_pkgs) StdoutLine: {'line': b"writing list of installed files to '/home/blakepi/ros2_ws/build/python_pkgs/install.log'\n"}
+[18.003660] (-) TimerEvent: {}
+[18.109987] (-) TimerEvent: {}
+[18.213613] (-) TimerEvent: {}
+[18.234029] (python_pkgs) CommandEnded: {'returncode': 0}
+[18.313962] (-) TimerEvent: {}
+[18.432065] (-) TimerEvent: {}
+[18.539474] (-) TimerEvent: {}
+[18.631815] (python_pkgs) JobEnded: {'identifier': 'python_pkgs', 'rc': 0}
+[18.643891] (-) TimerEvent: {}
+[18.746800] (-) TimerEvent: {}
+[18.848265] (-) TimerEvent: {}
+[18.950703] (-) TimerEvent: {}
+[19.064810] (-) TimerEvent: {}
+[19.165748] (-) TimerEvent: {}
+[19.266741] (-) TimerEvent: {}
+[19.369502] (-) TimerEvent: {}
+[19.479482] (-) TimerEvent: {}
+[19.584645] (-) TimerEvent: {}
+[19.687978] (-) TimerEvent: {}
+[19.796046] (-) TimerEvent: {}
+[19.899278] (-) TimerEvent: {}
+[20.004181] (-) TimerEvent: {}
+[20.107404] (-) TimerEvent: {}
+[20.210800] (-) TimerEvent: {}
+[20.313852] (-) TimerEvent: {}
+[20.417029] (-) TimerEvent: {}
+[20.522405] (-) TimerEvent: {}
+[20.625953] (-) TimerEvent: {}
+[20.729887] (-) TimerEvent: {}
+[20.832507] (-) TimerEvent: {}
+[20.934002] (-) TimerEvent: {}
+[21.035472] (-) TimerEvent: {}
+[21.136962] (-) TimerEvent: {}
+[21.238630] (-) TimerEvent: {}
+[21.343579] (-) TimerEvent: {}
+[21.446728] (-) TimerEvent: {}
+[21.563553] (-) TimerEvent: {}
+[21.665201] (-) TimerEvent: {}
+[21.681155] (interface) JobEnded: {'identifier': 'interface', 'rc': 0}
+[21.700803] (robot_arm) JobStarted: {'identifier': 'robot_arm'}
+[21.771592] (-) TimerEvent: {}
+[21.881435] (-) TimerEvent: {}
+[21.985508] (-) TimerEvent: {}
+[22.053092] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'cmake'}
+[22.079780] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'build'}
+[22.088252] (-) TimerEvent: {}
+[22.110309] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/robot_arm', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 34694 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d5d31f61-4ec7-4158-bab2-991a5f746a99.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '57'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX7VK9HL/agent.110077'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 34694 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble')]), 'shell': False}
+[22.188617] (-) TimerEvent: {}
+[22.293048] (-) TimerEvent: {}
+[22.396464] (-) TimerEvent: {}
+[22.499879] (-) TimerEvent: {}
+[22.603231] (-) TimerEvent: {}
+[22.705541] (-) TimerEvent: {}
+[22.808300] (-) TimerEvent: {}
+[22.859458] (robot_arm) StdoutLine: {'line': b'[ 50%] Built target servo_node\n'}
+[22.908665] (-) TimerEvent: {}
+[23.017744] (-) TimerEvent: {}
+[23.121025] (-) TimerEvent: {}
+[23.226700] (-) TimerEvent: {}
+[23.334201] (-) TimerEvent: {}
+[23.414822] (robot_arm) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_robot_arm\n'}
+[23.434509] (-) TimerEvent: {}
+[23.539608] (-) TimerEvent: {}
+[23.644561] (-) TimerEvent: {}
+[23.748970] (-) TimerEvent: {}
+[23.817379] (robot_arm) StdoutLine: {'line': b'[100%] Built target bluetooth_node\n'}
+[23.849853] (-) TimerEvent: {}
+[23.951995] (-) TimerEvent: {}
+[24.053950] (-) TimerEvent: {}
+[24.156150] (-) TimerEvent: {}
+[24.257555] (-) TimerEvent: {}
+[24.359605] (-) TimerEvent: {}
+[24.461835] (-) TimerEvent: {}
+[24.563986] (-) TimerEvent: {}
+[24.665528] (-) TimerEvent: {}
+[24.767407] (-) TimerEvent: {}
+[24.869029] (-) TimerEvent: {}
+[24.970961] (-) TimerEvent: {}
+[25.072778] (-) TimerEvent: {}
+[25.174330] (-) TimerEvent: {}
+[25.275924] (-) TimerEvent: {}
+[25.377542] (-) TimerEvent: {}
+[25.481776] (-) TimerEvent: {}
+[25.583161] (-) TimerEvent: {}
+[25.684743] (-) TimerEvent: {}
+[25.834530] (-) TimerEvent: {}
+[25.937852] (-) TimerEvent: {}
+[26.039467] (-) TimerEvent: {}
+[26.143317] (-) TimerEvent: {}
+[26.245123] (-) TimerEvent: {}
+[26.347748] (-) TimerEvent: {}
+[26.448536] (-) TimerEvent: {}
+[26.553274] (-) TimerEvent: {}
+[26.655631] (-) TimerEvent: {}
+[26.762379] (-) TimerEvent: {}
+[26.868112] (-) TimerEvent: {}
+[26.972474] (-) TimerEvent: {}
+[27.081899] (-) TimerEvent: {}
+[27.187790] (-) TimerEvent: {}
+[27.295747] (-) TimerEvent: {}
+[27.399013] (-) TimerEvent: {}
+[27.502474] (-) TimerEvent: {}
+[27.606148] (-) TimerEvent: {}
+[27.714185] (-) TimerEvent: {}
+[27.825045] (-) TimerEvent: {}
+[27.936803] (-) TimerEvent: {}
+[27.996890] (robot_arm) StdoutLine: {'line': b'running egg_info\n'}
+[28.024310] (robot_arm) StdoutLine: {'line': b'writing robot_arm.egg-info/PKG-INFO\n'}
+[28.037121] (-) TimerEvent: {}
+[28.048148] (robot_arm) StdoutLine: {'line': b'writing dependency_links to robot_arm.egg-info/dependency_links.txt\n'}
+[28.073780] (robot_arm) StdoutLine: {'line': b'writing top-level names to robot_arm.egg-info/top_level.txt\n'}
+[28.134182] (robot_arm) StdoutLine: {'line': b"reading manifest file 'robot_arm.egg-info/SOURCES.txt'\n"}
+[28.139733] (-) TimerEvent: {}
+[28.196980] (robot_arm) StdoutLine: {'line': b"writing manifest file 'robot_arm.egg-info/SOURCES.txt'\n"}
+[28.240439] (-) TimerEvent: {}
+[28.344722] (-) TimerEvent: {}
+[28.448190] (-) TimerEvent: {}
+[28.551551] (-) TimerEvent: {}
+[28.654288] (-) TimerEvent: {}
+[28.757344] (-) TimerEvent: {}
+[28.860225] (-) TimerEvent: {}
+[28.961636] (-) TimerEvent: {}
+[29.063110] (-) TimerEvent: {}
+[29.106220] (robot_arm) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_arm_egg\n'}
+[29.164650] (-) TimerEvent: {}
+[29.269496] (-) TimerEvent: {}
+[29.367901] (robot_arm) CommandEnded: {'returncode': 0}
+[29.378073] (-) TimerEvent: {}
+[29.496281] (-) TimerEvent: {}
+[29.602686] (-) TimerEvent: {}
+[29.704177] (-) TimerEvent: {}
+[29.806491] (-) TimerEvent: {}
+[29.909592] (-) TimerEvent: {}
+[30.014134] (-) TimerEvent: {}
+[30.119302] (-) TimerEvent: {}
+[30.222555] (-) TimerEvent: {}
+[30.237205] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'install'}
+[30.237815] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blakepi/ros2_ws/build/robot_arm'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 34694 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d5d31f61-4ec7-4158-bab2-991a5f746a99.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '57'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXX7VK9HL/agent.110077'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 34694 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble')]), 'shell': False}
+[30.323635] (-) TimerEvent: {}
+[30.428936] (-) TimerEvent: {}
+[30.477593] (robot_arm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.489760] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_node\n'}
+[30.503414] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node\n'}
+[30.518639] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/pythonpath.sh\n'}
+[30.529193] (-) TimerEvent: {}
+[30.560069] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/pythonpath.dsv\n'}
+[30.561565] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info\n'}
+[30.562914] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[30.579591] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[30.601379] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[30.604977] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[30.630347] (-) TimerEvent: {}
+[30.634926] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm\n'}
+[30.640470] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/__init__.py\n'}
+[30.643420] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/wifi_image_sender_node.py\n'}
+[30.644667] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/camera_node.py\n'}
+[30.652928] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/distance_node.py\n'}
+[30.730711] (-) TimerEvent: {}
+[30.845926] (-) TimerEvent: {}
+[30.947468] (-) TimerEvent: {}
+[31.051348] (-) TimerEvent: {}
+[31.155363] (-) TimerEvent: {}
+[31.258852] (-) TimerEvent: {}
+[31.363233] (-) TimerEvent: {}
+[31.468736] (-) TimerEvent: {}
+[31.574667] (-) TimerEvent: {}
+[31.676994] (-) TimerEvent: {}
+[31.781977] (-) TimerEvent: {}
+[31.887771] (-) TimerEvent: {}
+[31.989433] (-) TimerEvent: {}
+[32.046792] (robot_arm) StdoutLine: {'line': b"Listing '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm'...\n"}
+[32.049290] (robot_arm) StdoutLine: {'line': b"Compiling '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/distance_node.py'...\n"}
+[32.090579] (-) TimerEvent: {}
+[32.130136] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/camera_node.py\n'}
+[32.131696] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/distance_node.py\n'}
+[32.147541] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/wifi_image_sender_node.py\n'}
+[32.150992] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/package_run_dependencies/robot_arm\n'}
+[32.155853] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/parent_prefix_path/robot_arm\n'}
+[32.200263] (-) TimerEvent: {}
+[32.204437] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.sh\n'}
+[32.205818] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.dsv\n'}
+[32.220671] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.sh\n'}
+[32.232209] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.dsv\n'}
+[32.243846] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.bash\n'}
+[32.252359] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.sh\n'}
+[32.260347] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.zsh\n'}
+[32.264287] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.dsv\n'}
+[32.266053] (robot_arm) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv\n'}
+[32.282075] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/packages/robot_arm\n'}
+[32.283796] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig.cmake\n'}
+[32.286434] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig-version.cmake\n'}
+[32.287767] (robot_arm) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.xml\n'}
+[32.300594] (-) TimerEvent: {}
+[32.320466] (robot_arm) CommandEnded: {'returncode': 0}
+[32.401450] (-) TimerEvent: {}
+[32.503040] (-) TimerEvent: {}
+[32.605848] (-) TimerEvent: {}
+[32.707597] (-) TimerEvent: {}
+[32.815071] (-) TimerEvent: {}
+[32.920055] (-) TimerEvent: {}
+[33.025120] (-) TimerEvent: {}
+[33.127713] (-) TimerEvent: {}
+[33.230923] (-) TimerEvent: {}
+[33.335142] (-) TimerEvent: {}
+[33.437750] (-) TimerEvent: {}
+[33.479059] (robot_arm) JobEnded: {'identifier': 'robot_arm', 'rc': 0}
+[33.496667] (-) EventReactorShutdown: {}

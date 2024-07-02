@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp" "CMakeFiles/servo_node.dir/src/servo_controller.cpp.o" "gcc" "CMakeFiles/servo_node.dir/src/servo_controller.cpp.o.d"
+  "/home/blakepi/ros2_ws/src/robot_arm/src/cpp/servo_node.cpp" "CMakeFiles/servo_node.dir/src/cpp/servo_node.cpp.o" "gcc" "CMakeFiles/servo_node.dir/src/cpp/servo_node.cpp.o.d"
   )
 
 # Targets to which this target links.

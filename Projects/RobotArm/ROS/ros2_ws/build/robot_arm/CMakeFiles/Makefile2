@@ -63,67 +63,23 @@ CMAKE_BINARY_DIR = /home/blakepi/ros2_ws/build/robot_arm
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/robot_arm.dir/all
-all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/all
-all: CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/all
-all: CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all
-all: CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all
-all: CMakeFiles/servo_publisher_node.dir/all
 all: CMakeFiles/servo_node.dir/all
 all: CMakeFiles/bluetooth_node.dir/all
-all: robot_arm__py/all
+all: CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: robot_arm__py/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_arm_uninstall.dir/clean
-clean: CMakeFiles/robot_arm.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_generator_c.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/clean
-clean: CMakeFiles/robot_arm__cpp.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/clean
-clean: CMakeFiles/ament_cmake_python_copy_robot_arm.dir/clean
-clean: CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_generator_py.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/clean
-clean: CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/clean
-clean: CMakeFiles/servo_publisher_node.dir/clean
 clean: CMakeFiles/servo_node.dir/clean
 clean: CMakeFiles/bluetooth_node.dir/clean
-clean: robot_arm__py/clean
+clean: CMakeFiles/ament_cmake_python_copy_robot_arm.dir/clean
+clean: CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory robot_arm__py
-
-# Recursive "all" directory target.
-robot_arm__py/all:
-.PHONY : robot_arm__py/all
-
-# Recursive "preinstall" directory target.
-robot_arm__py/preinstall:
-.PHONY : robot_arm__py/preinstall
-
-# Recursive "clean" directory target.
-robot_arm__py/clean: robot_arm__py/CMakeFiles/robot_arm__py.dir/clean
-.PHONY : robot_arm__py/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -178,245 +134,56 @@ CMakeFiles/robot_arm_uninstall.dir/clean:
 .PHONY : CMakeFiles/robot_arm_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/robot_arm.dir
+# Target rules for target CMakeFiles/servo_node.dir
 
 # All Build rule for target.
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__cpp.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/all
-CMakeFiles/robot_arm.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm.dir/build.make CMakeFiles/robot_arm.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm.dir/build.make CMakeFiles/robot_arm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num= "Built target robot_arm"
-.PHONY : CMakeFiles/robot_arm.dir/all
+CMakeFiles/servo_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=3,4 "Built target servo_node"
+.PHONY : CMakeFiles/servo_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robot_arm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm.dir/all
+CMakeFiles/servo_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/servo_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm.dir/rule
+.PHONY : CMakeFiles/servo_node.dir/rule
 
 # Convenience name for target.
-robot_arm: CMakeFiles/robot_arm.dir/rule
-.PHONY : robot_arm
+servo_node: CMakeFiles/servo_node.dir/rule
+.PHONY : servo_node
 
 # clean rule for target.
-CMakeFiles/robot_arm.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm.dir/build.make CMakeFiles/robot_arm.dir/clean
-.PHONY : CMakeFiles/robot_arm.dir/clean
+CMakeFiles/servo_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/clean
+.PHONY : CMakeFiles/servo_node.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_generator_c.dir
+# Target rules for target CMakeFiles/bluetooth_node.dir
 
 # All Build rule for target.
-CMakeFiles/robot_arm__rosidl_generator_c.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_c.dir/build.make CMakeFiles/robot_arm__rosidl_generator_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_c.dir/build.make CMakeFiles/robot_arm__rosidl_generator_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=5,6,7 "Built target robot_arm__rosidl_generator_c"
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_c.dir/all
+CMakeFiles/bluetooth_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=1,2 "Built target bluetooth_node"
+.PHONY : CMakeFiles/bluetooth_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_generator_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_generator_c.dir/all
+CMakeFiles/bluetooth_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bluetooth_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_c.dir/rule
+.PHONY : CMakeFiles/bluetooth_node.dir/rule
 
 # Convenience name for target.
-robot_arm__rosidl_generator_c: CMakeFiles/robot_arm__rosidl_generator_c.dir/rule
-.PHONY : robot_arm__rosidl_generator_c
+bluetooth_node: CMakeFiles/bluetooth_node.dir/rule
+.PHONY : bluetooth_node
 
 # clean rule for target.
-CMakeFiles/robot_arm__rosidl_generator_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_c.dir/build.make CMakeFiles/robot_arm__rosidl_generator_c.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_c.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=18,19,20 "Built target robot_arm__rosidl_typesupport_fastrtps_c"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_fastrtps_c: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_fastrtps_c
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__cpp.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__cpp.dir/build.make CMakeFiles/robot_arm__cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__cpp.dir/build.make CMakeFiles/robot_arm__cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=3 "Built target robot_arm__cpp"
-.PHONY : CMakeFiles/robot_arm__cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__cpp.dir/rule
-
-# Convenience name for target.
-robot_arm__cpp: CMakeFiles/robot_arm__cpp.dir/rule
-.PHONY : robot_arm__cpp
-
-# clean rule for target.
-CMakeFiles/robot_arm__cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__cpp.dir/build.make CMakeFiles/robot_arm__cpp.dir/clean
-.PHONY : CMakeFiles/robot_arm__cpp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/robot_arm__cpp.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=23,24,25 "Built target robot_arm__rosidl_typesupport_fastrtps_cpp"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_fastrtps_cpp: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_fastrtps_cpp
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=26,27,28 "Built target robot_arm__rosidl_typesupport_introspection_c"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_introspection_c: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_introspection_c
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_c.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=10,11,12 "Built target robot_arm__rosidl_typesupport_c"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_c: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_c
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/robot_arm__cpp.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=31,32,33 "Built target robot_arm__rosidl_typesupport_introspection_cpp"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_introspection_cpp: CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_introspection_cpp
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/all: CMakeFiles/robot_arm__cpp.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=15,16,17 "Built target robot_arm__rosidl_typesupport_cpp"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_cpp: CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_cpp
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_cpp.dir/clean
+CMakeFiles/bluetooth_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/clean
+.PHONY : CMakeFiles/bluetooth_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ament_cmake_python_copy_robot_arm.dir
@@ -469,227 +236,6 @@ ament_cmake_python_build_robot_arm_egg: CMakeFiles/ament_cmake_python_build_robo
 CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/build.make CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/clean
 .PHONY : CMakeFiles/ament_cmake_python_build_robot_arm_egg.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_generator_py.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_generator_py.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-CMakeFiles/robot_arm__rosidl_generator_py.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-CMakeFiles/robot_arm__rosidl_generator_py.dir/all: robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_py.dir/build.make CMakeFiles/robot_arm__rosidl_generator_py.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_py.dir/build.make CMakeFiles/robot_arm__rosidl_generator_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=8,9 "Built target robot_arm__rosidl_generator_py"
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 25
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_py.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_generator_py: CMakeFiles/robot_arm__rosidl_generator_py.dir/rule
-.PHONY : robot_arm__rosidl_generator_py
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_generator_py.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_generator_py.dir/build.make CMakeFiles/robot_arm__rosidl_generator_py.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_generator_py.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all: robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=21,22 "Built target robot_arm__rosidl_typesupport_fastrtps_c__pyext"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_fastrtps_c__pyext: CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_fastrtps_c__pyext
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_fastrtps_c__pyext.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all: robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=29,30 "Built target robot_arm__rosidl_typesupport_introspection_c__pyext"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_introspection_c__pyext: CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_introspection_c__pyext
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_introspection_c__pyext.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir
-
-# All Build rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_typesupport_c.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/robot_arm__rosidl_generator_py.dir/all
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all: robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=13,14 "Built target robot_arm__rosidl_typesupport_c__pyext"
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/rule
-
-# Convenience name for target.
-robot_arm__rosidl_typesupport_c__pyext: CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/rule
-.PHONY : robot_arm__rosidl_typesupport_c__pyext
-
-# clean rule for target.
-CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/clean
-.PHONY : CMakeFiles/robot_arm__rosidl_typesupport_c__pyext.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/servo_publisher_node.dir
-
-# All Build rule for target.
-CMakeFiles/servo_publisher_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_publisher_node.dir/build.make CMakeFiles/servo_publisher_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_publisher_node.dir/build.make CMakeFiles/servo_publisher_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=36,37 "Built target servo_publisher_node"
-.PHONY : CMakeFiles/servo_publisher_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/servo_publisher_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/servo_publisher_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/servo_publisher_node.dir/rule
-
-# Convenience name for target.
-servo_publisher_node: CMakeFiles/servo_publisher_node.dir/rule
-.PHONY : servo_publisher_node
-
-# clean rule for target.
-CMakeFiles/servo_publisher_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_publisher_node.dir/build.make CMakeFiles/servo_publisher_node.dir/clean
-.PHONY : CMakeFiles/servo_publisher_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/servo_node.dir
-
-# All Build rule for target.
-CMakeFiles/servo_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=34,35 "Built target servo_node"
-.PHONY : CMakeFiles/servo_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/servo_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/servo_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/servo_node.dir/rule
-
-# Convenience name for target.
-servo_node: CMakeFiles/servo_node.dir/rule
-.PHONY : servo_node
-
-# clean rule for target.
-CMakeFiles/servo_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_node.dir/build.make CMakeFiles/servo_node.dir/clean
-.PHONY : CMakeFiles/servo_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/bluetooth_node.dir
-
-# All Build rule for target.
-CMakeFiles/bluetooth_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=1,2 "Built target bluetooth_node"
-.PHONY : CMakeFiles/bluetooth_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/bluetooth_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bluetooth_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : CMakeFiles/bluetooth_node.dir/rule
-
-# Convenience name for target.
-bluetooth_node: CMakeFiles/bluetooth_node.dir/rule
-.PHONY : bluetooth_node
-
-# clean rule for target.
-CMakeFiles/bluetooth_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bluetooth_node.dir/build.make CMakeFiles/bluetooth_node.dir/clean
-.PHONY : CMakeFiles/bluetooth_node.dir/clean
-
-#=============================================================================
-# Target rules for target robot_arm__py/CMakeFiles/robot_arm__py.dir
-
-# All Build rule for target.
-robot_arm__py/CMakeFiles/robot_arm__py.dir/all: CMakeFiles/robot_arm.dir/all
-	$(MAKE) $(MAKESILENT) -f robot_arm__py/CMakeFiles/robot_arm__py.dir/build.make robot_arm__py/CMakeFiles/robot_arm__py.dir/depend
-	$(MAKE) $(MAKESILENT) -f robot_arm__py/CMakeFiles/robot_arm__py.dir/build.make robot_arm__py/CMakeFiles/robot_arm__py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/blakepi/ros2_ws/build/robot_arm/CMakeFiles --progress-num=4 "Built target robot_arm__py"
-.PHONY : robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm__py/CMakeFiles/robot_arm__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_arm__py/CMakeFiles/robot_arm__py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/blakepi/ros2_ws/build/robot_arm/CMakeFiles 0
-.PHONY : robot_arm__py/CMakeFiles/robot_arm__py.dir/rule
-
-# Convenience name for target.
-robot_arm__py: robot_arm__py/CMakeFiles/robot_arm__py.dir/rule
-.PHONY : robot_arm__py
-
-# clean rule for target.
-robot_arm__py/CMakeFiles/robot_arm__py.dir/clean:
-	$(MAKE) $(MAKESILENT) -f robot_arm__py/CMakeFiles/robot_arm__py.dir/build.make robot_arm__py/CMakeFiles/robot_arm__py.dir/clean
-.PHONY : robot_arm__py/CMakeFiles/robot_arm__py.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -651,4 +651,8 @@ CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o: \
  /usr/include/dbus-1.0/dbus/dbus-signature.h \
  /usr/include/dbus-1.0/dbus/dbus-syntax.h \
  /usr/include/dbus-1.0/dbus/dbus-threads.h \
- /home/blakepi/ros2_ws/src/robot_arm/include/robot_arm/servo_config.hpp
+ /home/blakepi/ros2_ws/src/robot_arm/include/robot_arm/servo_config.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__builder.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__traits.hpp

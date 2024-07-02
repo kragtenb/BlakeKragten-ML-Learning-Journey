@@ -5,9 +5,9 @@
 #include <unordered_map>
 #include <string>
 
-const std::unordered_map<std::string, int> servo_topics = {
+const std::unordered_map<std::string, int> servo_gpio_map = {
     {"wrist_up_down", 26},
-    {"hand", 16},
+    {"hand", 25},
     {"elbow", 13},
     {"base", 12},
     {"wrist_rotation", 6},

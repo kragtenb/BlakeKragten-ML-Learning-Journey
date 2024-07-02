@@ -1,0 +1,74 @@
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_arm[m[K’ was not declared in this scope
+   89 |     rclcpp::Publisher<[01;31m[Krobot_arm[m[K::msg::ServoMotorState>::SharedPtr publisher_;
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+      |                                                                  [32m[K;[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                                   [01;31m[K^~~~~~~~~~[m[K
+      |                                                                   [32m[Krmw_publisher_t[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In constructor ‘[01m[KServoNode::ServoNode()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   30 |         [01;31m[Kpublisher_[m[K = this->create_publisher<interface::msg::ServoMotorState>("", 0.0);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::adjustServo(std::string, int, double)[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, position);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo [01;36m[K%s[m[K to PWM value: %d", servo_name, position);
+      |                                                          [01;36m[K~^[m[K
+      |                                                           [01;36m[K|[m[K
+      |                                                           [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, [32m[Kposition[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~[m[K
+      |                                                                                            [32m[K|[m[K
+      |                                                                                            [32m[Kdouble[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo %s to PWM value: [01;36m[K%d[m[K", servo_name, position);
+      |                                                                           [01;36m[K~^[m[K
+      |                                                                            [01;36m[K|[m[K
+      |                                                                            [01;36m[Kint[m[K
+      |                                                                           [32m[K%f[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::publish_servo_motor_state_change(std::string, double)[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:81:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot_msgs[m[K’ has not been declared
+   81 |         auto message = [01;31m[Kmy_robot_msgs[m[K::msg::ServoMotorState(servo_name, value);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   83 |         [01;31m[Kpublisher_[m[K->publish(message);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

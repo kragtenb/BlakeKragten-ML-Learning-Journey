@@ -1,0 +1,142 @@
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:31:81:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   31 |         camera_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>([01;35m[K'/camera/image'[m[K, 10, [this](sensor_msgs::msg::Image msg) {
+      |                                                                                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:34:82:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   34 |         distance_subscriber_ = this->create_subscription<std_msgs::msg::Float32>([01;35m[K'/sensor/ultrasonic'[m[K, 10, [this](std_msgs::msg::Float32) {
+      |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:57:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   57 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+      |                                       [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:57:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In constructor ‘[01m[KBluetoothNode::BluetoothNode()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:31:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBluetoothNode::create_subscription<sensor_msgs::msg::Image>(int, int, BluetoothNode::BluetoothNode()::<lambda(sensor_msgs::msg::Image)>)[m[K’
+   31 |         camera_subscriber_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::Image>('/camera/image', 10, [this](sensor_msgs::msg::Image msg) {[m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;31m[K            this->cameraSubscriptionCallback(msg);[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                              
+   33 | [01;31m[K        })[m[K;
+      |         [01;31m[K~~[m[K                                                                      
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:31:81:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1835100005[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   31 |         camera_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>([01;36m[K'/camera/image'[m[K, 10, [this](sensor_msgs::msg::Image msg) {
+      |                                                                                 [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In lambda function:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:35:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   35 |             this->distanceSubscriptionCallback([01;31m[Kmsg[m[K);
+      |                                                [01;31m[K^~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:35:48:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:7[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp:7[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:18[m[K:
+[01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kinterface::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In constructor ‘[01m[KBluetoothNode::BluetoothNode()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:34:81:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBluetoothNode::create_subscription<std_msgs::msg::Float32>(int, int, BluetoothNode::BluetoothNode()::<lambda(std_msgs::msg::Float32)>)[m[K’
+   34 |         distance_subscriber_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Float32>('/sensor/ultrasonic', 10, [this](std_msgs::msg::Float32) {[m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;31m[K            this->distanceSubscriptionCallback(msg);[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                             
+   36 | [01;31m[K        })[m[K
+      |         [01;31m[K~~[m[K                                                                       
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:34:82:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1869506915[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   34 |         distance_subscriber_ = this->create_subscription<std_msgs::msg::Float32>([01;36m[K'/sensor/ultrasonic'[m[K, 10, [this](std_msgs::msg::Float32) {
+      |                                                                                  [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:82:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   82 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:82:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::distanceSubscriptionCallback(std_msgs::msg::Float32)[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:210:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::distance[m[K’?
+  210 |         uint32_t distanceInt = *reinterpret_cast<uint32_t*>(&[01;31m[Kdistance[m[K);
+      |                                                              [01;31m[K^~~~~~~~[m[K
+      |                                                              [32m[Kstd::distance[m[K
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:66[m[K,
+                 from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator_base_funcs.h:138:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::distance[m[K’ declared here
+  138 |     [01;36m[Kdistance[m[K(_InputIterator __first, _InputIterator __last)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:200:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  200 |     void distanceSubscriptionCallback([01;35m[Kstd_msgs::msg::Float32 msg[m[K) {
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:168: CMakeFiles/bluetooth_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

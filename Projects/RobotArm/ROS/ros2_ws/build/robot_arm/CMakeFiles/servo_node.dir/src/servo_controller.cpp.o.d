@@ -621,4 +621,12 @@ CMakeFiles/servo_node.dir/src/servo_controller.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
  /usr/local/include/pigpio.h \
- /home/blakepi/ros2_ws/src/robot_arm/include/robot_arm/servo_config.hpp
+ /home/blakepi/ros2_ws/src/robot_arm/include/robot_arm/servo_config.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__builder.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__traits.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state_change.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__struct.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__builder.hpp \
+ /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__traits.hpp

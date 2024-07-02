@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[ 50%] Built target servo_node
+[ 50%] Built target ament_cmake_python_copy_robot_arm
+[ 75%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o[0m
+running egg_info
+writing robot_arm.egg-info/PKG-INFO
+writing dependency_links to robot_arm.egg-info/dependency_links.txt
+writing top-level names to robot_arm.egg-info/top_level.txt
+reading manifest file 'robot_arm.egg-info/SOURCES.txt'
+writing manifest file 'robot_arm.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_robot_arm_egg
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:57:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   57 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+      |                                       [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:57:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In constructor ‘[01m[KBluetoothNode::BluetoothNode()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:38:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KinitializeBluetooth[m[K’
+   38 |         [01;31m[KinitializeBluetooth[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:82:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   82 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:82:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::distanceSubscriptionCallback(std_msgs::msg::Float32)[m[K’:
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:210:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::distance[m[K’?
+  210 |         uint32_t distanceInt = *reinterpret_cast<uint32_t*>(&[01;31m[Kdistance[m[K);
+      |                                                              [01;31m[K^~~~~~~~[m[K
+      |                                                              [32m[Kstd::distance[m[K
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:66[m[K,
+                 from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_iterator_base_funcs.h:138:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::distance[m[K’ declared here
+  138 |     [01;36m[Kdistance[m[K(_InputIterator __first, _InputIterator __last)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:200:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  200 |     void distanceSubscriptionCallback([01;35m[Kstd_msgs::msg::Float32 msg[m[K) {
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:168: CMakeFiles/bluetooth_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

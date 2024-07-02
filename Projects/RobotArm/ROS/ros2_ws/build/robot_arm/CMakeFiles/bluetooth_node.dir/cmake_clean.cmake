@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o"
-  "CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o.d"
+  "CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o"
+  "CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o.d"
   "bluetooth_node"
   "bluetooth_node.pdb"
 )

@@ -1,0 +1,103 @@
+[0.054s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.164s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.858s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.031s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.048s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.082s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.141s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.217s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.523s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.533s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.808s] -- Found interface: 0.0.0 (/home/blakepi/ros2_ws/install/interface/share/interface/cmake)
+[2.936s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.496s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.498s] -- Configured cppcheck include dirs: /home/blakepi/ros2_ws/src/robot_arm/include
+[3.498s] -- Configured cppcheck exclude dirs and/or files: 
+[3.516s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.551s] -- Added test 'lint_cmake' to check CMake code style
+[3.570s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.719s] -- Added test 'uncrustify' to check C / C++ code style
+[3.720s] -- Configured uncrustify additional arguments: 
+[3.737s] -- Added test 'xmllint' to check XML markup files
+[3.747s] -- Configuring done
+[3.864s] -- Generating done
+[3.876s] -- Build files have been written to: /home/blakepi/ros2_ws/build/robot_arm
+[4.029s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[4.034s] [35m[1mConsolidate compiler generated dependencies of target servo_publisher_node[0m
+[4.118s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[4.252s] [ 16%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[4.260s] [ 50%] Built target servo_publisher_node
+[4.312s] [ 66%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[17.659s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:45:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.660s]    45 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+[17.660s]       |                                       [01;35m[K^[m[K
+[17.661s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:45:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.671s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In constructor ‘[01m[KBluetoothNode::BluetoothNode()[m[K’:
+[17.674s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:21:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >::Publisher()[m[K’
+[17.677s]    21 |     BluetoothNode() : Node("bluetooth_node"), stop_flag(false[01;31m[K)[m[K {
+[17.679s]       |                                                              [01;31m[K^[m[K
+[17.680s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[17.681s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[17.683s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[17.685s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.686s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.688s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.688s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.691s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:1[m[K:
+[17.691s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:125:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<MessageT, AllocatorT>::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = interface::msg::ServoMotorState_<std::allocator<void> >; AllocatorT = std::allocator<void>; std::string = std::__cxx11::basic_string<char>][m[K’
+[17.692s]   125 |   [01;36m[KPublisher[m[K(
+[17.692s]       |   [01;36m[K^~~~~~~~~[m[K
+[17.693s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:125:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[17.693s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >::Publisher(const rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >&)[m[K’
+[17.694s]    77 | class [01;36m[KPublisher[m[K : public PublisherBase
+[17.694s]       |       [01;36m[K^~~~~~~~~[m[K
+[17.695s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[17.708s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:24:105:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > > >[m[K’)
+[17.709s]    24 |         servo_publisher_ = this->create_publisher<interface::msg::ServoMotorState>("ServoMotorState", 10[01;31m[K)[m[K;
+[17.710s]       |                                                                                                         [01;31m[K^[m[K
+[17.711s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[17.711s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[17.712s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[17.713s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.713s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.714s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.715s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.715s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.716s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.716s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.717s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:1[m[K:
+[17.718s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >& rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >::operator=(const rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >&)[m[K’ (deleted)
+[17.718s]    77 | class [01;36m[KPublisher[m[K : public PublisherBase
+[17.719s]       |       [01;36m[K^~~~~~~~~[m[K
+[17.720s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > > >[m[K’ to ‘[01m[Kconst rclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >&[m[K’
+[17.721s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[17.722s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:68:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.723s]    68 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+[17.724s]       |                                             [01;35m[K^[m[K
+[17.724s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:68:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.773s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::listenForConnections()[m[K’:
+[17.774s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:164:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kservo_publishers_[m[K’ was not declared in this scope; did you mean ‘[01m[Kservo_publisher_[m[K’?
+[17.775s]   164 |                     if ([01;31m[Kservo_publishers_[m[K.count(servo_name) > 0) {
+[17.776s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[17.777s]       |                         [32m[Kservo_publisher_[m[K
+[17.778s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:168:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Publisher<interface::msg::ServoMotorState_<std::allocator<void> > >[m[K’
+[17.778s]   168 |                         servo_publisher_[01;31m[K->[m[Kpublish(msg);
+[17.779s]       |                                         [01;31m[K^~[m[K
+[18.005s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In constructor ‘[01m[KServoNode::ServoNode()[m[K’:
+[18.005s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:32:105:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ServoNode::servoMotoStateCallback(interface::msg::ServoMotorState_<std::allocator<void> >::SharedPtr)[m[K’
+[18.006s]    32 |         subscriber_ = this->create_subscription<interface::msg::ServoMotorState>("ServoMotorState", 10, [01;31m[KservoMotoStateCallback[m[K);
+[18.007s]       |                                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.010s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:42:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.011s]    42 |     void [01;36m[KservoMotoStateCallback[m[K(const interface::msg::ServoMotorState::SharedPtr msg) {
+[18.012s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[20.629s] gmake[2]: *** [CMakeFiles/bluetooth_node.dir/build.make:76: CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o] Error 1
+[20.630s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/bluetooth_node.dir/all] Error 2
+[20.631s] gmake[1]: *** Waiting for unfinished jobs....
+[21.428s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[21.428s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[21.430s] gmake: *** [Makefile:146: all] Error 2
+[21.438s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

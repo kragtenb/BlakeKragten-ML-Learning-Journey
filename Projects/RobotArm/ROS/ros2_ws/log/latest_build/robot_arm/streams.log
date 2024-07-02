@@ -1,69 +1,63 @@
-[1.389s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
-[1.526s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
-[2.254s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
-[2.433s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
-[2.448s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
-[2.486s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
-[2.546s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[2.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[2.924s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
-[2.932s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
-[3.584s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
-[4.295s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
-[5.721s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
-[7.254s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[7.852s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
-[7.968s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
-[8.089s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
-[8.090s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
-[8.090s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
-[8.169s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
-[8.386s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
-[8.392s] -- Configured cppcheck include dirs: /home/blakepi/ros2_ws/src/robot_arm/include
-[8.393s] -- Configured cppcheck exclude dirs and/or files: 
-[8.414s] -- Added test 'flake8' to check Python code syntax and style conventions
-[8.446s] -- Added test 'lint_cmake' to check CMake code style
-[8.464s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
-[8.588s] -- Added test 'uncrustify' to check C / C++ code style
-[8.588s] -- Configured uncrustify additional arguments: 
-[8.605s] -- Added test 'xmllint' to check XML markup files
-[8.624s] -- Configuring done
-[8.936s] -- Generating done
-[8.959s] -- Build files have been written to: /home/blakepi/ros2_ws/build/robot_arm
-[9.110s] [35m[1mConsolidate compiler generated dependencies of target robot_arm__rosidl_generator_c[0m
-[9.113s] [35m[1mConsolidate compiler generated dependencies of target servo_publisher_node[0m
-[9.143s] [  2%] Built target robot_arm__cpp
-[9.202s] [ 10%] Built target robot_arm__rosidl_generator_c
-[9.218s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
-[9.245s] [ 10%] Built target ament_cmake_python_copy_robot_arm
-[9.262s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
-[9.276s] [ 16%] Built target servo_publisher_node
-[9.314s] [35m[1mConsolidate compiler generated dependencies of target robot_arm__rosidl_typesupport_cpp[0m
-[9.336s] [35m[1mConsolidate compiler generated dependencies of target robot_arm__rosidl_typesupport_fastrtps_c[0m
-[9.346s] [ 18%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
-[9.392s] [ 24%] Built target bluetooth_node
-[9.414s] [ 32%] Built target robot_arm__rosidl_typesupport_fastrtps_c
-[9.433s] [ 40%] Built target robot_arm__rosidl_typesupport_cpp
-[9.462s] [35m[1mConsolidate compiler generated dependencies of target robot_arm__rosidl_typesupport_fastrtps_cpp[0m
-[9.498s] [ 43%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
-[9.517s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
-[9.620s] [ 54%] Built target robot_arm__rosidl_typesupport_fastrtps_cpp
-[9.708s] [ 56%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
-[11.113s] [ 59%] [32mBuilding C object CMakeFiles/robot_arm__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_arm/msg/detail/servo_motor_state__type_support.c.o[0m
-[11.238s] [ 62%] [32mBuilding CXX object CMakeFiles/robot_arm__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_arm/msg/servo_motor_state__type_support.cpp.o[0m
-[11.356s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Krobot_arm/msg/servo_motor_state.hpp: No such file or directory
-[11.361s]     8 | #include [01;31m[K"robot_arm/msg/servo_motor_state.hpp"[m[K
-[11.363s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[11.366s] compilation terminated.
-[11.432s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
-[11.436s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/servo_node.dir/all] Error 2
-[11.436s] gmake[1]: *** Waiting for unfinished jobs....
-[11.508s] [ 64%] [32mBuilding CXX object CMakeFiles/robot_arm__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_arm/msg/detail/servo_motor_state__type_support.cpp.o[0m
-[11.639s] [ 67%] [32m[1mLinking CXX shared library librobot_arm__rosidl_typesupport_c.so[0m
-[11.842s] [ 67%] Built target robot_arm__rosidl_typesupport_c
-[11.890s] [ 70%] [32m[1mLinking C shared library librobot_arm__rosidl_typesupport_introspection_c.so[0m
-[12.027s] [ 70%] Built target robot_arm__rosidl_typesupport_introspection_c
-[13.443s] [ 72%] [32m[1mLinking CXX shared library librobot_arm__rosidl_typesupport_introspection_cpp.so[0m
-[13.715s] [ 72%] Built target robot_arm__rosidl_typesupport_introspection_cpp
-[13.719s] gmake: *** [Makefile:146: all] Error 2
-[13.726s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.191s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.585s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[0.808s] [ 50%] Built target servo_node
+[0.862s] [ 50%] Built target ament_cmake_python_copy_robot_arm
+[0.925s] [ 75%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/cpp/bluetooth_node.cpp.o[0m
+[2.684s] running egg_info
+[2.688s] writing robot_arm.egg-info/PKG-INFO
+[2.690s] writing dependency_links to robot_arm.egg-info/dependency_links.txt
+[2.694s] writing top-level names to robot_arm.egg-info/top_level.txt
+[2.704s] reading manifest file 'robot_arm.egg-info/SOURCES.txt'
+[2.710s] writing manifest file 'robot_arm.egg-info/SOURCES.txt'
+[2.911s] [ 75%] Built target ament_cmake_python_build_robot_arm_egg
+[21.884s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:54:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.885s]    54 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+[21.885s]       |                                       [01;35m[K^[m[K
+[21.886s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:54:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.908s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[21.909s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:78:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.910s]    78 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+[21.910s]       |                                             [01;35m[K^[m[K
+[21.910s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/cpp/bluetooth_node.cpp:78:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[48.002s] [100%] [32m[1mLinking CXX executable bluetooth_node[0m
+[50.752s] [100%] Built target bluetooth_node
+[50.791s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[50.977s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm
+[51.004s] -- Install configuration: ""
+[51.005s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_node
+[51.007s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node
+[51.037s] -- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node" to ""
+[51.038s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/pythonpath.sh
+[51.038s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/pythonpath.dsv
+[51.039s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info
+[51.040s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/SOURCES.txt
+[51.041s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/dependency_links.txt
+[51.042s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/PKG-INFO
+[51.043s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm-0.0.0-py3.10.egg-info/top_level.txt
+[51.044s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm
+[51.045s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/__init__.py
+[51.046s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/wifi_image_sender_node.py
+[51.046s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/camera_node.py
+[51.047s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm/distance_node.py
+[51.221s] Listing '/home/blakepi/ros2_ws/install/robot_arm/local/lib/python3.10/dist-packages/robot_arm'...
+[51.252s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/camera_node.py
+[51.253s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/distance_node.py
+[51.256s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/wifi_image_sender_node.py
+[51.258s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/launch
+[51.261s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/launch/robot_arm_launch.py
+[51.262s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/package_run_dependencies/robot_arm
+[51.265s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/parent_prefix_path/robot_arm
+[51.267s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.sh
+[51.268s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.dsv
+[51.270s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.sh
+[51.271s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.dsv
+[51.275s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.bash
+[51.283s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.sh
+[51.285s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.zsh
+[51.287s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.dsv
+[51.288s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv
+[51.291s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/packages/robot_arm
+[51.292s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig.cmake
+[51.294s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig-version.cmake
+[51.296s] -- Up-to-date: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.xml
+[51.298s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm

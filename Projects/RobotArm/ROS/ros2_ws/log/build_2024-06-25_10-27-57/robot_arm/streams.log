@@ -1,0 +1,76 @@
+[0.068s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.243s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.307s] [ 33%] Built target servo_publisher_node
+[0.337s] [ 66%] Built target bluetooth_node
+[0.351s] [ 83%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[11.847s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.848s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.848s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.852s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.853s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::adjustServo(std::string, int, double)[m[K’:
+[11.853s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.853s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, position);
+[11.854s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.854s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.855s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo [01;36m[K%s[m[K to PWM value: %d", servo_name, position);
+[11.855s]       |                                                          [01;36m[K~^[m[K
+[11.855s]       |                                                           [01;36m[K|[m[K
+[11.856s]       |                                                           [01;36m[Kchar*[m[K
+[11.856s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.857s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.857s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.857s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.858s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.858s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.861s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.862s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.862s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, [32m[Kposition[m[K);
+[11.863s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~[m[K
+[11.863s]       |                                                                                            [32m[K|[m[K
+[11.863s]       |                                                                                            [32m[Kdouble[m[K
+[11.864s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.864s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo %s to PWM value: [01;36m[K%d[m[K", servo_name, position);
+[11.865s]       |                                                                           [01;36m[K~^[m[K
+[11.865s]       |                                                                            [01;36m[K|[m[K
+[11.865s]       |                                                                            [01;36m[Kint[m[K
+[11.866s]       |                                                                           [32m[K%f[m[K
+[36.165s] [100%] [32m[1mLinking CXX executable servo_node[0m
+[38.119s] [100%] Built target servo_node
+[38.160s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[38.354s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm
+[38.380s] -- Install configuration: ""
+[38.381s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_node
+[38.410s] -- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_node" to ""
+[38.410s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_publisher_node
+[38.418s] -- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/servo_publisher_node" to ""
+[38.419s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node
+[38.428s] -- Set runtime path of "/home/blakepi/ros2_ws/install/robot_arm/lib/robot_arm/bluetooth_node" to ""
+[38.429s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/package_run_dependencies/robot_arm
+[38.431s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/parent_prefix_path/robot_arm
+[38.432s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.sh
+[38.433s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/ament_prefix_path.dsv
+[38.434s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.sh
+[38.435s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/environment/path.dsv
+[38.436s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.bash
+[38.437s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.sh
+[38.438s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.zsh
+[38.439s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/local_setup.dsv
+[38.440s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.dsv
+[38.442s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/ament_index/resource_index/packages/robot_arm
+[38.443s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig.cmake
+[38.444s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/cmake/robot_armConfig-version.cmake
+[38.445s] -- Installing: /home/blakepi/ros2_ws/install/robot_arm/share/robot_arm/package.xml
+[38.452s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '0': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/blakepi/ros2_ws/build/robot_arm

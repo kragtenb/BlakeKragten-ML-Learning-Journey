@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_robot_arm.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_robot_arm.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_robot_arm:
-	/usr/bin/cmake -E copy_directory /home/blakepi/ros2_ws/build/robot_arm/rosidl_generator_py/robot_arm /home/blakepi/ros2_ws/build/robot_arm/ament_cmake_python/robot_arm/robot_arm
+	/usr/bin/cmake -E copy_directory /home/blakepi/ros2_ws/src/robot_arm/robot_arm /home/blakepi/ros2_ws/build/robot_arm/ament_cmake_python/robot_arm/robot_arm
 
 ament_cmake_python_copy_robot_arm: CMakeFiles/ament_cmake_python_copy_robot_arm
 ament_cmake_python_copy_robot_arm: CMakeFiles/ament_cmake_python_copy_robot_arm.dir/build.make

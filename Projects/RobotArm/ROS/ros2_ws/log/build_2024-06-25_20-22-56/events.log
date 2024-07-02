@@ -1,0 +1,526 @@
+[0.000000] (-) TimerEvent: {}
+[0.001865] (-) JobUnselected: {'identifier': 'python_pkgs'}
+[0.002458] (-) JobUnselected: {'identifier': 'robot_arm'}
+[0.002953] (interface) JobQueued: {'identifier': 'interface', 'dependencies': OrderedDict()}
+[0.003152] (interface) JobStarted: {'identifier': 'interface'}
+[0.038754] (interface) JobProgress: {'identifier': 'interface', 'progress': 'cmake'}
+[0.042322] (interface) JobProgress: {'identifier': 'interface', 'progress': 'build'}
+[0.046076] (interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/interface', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/interface', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 51730 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('OLDPWD', '/home/blakepi/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-af524693-7e9c-468b-b001-3e2bff38399e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '132'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXWGxUvq/agent.15083'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 51730 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble')]), 'shell': False}
+[0.099065] (-) TimerEvent: {}
+[0.162441] (interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199252] (-) TimerEvent: {}
+[0.300175] (-) TimerEvent: {}
+[0.401186] (-) TimerEvent: {}
+[0.502019] (-) TimerEvent: {}
+[0.603104] (-) TimerEvent: {}
+[0.704222] (-) TimerEvent: {}
+[0.805515] (-) TimerEvent: {}
+[0.834626] (interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.905693] (-) TimerEvent: {}
+[0.968434] (interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.980228] (interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.003721] (interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.005814] (-) TimerEvent: {}
+[1.049453] (interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.106063] (-) TimerEvent: {}
+[1.115872] (interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.206269] (-) TimerEvent: {}
+[1.307156] (-) TimerEvent: {}
+[1.376623] (interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.383615] (interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.407299] (-) TimerEvent: {}
+[1.508296] (-) TimerEvent: {}
+[1.609098] (-) TimerEvent: {}
+[1.709921] (-) TimerEvent: {}
+[1.810750] (-) TimerEvent: {}
+[1.911697] (-) TimerEvent: {}
+[1.939748] (interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.011867] (-) TimerEvent: {}
+[2.112617] (-) TimerEvent: {}
+[2.213366] (-) TimerEvent: {}
+[2.314105] (-) TimerEvent: {}
+[2.414861] (-) TimerEvent: {}
+[2.515609] (-) TimerEvent: {}
+[2.542492] (interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.615759] (-) TimerEvent: {}
+[2.716572] (-) TimerEvent: {}
+[2.817830] (-) TimerEvent: {}
+[2.918852] (-) TimerEvent: {}
+[3.019631] (-) TimerEvent: {}
+[3.120299] (-) TimerEvent: {}
+[3.221065] (-) TimerEvent: {}
+[3.321926] (-) TimerEvent: {}
+[3.422784] (-) TimerEvent: {}
+[3.523570] (-) TimerEvent: {}
+[3.624546] (-) TimerEvent: {}
+[3.673393] (interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.724680] (-) TimerEvent: {}
+[3.825922] (-) TimerEvent: {}
+[3.927222] (-) TimerEvent: {}
+[4.028473] (-) TimerEvent: {}
+[4.130295] (-) TimerEvent: {}
+[4.231241] (-) TimerEvent: {}
+[4.332133] (-) TimerEvent: {}
+[4.433365] (-) TimerEvent: {}
+[4.534735] (-) TimerEvent: {}
+[4.636814] (-) TimerEvent: {}
+[4.737806] (-) TimerEvent: {}
+[4.838834] (-) TimerEvent: {}
+[4.939770] (-) TimerEvent: {}
+[5.041151] (-) TimerEvent: {}
+[5.142525] (-) TimerEvent: {}
+[5.161130] (interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.242697] (-) TimerEvent: {}
+[5.343706] (-) TimerEvent: {}
+[5.444729] (-) TimerEvent: {}
+[5.546302] (-) TimerEvent: {}
+[5.647913] (-) TimerEvent: {}
+[5.746562] (interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.748065] (-) TimerEvent: {}
+[5.849177] (-) TimerEvent: {}
+[5.860932] (interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.949460] (-) TimerEvent: {}
+[5.971703] (interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.972369] (interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.972771] (interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.025214] (interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.049633] (-) TimerEvent: {}
+[6.082121] (interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.090816] (interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.102000] (interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.149818] (-) TimerEvent: {}
+[6.251210] (-) TimerEvent: {}
+[6.311654] (interface) StdoutLine: {'line': b'-- Generating done\n'}
+[6.338679] (interface) StdoutLine: {'line': b'-- Build files have been written to: /home/blakepi/ros2_ws/build/interface\n'}
+[6.351555] (-) TimerEvent: {}
+[6.453059] (-) TimerEvent: {}
+[6.459211] (interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.501085] (interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.555402] (-) TimerEvent: {}
+[6.621151] (interface) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_interface\n'}
+[6.655686] (-) TimerEvent: {}
+[6.757533] (-) TimerEvent: {}
+[6.858313] (-) TimerEvent: {}
+[6.959149] (-) TimerEvent: {}
+[7.060202] (-) TimerEvent: {}
+[7.161474] (-) TimerEvent: {}
+[7.262305] (-) TimerEvent: {}
+[7.363173] (-) TimerEvent: {}
+[7.464005] (-) TimerEvent: {}
+[7.564776] (-) TimerEvent: {}
+[7.665522] (-) TimerEvent: {}
+[7.767127] (-) TimerEvent: {}
+[7.868840] (-) TimerEvent: {}
+[7.970454] (-) TimerEvent: {}
+[8.072197] (-) TimerEvent: {}
+[8.174576] (-) TimerEvent: {}
+[8.276293] (interface) StdoutLine: {'line': b'running egg_info\n'}
+[8.277515] (-) TimerEvent: {}
+[8.280209] (interface) StdoutLine: {'line': b'writing interface.egg-info/PKG-INFO\n'}
+[8.282587] (interface) StdoutLine: {'line': b'writing dependency_links to interface.egg-info/dependency_links.txt\n'}
+[8.284335] (interface) StdoutLine: {'line': b'writing top-level names to interface.egg-info/top_level.txt\n'}
+[8.299872] (interface) StdoutLine: {'line': b"reading manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[8.303373] (interface) StdoutLine: {'line': b"writing manifest file 'interface.egg-info/SOURCES.txt'\n"}
+[8.377877] (-) TimerEvent: {}
+[8.480289] (-) TimerEvent: {}
+[8.498393] (interface) StdoutLine: {'line': b'[  5%] Built target interface__cpp\n'}
+[8.500466] (interface) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_interface_egg\n'}
+[8.544500] (interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.552516] (interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.556844] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_generator_c\x1b[0m\n'}
+[8.573218] (interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.580540] (-) TimerEvent: {}
+[8.631193] (interface) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/servo_motor_state__functions.c.o\x1b[0m\n'}
+[8.680768] (-) TimerEvent: {}
+[8.782011] (-) TimerEvent: {}
+[8.883568] (-) TimerEvent: {}
+[8.984900] (-) TimerEvent: {}
+[8.994577] (interface) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/msg/detail/servo_motor_state_change__functions.c.o\x1b[0m\n'}
+[9.085084] (-) TimerEvent: {}
+[9.187215] (-) TimerEvent: {}
+[9.288503] (-) TimerEvent: {}
+[9.389779] (-) TimerEvent: {}
+[9.491062] (-) TimerEvent: {}
+[9.523326] (interface) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libinterface__rosidl_generator_c.so\x1b[0m\n'}
+[9.591248] (-) TimerEvent: {}
+[9.692877] (-) TimerEvent: {}
+[9.794044] (-) TimerEvent: {}
+[9.853185] (interface) StdoutLine: {'line': b'[ 20%] Built target interface__rosidl_generator_c\n'}
+[9.894245] (-) TimerEvent: {}
+[9.975296] (interface) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.994551] (-) TimerEvent: {}
+[10.096557] (-) TimerEvent: {}
+[10.199380] (-) TimerEvent: {}
+[10.245336] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[10.299659] (-) TimerEvent: {}
+[10.403013] (-) TimerEvent: {}
+[10.493587] (interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/msg/servo_motor_state__type_support.cpp.o\x1b[0m\n'}
+[10.503193] (-) TimerEvent: {}
+[10.604522] (-) TimerEvent: {}
+[10.682845] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[10.704753] (-) TimerEvent: {}
+[10.803590] (interface) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/msg/detail/dds_fastrtps/servo_motor_state__type_support.cpp.o\x1b[0m\n'}
+[10.805844] (-) TimerEvent: {}
+[10.893100] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[10.906062] (-) TimerEvent: {}
+[11.008179] (-) TimerEvent: {}
+[11.045505] (interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/msg/detail/servo_motor_state__type_support.cpp.o\x1b[0m\n'}
+[11.108386] (-) TimerEvent: {}
+[11.209699] (-) TimerEvent: {}
+[11.310558] (-) TimerEvent: {}
+[11.411411] (-) TimerEvent: {}
+[11.512297] (-) TimerEvent: {}
+[11.613386] (-) TimerEvent: {}
+[11.714585] (-) TimerEvent: {}
+[11.815421] (-) TimerEvent: {}
+[11.916343] (-) TimerEvent: {}
+[12.017266] (-) TimerEvent: {}
+[12.119185] (-) TimerEvent: {}
+[12.221117] (-) TimerEvent: {}
+[12.323042] (-) TimerEvent: {}
+[12.424964] (-) TimerEvent: {}
+[12.461911] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[12.525278] (-) TimerEvent: {}
+[12.666341] (-) TimerEvent: {}
+[12.719475] (interface) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/servo_motor_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.766616] (-) TimerEvent: {}
+[12.869276] (-) TimerEvent: {}
+[12.971619] (-) TimerEvent: {}
+[13.073535] (-) TimerEvent: {}
+[13.175627] (-) TimerEvent: {}
+[13.278801] (-) TimerEvent: {}
+[13.331957] (interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/msg/servo_motor_state_change__type_support.cpp.o\x1b[0m\n'}
+[13.379138] (-) TimerEvent: {}
+[13.481912] (-) TimerEvent: {}
+[13.584092] (-) TimerEvent: {}
+[13.686296] (-) TimerEvent: {}
+[13.789321] (-) TimerEvent: {}
+[13.892350] (-) TimerEvent: {}
+[13.994296] (-) TimerEvent: {}
+[14.095820] (-) TimerEvent: {}
+[14.198204] (-) TimerEvent: {}
+[14.300536] (-) TimerEvent: {}
+[14.324777] (interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/msg/detail/dds_fastrtps/servo_motor_state_change__type_support.cpp.o\x1b[0m\n'}
+[14.400751] (-) TimerEvent: {}
+[14.504030] (-) TimerEvent: {}
+[14.606842] (-) TimerEvent: {}
+[14.709361] (-) TimerEvent: {}
+[14.811847] (-) TimerEvent: {}
+[14.914849] (-) TimerEvent: {}
+[15.017949] (-) TimerEvent: {}
+[15.121008] (-) TimerEvent: {}
+[15.223794] (-) TimerEvent: {}
+[15.326571] (-) TimerEvent: {}
+[15.429128] (-) TimerEvent: {}
+[15.509157] (interface) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libinterface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[15.529373] (-) TimerEvent: {}
+[15.632207] (-) TimerEvent: {}
+[15.701218] (interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/msg/detail/servo_motor_state_change__type_support.cpp.o\x1b[0m\n'}
+[15.732491] (-) TimerEvent: {}
+[15.835366] (-) TimerEvent: {}
+[15.919860] (interface) StdoutLine: {'line': b'[ 43%] Built target interface__rosidl_typesupport_cpp\n'}
+[15.935740] (-) TimerEvent: {}
+[16.033614] (interface) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[16.036247] (-) TimerEvent: {}
+[16.139268] (-) TimerEvent: {}
+[16.241110] (-) TimerEvent: {}
+[16.343167] (-) TimerEvent: {}
+[16.445496] (-) TimerEvent: {}
+[16.547482] (-) TimerEvent: {}
+[16.650827] (-) TimerEvent: {}
+[16.727338] (interface) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/msg/detail/servo_motor_state_change__type_support_c.cpp.o\x1b[0m\n'}
+[16.751070] (-) TimerEvent: {}
+[16.853388] (-) TimerEvent: {}
+[16.955408] (-) TimerEvent: {}
+[17.057655] (-) TimerEvent: {}
+[17.159994] (-) TimerEvent: {}
+[17.261667] (-) TimerEvent: {}
+[17.363554] (-) TimerEvent: {}
+[17.465437] (-) TimerEvent: {}
+[17.568468] (-) TimerEvent: {}
+[17.671633] (-) TimerEvent: {}
+[17.774647] (-) TimerEvent: {}
+[17.877432] (-) TimerEvent: {}
+[17.979614] (-) TimerEvent: {}
+[17.982706] (interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[18.079879] (-) TimerEvent: {}
+[18.183261] (-) TimerEvent: {}
+[18.286827] (-) TimerEvent: {}
+[18.391855] (-) TimerEvent: {}
+[18.494625] (-) TimerEvent: {}
+[18.531049] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[18.595299] (interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/msg/detail/servo_motor_state__type_support.c.o\x1b[0m\n'}
+[18.597099] (-) TimerEvent: {}
+[18.603946] (interface) StdoutLine: {'line': b'[ 53%] Built target interface__rosidl_typesupport_fastrtps_cpp\n'}
+[18.697320] (-) TimerEvent: {}
+[18.713493] (interface) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[18.797679] (-) TimerEvent: {}
+[18.900644] (-) TimerEvent: {}
+[18.995441] (interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/msg/detail/servo_motor_state_change__type_support.c.o\x1b[0m\n'}
+[19.000870] (-) TimerEvent: {}
+[19.102296] (-) TimerEvent: {}
+[19.204529] (-) TimerEvent: {}
+[19.281101] (interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libinterface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[19.304765] (-) TimerEvent: {}
+[19.347113] (interface) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libinterface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.405023] (-) TimerEvent: {}
+[19.507183] (-) TimerEvent: {}
+[19.609130] (-) TimerEvent: {}
+[19.697841] (interface) StdoutLine: {'line': b'[ 64%] Built target interface__rosidl_typesupport_introspection_c\n'}
+[19.709368] (-) TimerEvent: {}
+[19.732953] (interface) StdoutLine: {'line': b'[ 64%] Built target interface__rosidl_typesupport_introspection_cpp\n'}
+[19.809594] (-) TimerEvent: {}
+[19.910645] (-) TimerEvent: {}
+[19.998689] (interface) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[20.011005] (-) TimerEvent: {}
+[20.112300] (-) TimerEvent: {}
+[20.213757] (-) TimerEvent: {}
+[20.315480] (-) TimerEvent: {}
+[20.400457] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_c\x1b[0m\n'}
+[20.415738] (-) TimerEvent: {}
+[20.468907] (interface) StdoutLine: {'line': b'[ 66%] Built target interface__rosidl_typesupport_fastrtps_c\n'}
+[20.471918] (interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/msg/servo_motor_state__type_support.cpp.o\x1b[0m\n'}
+[20.483816] (interface) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/msg/servo_motor_state_change__type_support.cpp.o\x1b[0m\n'}
+[20.516249] (-) TimerEvent: {}
+[20.619627] (-) TimerEvent: {}
+[20.685156] (interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libinterface__rosidl_typesupport_c.so\x1b[0m\n'}
+[20.719865] (-) TimerEvent: {}
+[20.821406] (-) TimerEvent: {}
+[20.879756] (interface) StdoutLine: {'line': b'[ 74%] Built target interface__rosidl_typesupport_c\n'}
+[20.921651] (-) TimerEvent: {}
+[20.965929] (interface) StdoutLine: {'line': b'[ 74%] Built target interface\n'}
+[21.021855] (-) TimerEvent: {}
+[21.052167] (interface) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[21.122103] (-) TimerEvent: {}
+[21.223093] (-) TimerEvent: {}
+[21.324154] (-) TimerEvent: {}
+[21.427575] (-) TimerEvent: {}
+[21.529536] (-) TimerEvent: {}
+[21.631111] (-) TimerEvent: {}
+[21.733246] (-) TimerEvent: {}
+[21.835584] (-) TimerEvent: {}
+[21.940041] (-) TimerEvent: {}
+[22.042079] (-) TimerEvent: {}
+[22.144159] (-) TimerEvent: {}
+[22.246157] (-) TimerEvent: {}
+[22.350114] (-) TimerEvent: {}
+[22.450971] (-) TimerEvent: {}
+[22.551767] (-) TimerEvent: {}
+[22.653228] (-) TimerEvent: {}
+[22.754222] (-) TimerEvent: {}
+[22.855461] (-) TimerEvent: {}
+[22.957108] (-) TimerEvent: {}
+[23.037285] (interface) StdoutLine: {'line': b'[ 76%] Built target interface__py\n'}
+[23.057314] (-) TimerEvent: {}
+[23.078960] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_generator_py\x1b[0m\n'}
+[23.150855] (interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_servo_motor_state_change_s.c.o\x1b[0m\n'}
+[23.154649] (interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/msg/_servo_motor_state_s.c.o\x1b[0m\n'}
+[23.157559] (-) TimerEvent: {}
+[23.260049] (-) TimerEvent: {}
+[23.362070] (-) TimerEvent: {}
+[23.464549] (-) TimerEvent: {}
+[23.566462] (-) TimerEvent: {}
+[23.672720] (-) TimerEvent: {}
+[23.713070] (interface) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface/libinterface__rosidl_generator_py.so\x1b[0m\n'}
+[23.772950] (-) TimerEvent: {}
+[23.873906] (-) TimerEvent: {}
+[23.899546] (interface) StdoutLine: {'line': b'[ 84%] Built target interface__rosidl_generator_py\n'}
+[23.954764] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[23.960833] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[23.965309] (interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[23.974342] (-) TimerEvent: {}
+[24.050390] (interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[24.075115] (-) TimerEvent: {}
+[24.097961] (interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[24.128845] (interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[24.175409] (-) TimerEvent: {}
+[24.277692] (-) TimerEvent: {}
+[24.379433] (-) TimerEvent: {}
+[24.481289] (-) TimerEvent: {}
+[24.583181] (-) TimerEvent: {}
+[24.684722] (-) TimerEvent: {}
+[24.686726] (interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.785134] (-) TimerEvent: {}
+[24.899219] (-) TimerEvent: {}
+[24.926474] (interface) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.983607] (interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[24.999421] (-) TimerEvent: {}
+[25.057954] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_c__pyext\n'}
+[25.099696] (-) TimerEvent: {}
+[25.185863] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[25.199904] (-) TimerEvent: {}
+[25.232255] (interface) StdoutLine: {'line': b'[100%] Built target interface__rosidl_typesupport_introspection_c__pyext\n'}
+[25.300121] (-) TimerEvent: {}
+[25.350037] (interface) CommandEnded: {'returncode': 0}
+[25.400393] (-) TimerEvent: {}
+[25.501680] (-) TimerEvent: {}
+[25.603102] (-) TimerEvent: {}
+[25.705693] (-) TimerEvent: {}
+[25.806900] (-) TimerEvent: {}
+[25.895147] (interface) JobProgress: {'identifier': 'interface', 'progress': 'install'}
+[25.907300] (-) TimerEvent: {}
+[25.947966] (interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/blakepi/ros2_ws/build/interface'], 'cwd': '/home/blakepi/ros2_ws/build/interface', 'env': OrderedDict([('SUDO_GID', '1003'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 51730 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('OLDPWD', '/home/blakepi/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-af524693-7e9c-468b-b001-3e2bff38399e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '132'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXWGxUvq/agent.15083'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'blakepi'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 51730 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble')]), 'shell': False}
+[25.994946] (interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.996062] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/rosidl_interfaces/interface\n'}
+[25.997520] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[25.998563] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[25.999422] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state_change.h\n'}
+[26.000303] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.000881] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.h\n'}
+[26.001537] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.h\n'}
+[26.002903] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__functions.h\n'}
+[26.004163] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.h\n'}
+[26.005720] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__functions.c\n'}
+[26.007022] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__struct.h\n'}
+[26.007816] (-) TimerEvent: {}
+[26.008924] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__functions.h\n'}
+[26.012056] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__functions.c\n'}
+[26.015419] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.h\n'}
+[26.017903] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[26.019167] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/library_path.sh\n'}
+[26.020504] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/environment/library_path.dsv\n'}
+[26.023219] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_c.so\n'}
+[26.027665] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_c.so" to ""\n'}
+[26.028677] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[26.032217] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[26.033016] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[26.034050] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.036345] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_fastrtps_c.h\n'}
+[26.038368] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_fastrtps_c.h\n'}
+[26.041304] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so\n'}
+[26.046008] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[26.046880] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[26.051187] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[26.052951] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp\n'}
+[26.063678] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state_change.hpp\n'}
+[26.064775] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.065311] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp\n'}
+[26.065803] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__builder.hpp\n'}
+[26.066276] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__traits.hpp\n'}
+[26.066764] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__traits.hpp\n'}
+[26.067435] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__builder.hpp\n'}
+[26.069847] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__struct.hpp\n'}
+[26.072005] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[26.074082] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[26.076482] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[26.077014] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.079553] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[26.080334] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[26.085367] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/dds_fastrtps\n'}
+[26.089806] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[26.092448] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[26.094848] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[26.096842] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[26.100008] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.106861] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_introspection_c.h\n'}
+[26.108237] (-) TimerEvent: {}
+[26.111784] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_introspection_c.h\n'}
+[26.116350] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.c\n'}
+[26.119279] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.c\n'}
+[26.121955] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[26.125735] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so\n'}
+[26.128602] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[26.129592] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_c.so\n'}
+[26.132635] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_c.so" to ""\n'}
+[26.136594] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface\n'}
+[26.137144] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg\n'}
+[26.139438] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail\n'}
+[26.139914] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__rosidl_typesupport_introspection_cpp.hpp\n'}
+[26.140392] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[26.140793] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__type_support.cpp\n'}
+[26.141167] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state_change__type_support.cpp\n'}
+[26.141536] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so\n'}
+[26.141897] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[26.142258] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_cpp.so\n'}
+[26.145428] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_typesupport_cpp.so" to ""\n'}
+[26.146451] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/pythonpath.sh\n'}
+[26.147047] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/environment/pythonpath.dsv\n'}
+[26.147902] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info\n'}
+[26.148615] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[26.150188] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[26.151499] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[26.152761] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[26.154194] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface\n'}
+[26.156247] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.156982] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py\n'}
+[26.157751] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[26.160551] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_c.c\n'}
+[26.171367] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/libinterface__rosidl_generator_py.so\n'}
+[26.172250] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[26.174577] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.175191] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg\n'}
+[26.175685] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_change_s.c\n'}
+[26.176238] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/__init__.py\n'}
+[26.176794] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_change.py\n'}
+[26.177375] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_s.c\n'}
+[26.178023] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state.py\n'}
+[26.178603] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.209957] (-) TimerEvent: {}
+[26.311082] (-) TimerEvent: {}
+[26.370097] (interface) StdoutLine: {'line': b"Listing '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface'...\n"}
+[26.372029] (interface) StdoutLine: {'line': b"Compiling '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py'...\n"}
+[26.373923] (interface) StdoutLine: {'line': b"Listing '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg'...\n"}
+[26.375176] (interface) StdoutLine: {'line': b"Compiling '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/__init__.py'...\n"}
+[26.376900] (interface) StdoutLine: {'line': b"Compiling '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state.py'...\n"}
+[26.377911] (interface) StdoutLine: {'line': b"Compiling '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/msg/_servo_motor_state_change.py'...\n"}
+[26.400399] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.403502] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[26.405045] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.407726] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[26.409108] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[26.411201] (-) TimerEvent: {}
+[26.411734] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[26.413458] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_py.so\n'}
+[26.416766] (interface) StdoutLine: {'line': b'-- Set runtime path of "/home/blakepi/ros2_ws/install/interface/lib/libinterface__rosidl_generator_py.so" to ""\n'}
+[26.419092] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorState.idl\n'}
+[26.421358] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorStateChange.idl\n'}
+[26.422277] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorState.msg\n'}
+[26.423393] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/msg/ServoMotorStateChange.msg\n'}
+[26.424022] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/package_run_dependencies/interface\n'}
+[26.425571] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/parent_prefix_path/interface\n'}
+[26.426157] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/ament_prefix_path.sh\n'}
+[26.426690] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/environment/ament_prefix_path.dsv\n'}
+[26.427567] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/environment/path.sh\n'}
+[26.428130] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/environment/path.dsv\n'}
+[26.429853] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.bash\n'}
+[26.431248] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.sh\n'}
+[26.432250] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.zsh\n'}
+[26.432784] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/local_setup.dsv\n'}
+[26.433330] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/package.dsv\n'}
+[26.434704] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/ament_index/resource_index/packages/interface\n'}
+[26.435501] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport.cmake\n'}
+[26.436197] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[26.436814] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[26.438342] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[26.439888] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_cppExport.cmake\n'}
+[26.440690] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[26.441349] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[26.441999] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[26.442553] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[26.443439] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport.cmake\n'}
+[26.443858] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[26.444481] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[26.445070] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[26.445878] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport.cmake\n'}
+[26.446527] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[26.446894] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport.cmake\n'}
+[26.447325] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[26.448153] (interface) StdoutLine: {'line': b'-- Installing: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake-extras.cmake\n'}
+[26.448948] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.449752] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.450742] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[26.451234] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[26.451632] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.452013] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[26.452454] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interfaceConfig.cmake\n'}
+[26.452855] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/cmake/interfaceConfig-version.cmake\n'}
+[26.453203] (interface) StdoutLine: {'line': b'-- Up-to-date: /home/blakepi/ros2_ws/install/interface/share/interface/package.xml\n'}
+[26.471095] (interface) CommandEnded: {'returncode': 0}
+[26.511600] (-) TimerEvent: {}
+[26.615244] (-) TimerEvent: {}
+[26.716961] (-) TimerEvent: {}
+[26.817988] (-) TimerEvent: {}
+[26.919423] (-) TimerEvent: {}
+[27.023149] (-) TimerEvent: {}
+[27.093890] (interface) JobEnded: {'identifier': 'interface', 'rc': 0}
+[27.098591] (-) EventReactorShutdown: {}

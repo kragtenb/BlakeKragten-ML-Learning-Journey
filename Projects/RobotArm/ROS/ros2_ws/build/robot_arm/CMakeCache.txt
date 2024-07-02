@@ -42,15 +42,6 @@ BUILD_SHARED_LIBS:BOOL=ON
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
-//The directory containing a CMake configuration file for Bluetooth.
-Bluetooth_DIR:PATH=Bluetooth_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
-
-//Path to a file.
-Boost_INCLUDE_DIR:PATH=Boost_INCLUDE_DIR-NOTFOUND
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -246,9 +237,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for DBus.
-DBus_DIR:PATH=DBus_DIR-NOTFOUND
-
 //Path to a library.
 FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
 
@@ -278,6 +266,9 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libssl.so
+
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 
 //Path to a file.
 PIGPIO_INCLUDE_DIR:PATH=/usr/local/include
@@ -313,7 +304,7 @@ SITE:STRING=blakepi
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a file.
 _numpy_h:FILEPATH=/usr/include/python3.10/numpy/numpyconfig.h
@@ -423,14 +414,11 @@ ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 
-//The directory containing a CMake configuration file for bluetooth.
-bluetooth_DIR:PATH=bluetooth_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
-//The directory containing a CMake configuration file for dbus.
-dbus_DIR:PATH=dbus_DIR-NOTFOUND
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/humble/share/cv_bridge/cmake
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -447,26 +435,17 @@ fmt_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/fmt
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for interface.
+interface_DIR:PATH=/home/blakepi/ros2_ws/install/interface/share/interface/cmake
+
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
-
-//The directory containing a CMake configuration file for pigpio.
-pigpio_DIR:PATH=/home/blakepi/pigpio-master/cmake
-
-//Path to a file.
-pigpio_INCLUDE_DIR:PATH=/usr/local/include
-
-//Path to a library.
-pigpio_LIBRARY:FILEPATH=/usr/local/lib/libpigpio.so
-
-//Path to a library.
-pigpiod_if2_LIBRARY:FILEPATH=/usr/local/lib/libpigpiod_if2.so
-
-//Path to a library.
-pigpiod_if_LIBRARY:FILEPATH=/usr/local/lib/libpigpiod_if.so
 
 //Path to a library.
 pkgcfg_lib_DBUS_dbus-1:FILEPATH=/usr/lib/aarch64-linux-gnu/libdbus-1.so
@@ -497,6 +476,9 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
+
+//The directory containing a CMake configuration file for rclpy.
+rclpy_DIR:PATH=/opt/ros/humble/share/rclpy/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
@@ -615,6 +597,9 @@ rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesup
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
 rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for spdlog.
 spdlog_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/spdlog
 
@@ -641,8 +626,6 @@ yaml_DIR:PATH=/opt/ros/humble/cmake
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: Boost_DIR
-Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -747,7 +730,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -827,6 +810,8 @@ DBUS_dbus-1_PREFIX:INTERNAL=
 DBUS_dbus-1_VERSION:INTERNAL=
 //Details about finding FastRTPS
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/humble/include][/opt/ros/humble/lib/libfastrtps.so;/opt/ros/humble/lib/libfastcdr.so][v()]
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
 //Details about finding PkgConfig
@@ -841,39 +826,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.10.12(3
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/aarch64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.12(3.5)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding pigpio
-FIND_PACKAGE_MESSAGE_DETAILS_pigpio:INTERNAL=[/usr/local/include][/usr/local/lib/libpigpio.so][/usr/local/lib/libpigpiod_if.so][/usr/local/lib/libpigpiod_if2.so][v()]
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_SSL_LIBRARY
 OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
-PIGPIO_CFLAGS:INTERNAL=
-PIGPIO_CFLAGS_I:INTERNAL=
-PIGPIO_CFLAGS_OTHER:INTERNAL=
-PIGPIO_FOUND:INTERNAL=
-PIGPIO_INCLUDEDIR:INTERNAL=
-PIGPIO_LIBDIR:INTERNAL=
-PIGPIO_LIBS:INTERNAL=
-PIGPIO_LIBS_L:INTERNAL=
-PIGPIO_LIBS_OTHER:INTERNAL=
-PIGPIO_LIBS_PATHS:INTERNAL=
-PIGPIO_MODULE_NAME:INTERNAL=
-PIGPIO_PREFIX:INTERNAL=
-PIGPIO_STATIC_CFLAGS:INTERNAL=
-PIGPIO_STATIC_CFLAGS_I:INTERNAL=
-PIGPIO_STATIC_CFLAGS_OTHER:INTERNAL=
-PIGPIO_STATIC_LIBDIR:INTERNAL=
-PIGPIO_STATIC_LIBS:INTERNAL=
-PIGPIO_STATIC_LIBS_L:INTERNAL=
-PIGPIO_STATIC_LIBS_OTHER:INTERNAL=
-PIGPIO_STATIC_LIBS_PATHS:INTERNAL=
-PIGPIO_VERSION:INTERNAL=
-PIGPIO_pigpio_INCLUDEDIR:INTERNAL=
-PIGPIO_pigpio_LIBDIR:INTERNAL=
-PIGPIO_pigpio_PREFIX:INTERNAL=
-PIGPIO_pigpio_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

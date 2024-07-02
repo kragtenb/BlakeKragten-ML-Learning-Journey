@@ -1,0 +1,75 @@
+[0.056s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.240s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.306s] [ 33%] Built target servo_publisher_node
+[0.336s] [ 66%] Built target bluetooth_node
+[0.346s] [ 83%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[11.747s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.749s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.751s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.763s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.766s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.767s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.769s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.770s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::adjustServo(std::string, int, double)[m[K’:
+[11.771s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.772s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, position);
+[11.772s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.773s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.773s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo [01;36m[K%s[m[K to PWM value: %d", servo_name, position);
+[11.774s]       |                                                          [01;36m[K~^[m[K
+[11.775s]       |                                                           [01;36m[K|[m[K
+[11.776s]       |                                                           [01;36m[Kchar*[m[K
+[11.776s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.786s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.803s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.803s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.804s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, [32m[Kposition[m[K);
+[11.805s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~[m[K
+[11.806s]       |                                                                                            [32m[K|[m[K
+[11.806s]       |                                                                                            [32m[Kdouble[m[K
+[11.807s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.807s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo %s to PWM value: [01;36m[K%d[m[K", servo_name, position);
+[11.808s]       |                                                                           [01;36m[K~^[m[K
+[11.808s]       |                                                                            [01;36m[K|[m[K
+[11.809s]       |                                                                            [01;36m[Kint[m[K
+[11.809s]       |                                                                           [32m[K%f[m[K
+[11.809s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::publish_servo_motor_state_change(std::string, double)[m[K’:
+[11.810s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:81:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(std::string&, double&)[m[K’
+[11.810s]    81 |         auto message = interface::msg::ServoMotorState(servo_name, value[01;31m[K)[m[K;
+[11.811s]       |                                                                         [01;31m[K^[m[K
+[11.811s] In file included from [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp:7[m[K,
+[11.811s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:9[m[K:
+[11.812s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:46:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kinterface::msg::ServoMotorState_<ContainerAllocator>::ServoMotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.812s]    46 |   explicit [01;36m[KServoMotorState_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.812s]       |            [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[11.813s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:46:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::allocator<void>&[m[K’
+[11.813s]    46 |   explicit ServoMotorState_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.814s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[11.814s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kinterface::msg::ServoMotorState_<ContainerAllocator>::ServoMotorState_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.815s]    36 |   explicit [01;36m[KServoMotorState_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.815s]       |            [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[11.815s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:36:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[11.817s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(const interface::msg::ServoMotorState_<std::allocator<void> >&)[m[K’
+[11.818s]    32 | struct [01;36m[KServoMotorState_[m[K
+[11.818s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[11.819s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[11.819s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(interface::msg::ServoMotorState_<std::allocator<void> >&&)[m[K’
+[11.820s] [01m[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[20.599s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[20.599s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[20.600s] gmake: *** [Makefile:146: all] Error 2
+[20.606s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

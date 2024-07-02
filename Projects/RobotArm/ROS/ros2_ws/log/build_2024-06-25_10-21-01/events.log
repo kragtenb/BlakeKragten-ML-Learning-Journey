@@ -1,0 +1,289 @@
+[0.000000] (-) TimerEvent: {}
+[0.001697] (-) JobUnselected: {'identifier': 'interface'}
+[0.002298] (-) JobUnselected: {'identifier': 'python_pkgs'}
+[0.002762] (robot_arm) JobQueued: {'identifier': 'robot_arm', 'dependencies': OrderedDict([('interface', '/home/blakepi/ros2_ws/install/interface')])}
+[0.002965] (robot_arm) JobStarted: {'identifier': 'robot_arm'}
+[0.049174] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'cmake'}
+[0.052540] (robot_arm) JobProgress: {'identifier': 'robot_arm', 'progress': 'build'}
+[0.055451] (robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blakepi/ros2_ws/build/robot_arm', '--', '-j4', '-l4'], 'cwd': '/home/blakepi/ros2_ws/build/robot_arm', 'env': OrderedDict([('SUDO_GID', '0'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.86.41 51730 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass.sh'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/home/blakepi/ros2_ws/install/interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/blakepi'), ('OLDPWD', '/home/blakepi/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-22c1a1b6-e107-488b-afc7-2e1119ed6b65.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/blakepi/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/blakepi/ros2_ws/install'), ('SUDO_UID', '0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master:/home/blakepi/pigpio-master'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '132'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-499b90c930.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXWGxUvq/agent.15083'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'root'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/blakepi/ros2_ws/build/robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.86.41 51730 192.168.86.46 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:/home/blakepi/ros2_ws/install/python_pkgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble')]), 'shell': False}
+[0.099235] (-) TimerEvent: {}
+[0.200175] (-) TimerEvent: {}
+[0.242987] (robot_arm) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target servo_node\x1b[0m\n'}
+[0.300404] (-) TimerEvent: {}
+[0.308047] (robot_arm) StdoutLine: {'line': b'[ 33%] Built target servo_publisher_node\n'}
+[0.337836] (robot_arm) StdoutLine: {'line': b'[ 66%] Built target bluetooth_node\n'}
+[0.348336] (robot_arm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o\x1b[0m\n'}
+[0.400552] (-) TimerEvent: {}
+[0.501316] (-) TimerEvent: {}
+[0.602534] (-) TimerEvent: {}
+[0.703304] (-) TimerEvent: {}
+[0.804230] (-) TimerEvent: {}
+[0.905559] (-) TimerEvent: {}
+[1.006311] (-) TimerEvent: {}
+[1.106995] (-) TimerEvent: {}
+[1.207703] (-) TimerEvent: {}
+[1.308668] (-) TimerEvent: {}
+[1.409554] (-) TimerEvent: {}
+[1.510388] (-) TimerEvent: {}
+[1.611313] (-) TimerEvent: {}
+[1.712224] (-) TimerEvent: {}
+[1.813277] (-) TimerEvent: {}
+[1.914300] (-) TimerEvent: {}
+[2.015246] (-) TimerEvent: {}
+[2.116302] (-) TimerEvent: {}
+[2.217421] (-) TimerEvent: {}
+[2.318294] (-) TimerEvent: {}
+[2.419123] (-) TimerEvent: {}
+[2.520083] (-) TimerEvent: {}
+[2.620876] (-) TimerEvent: {}
+[2.721779] (-) TimerEvent: {}
+[2.822633] (-) TimerEvent: {}
+[2.923475] (-) TimerEvent: {}
+[3.024323] (-) TimerEvent: {}
+[3.125132] (-) TimerEvent: {}
+[3.225910] (-) TimerEvent: {}
+[3.326675] (-) TimerEvent: {}
+[3.427554] (-) TimerEvent: {}
+[3.528424] (-) TimerEvent: {}
+[3.629683] (-) TimerEvent: {}
+[3.730856] (-) TimerEvent: {}
+[3.831957] (-) TimerEvent: {}
+[3.932782] (-) TimerEvent: {}
+[4.033960] (-) TimerEvent: {}
+[4.135063] (-) TimerEvent: {}
+[4.236151] (-) TimerEvent: {}
+[4.339642] (-) TimerEvent: {}
+[4.442259] (-) TimerEvent: {}
+[4.545097] (-) TimerEvent: {}
+[4.647704] (-) TimerEvent: {}
+[4.749811] (-) TimerEvent: {}
+[4.850732] (-) TimerEvent: {}
+[4.952703] (-) TimerEvent: {}
+[5.054726] (-) TimerEvent: {}
+[5.156702] (-) TimerEvent: {}
+[5.258691] (-) TimerEvent: {}
+[5.360686] (-) TimerEvent: {}
+[5.463147] (-) TimerEvent: {}
+[5.565248] (-) TimerEvent: {}
+[5.667232] (-) TimerEvent: {}
+[5.769286] (-) TimerEvent: {}
+[5.871790] (-) TimerEvent: {}
+[5.973815] (-) TimerEvent: {}
+[6.076639] (-) TimerEvent: {}
+[6.178660] (-) TimerEvent: {}
+[6.280848] (-) TimerEvent: {}
+[6.382957] (-) TimerEvent: {}
+[6.484867] (-) TimerEvent: {}
+[6.586834] (-) TimerEvent: {}
+[6.690323] (-) TimerEvent: {}
+[6.792851] (-) TimerEvent: {}
+[6.907403] (-) TimerEvent: {}
+[7.009787] (-) TimerEvent: {}
+[7.111687] (-) TimerEvent: {}
+[7.213856] (-) TimerEvent: {}
+[7.314755] (-) TimerEvent: {}
+[7.415590] (-) TimerEvent: {}
+[7.517378] (-) TimerEvent: {}
+[7.618210] (-) TimerEvent: {}
+[7.719046] (-) TimerEvent: {}
+[7.819946] (-) TimerEvent: {}
+[7.920748] (-) TimerEvent: {}
+[8.021565] (-) TimerEvent: {}
+[8.123002] (-) TimerEvent: {}
+[8.223827] (-) TimerEvent: {}
+[8.324740] (-) TimerEvent: {}
+[8.425561] (-) TimerEvent: {}
+[8.526609] (-) TimerEvent: {}
+[8.627449] (-) TimerEvent: {}
+[8.728376] (-) TimerEvent: {}
+[8.829284] (-) TimerEvent: {}
+[8.930171] (-) TimerEvent: {}
+[9.030975] (-) TimerEvent: {}
+[9.131889] (-) TimerEvent: {}
+[9.232938] (-) TimerEvent: {}
+[9.334089] (-) TimerEvent: {}
+[9.435010] (-) TimerEvent: {}
+[9.535895] (-) TimerEvent: {}
+[9.636728] (-) TimerEvent: {}
+[9.737610] (-) TimerEvent: {}
+[9.838452] (-) TimerEvent: {}
+[9.939280] (-) TimerEvent: {}
+[10.040620] (-) TimerEvent: {}
+[10.142043] (-) TimerEvent: {}
+[10.243482] (-) TimerEvent: {}
+[10.344836] (-) TimerEvent: {}
+[10.446316] (-) TimerEvent: {}
+[10.547200] (-) TimerEvent: {}
+[10.648041] (-) TimerEvent: {}
+[10.748828] (-) TimerEvent: {}
+[10.849641] (-) TimerEvent: {}
+[10.950459] (-) TimerEvent: {}
+[11.051252] (-) TimerEvent: {}
+[11.152539] (-) TimerEvent: {}
+[11.253724] (-) TimerEvent: {}
+[11.355050] (-) TimerEvent: {}
+[11.456390] (-) TimerEvent: {}
+[11.557455] (-) TimerEvent: {}
+[11.658404] (-) TimerEvent: {}
+[11.748466] (robot_arm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.751121] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.753012] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.754778] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.758517] (-) TimerEvent: {}
+[11.759577] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.763284] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.765057] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.767928] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.769568] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.770370] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.771141] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.772009] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1\x1b[m\x1b[K:\n'}
+[11.772801] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ServoNode::adjustServo(std::string, int, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.773555] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.774256] (robot_arm) StderrLine: {'line': b'   72 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Adjusting servo %s to PWM value: %d"\x1b[m\x1b[K, servo_name, position);\n'}
+[11.774938] (robot_arm) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.775502] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[11.776084] (robot_arm) StderrLine: {'line': b'   72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo \x1b[01;36m\x1b[K%s\x1b[m\x1b[K to PWM value: %d", servo_name, position);\n'}
+[11.776839] (robot_arm) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[11.777579] (robot_arm) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[11.778347] (robot_arm) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[11.779066] (robot_arm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.779751] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.780382] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.794436] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.795775] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.797834] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.799165] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.800272] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.802562] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.803473] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.804764] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.805427] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1\x1b[m\x1b[K:\n'}
+[11.806011] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.806711] (robot_arm) StderrLine: {'line': b'   72 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Adjusting servo %s to PWM value: %d"\x1b[m\x1b[K, servo_name, \x1b[32m\x1b[Kposition\x1b[m\x1b[K);\n'}
+[11.807825] (robot_arm) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K              \x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K\n'}
+[11.808424] (robot_arm) StderrLine: {'line': b'      |                                                                                            \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[11.809001] (robot_arm) StderrLine: {'line': b'      |                                                                                            \x1b[32m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[11.809612] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[11.810198] (robot_arm) StderrLine: {'line': b'   72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo %s to PWM value: \x1b[01;36m\x1b[K%d\x1b[m\x1b[K", servo_name, position);\n'}
+[11.810707] (robot_arm) StderrLine: {'line': b'      |                                                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[11.811111] (robot_arm) StderrLine: {'line': b'      |                                                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[11.811500] (robot_arm) StderrLine: {'line': b'      |                                                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[11.811926] (robot_arm) StderrLine: {'line': b'      |                                                                           \x1b[32m\x1b[K%f\x1b[m\x1b[K\n'}
+[11.812358] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ServoNode::publish_servo_motor_state_change(std::string, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.812737] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:81:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(std::string&, double&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.813144] (robot_arm) StderrLine: {'line': b'   81 |         auto message = interface::msg::ServoMotorState(servo_name, value\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.813517] (robot_arm) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.813878] (robot_arm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/servo_motor_state.hpp:7\x1b[m\x1b[K,\n'}
+[11.814245] (robot_arm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:9\x1b[m\x1b[K:\n'}
+[11.814610] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:46:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kinterface::msg::ServoMotorState_<ContainerAllocator>::ServoMotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.814989] (robot_arm) StderrLine: {'line': b'   46 |   explicit \x1b[01;36m\x1b[KServoMotorState_\x1b[m\x1b[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[11.815360] (robot_arm) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.815730] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:46:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<void>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.816257] (robot_arm) StderrLine: {'line': b'   46 |   explicit ServoMotorState_(\x1b[01;36m\x1b[Kconst ContainerAllocator & _alloc\x1b[m\x1b[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[11.816708] (robot_arm) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[11.817086] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:36:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kinterface::msg::ServoMotorState_<ContainerAllocator>::ServoMotorState_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.817509] (robot_arm) StderrLine: {'line': b'   36 |   explicit \x1b[01;36m\x1b[KServoMotorState_\x1b[m\x1b[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[11.817888] (robot_arm) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.818261] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:36:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[11.818722] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(const interface::msg::ServoMotorState_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.820453] (robot_arm) StderrLine: {'line': b'   32 | struct \x1b[01;36m\x1b[KServoMotorState_\x1b[m\x1b[K\n'}
+[11.821060] (robot_arm) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.821482] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[11.821877] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kinterface::msg::ServoMotorState_<std::allocator<void> >::ServoMotorState_(interface::msg::ServoMotorState_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.822347] (robot_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blakepi/ros2_ws/install/interface/include/interface/interface/msg/detail/servo_motor_state__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[11.858712] (-) TimerEvent: {}
+[11.959604] (-) TimerEvent: {}
+[12.060479] (-) TimerEvent: {}
+[12.161318] (-) TimerEvent: {}
+[12.262130] (-) TimerEvent: {}
+[12.363273] (-) TimerEvent: {}
+[12.464453] (-) TimerEvent: {}
+[12.565655] (-) TimerEvent: {}
+[12.667032] (-) TimerEvent: {}
+[12.768266] (-) TimerEvent: {}
+[12.869189] (-) TimerEvent: {}
+[12.970609] (-) TimerEvent: {}
+[13.071702] (-) TimerEvent: {}
+[13.172959] (-) TimerEvent: {}
+[13.273747] (-) TimerEvent: {}
+[13.374611] (-) TimerEvent: {}
+[13.475434] (-) TimerEvent: {}
+[13.576296] (-) TimerEvent: {}
+[13.677129] (-) TimerEvent: {}
+[13.777949] (-) TimerEvent: {}
+[13.878743] (-) TimerEvent: {}
+[13.980842] (-) TimerEvent: {}
+[14.081683] (-) TimerEvent: {}
+[14.182536] (-) TimerEvent: {}
+[14.283466] (-) TimerEvent: {}
+[14.384292] (-) TimerEvent: {}
+[14.485167] (-) TimerEvent: {}
+[14.585991] (-) TimerEvent: {}
+[14.686759] (-) TimerEvent: {}
+[14.787603] (-) TimerEvent: {}
+[14.888447] (-) TimerEvent: {}
+[14.989294] (-) TimerEvent: {}
+[15.090201] (-) TimerEvent: {}
+[15.191058] (-) TimerEvent: {}
+[15.291998] (-) TimerEvent: {}
+[15.392859] (-) TimerEvent: {}
+[15.493684] (-) TimerEvent: {}
+[15.594545] (-) TimerEvent: {}
+[15.695436] (-) TimerEvent: {}
+[15.796273] (-) TimerEvent: {}
+[15.897133] (-) TimerEvent: {}
+[15.997954] (-) TimerEvent: {}
+[16.098728] (-) TimerEvent: {}
+[16.199545] (-) TimerEvent: {}
+[16.300343] (-) TimerEvent: {}
+[16.401151] (-) TimerEvent: {}
+[16.501999] (-) TimerEvent: {}
+[16.602827] (-) TimerEvent: {}
+[16.703662] (-) TimerEvent: {}
+[16.804534] (-) TimerEvent: {}
+[16.905449] (-) TimerEvent: {}
+[17.006334] (-) TimerEvent: {}
+[17.107180] (-) TimerEvent: {}
+[17.208032] (-) TimerEvent: {}
+[17.308844] (-) TimerEvent: {}
+[17.409717] (-) TimerEvent: {}
+[17.510618] (-) TimerEvent: {}
+[17.611527] (-) TimerEvent: {}
+[17.712377] (-) TimerEvent: {}
+[17.813204] (-) TimerEvent: {}
+[17.914061] (-) TimerEvent: {}
+[18.014931] (-) TimerEvent: {}
+[18.115784] (-) TimerEvent: {}
+[18.216589] (-) TimerEvent: {}
+[18.317380] (-) TimerEvent: {}
+[18.418250] (-) TimerEvent: {}
+[18.519089] (-) TimerEvent: {}
+[18.619998] (-) TimerEvent: {}
+[18.722346] (-) TimerEvent: {}
+[18.823222] (-) TimerEvent: {}
+[18.924044] (-) TimerEvent: {}
+[19.024871] (-) TimerEvent: {}
+[19.125705] (-) TimerEvent: {}
+[19.226504] (-) TimerEvent: {}
+[19.327645] (-) TimerEvent: {}
+[19.428456] (-) TimerEvent: {}
+[19.529213] (-) TimerEvent: {}
+[19.629984] (-) TimerEvent: {}
+[19.730743] (-) TimerEvent: {}
+[19.831500] (-) TimerEvent: {}
+[19.932344] (-) TimerEvent: {}
+[20.033203] (-) TimerEvent: {}
+[20.134014] (-) TimerEvent: {}
+[20.234836] (-) TimerEvent: {}
+[20.335652] (-) TimerEvent: {}
+[20.436806] (-) TimerEvent: {}
+[20.537674] (-) TimerEvent: {}
+[20.601378] (robot_arm) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1\n'}
+[20.602302] (robot_arm) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2\n'}
+[20.603193] (robot_arm) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.608817] (robot_arm) CommandEnded: {'returncode': 2}
+[20.637883] (-) TimerEvent: {}
+[20.738643] (-) TimerEvent: {}
+[20.819380] (robot_arm) JobEnded: {'identifier': 'robot_arm', 'rc': 2}
+[20.831445] (-) EventReactorShutdown: {}

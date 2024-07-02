@@ -1,0 +1,80 @@
+[0.059s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.240s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.314s] [ 33%] Built target servo_publisher_node
+[0.320s] [ 66%] Built target bluetooth_node
+[0.383s] [ 83%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[11.822s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_arm[m[K’ was not declared in this scope
+[11.823s]    89 |     rclcpp::Publisher<[01;31m[Krobot_arm[m[K::msg::ServoMotorState>::SharedPtr publisher_;
+[11.824s]       |                       [01;31m[K^~~~~~~~~[m[K
+[11.824s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.825s]    89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState[01;31m[K>[m[K::SharedPtr publisher_;
+[11.826s]       |                                                      [01;31m[K^[m[K
+[11.826s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.827s]    89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState>::[01;31m[KSharedPtr[m[K publisher_;
+[11.827s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[11.828s]       |                                                                  [32m[K;[m[K
+[11.831s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:89:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.832s]    89 |     rclcpp::Publisher<robot_arm::msg::ServoMotorState>::SharedPtr [01;31m[Kpublisher_[m[K;
+[11.833s]       |                                                                   [01;31m[K^~~~~~~~~~[m[K
+[11.841s]       |                                                                   [32m[Krmw_publisher_t[m[K
+[11.933s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In constructor ‘[01m[KServoNode::ServoNode()[m[K’:
+[11.935s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.936s]    30 |         [01;31m[Kpublisher_[m[K = this->create_publisher<interface::msg::ServoMotorState>("", 0.0);
+[11.937s]       |         [01;31m[K^~~~~~~~~~[m[K
+[11.937s]       |         [32m[Krmw_publisher_t[m[K
+[11.982s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.983s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.983s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.983s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.984s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.984s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.985s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.985s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.986s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.986s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.987s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.987s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.988s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::adjustServo(std::string, int, double)[m[K’:
+[11.988s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.988s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, position);
+[11.989s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.989s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.990s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo [01;36m[K%s[m[K to PWM value: %d", servo_name, position);
+[11.990s]       |                                                          [01;36m[K~^[m[K
+[11.991s]       |                                                           [01;36m[K|[m[K
+[11.991s]       |                                                           [01;36m[Kchar*[m[K
+[11.992s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.995s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.995s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.996s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.996s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.996s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.997s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[11.997s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.997s]    72 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Adjusting servo %s to PWM value: %d"[m[K, servo_name, [32m[Kposition[m[K);
+[11.997s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~[m[K
+[11.998s]       |                                                                                            [32m[K|[m[K
+[11.998s]       |                                                                                            [32m[Kdouble[m[K
+[11.999s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:72:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.999s]    72 |         RCLCPP_INFO(this->get_logger(), "Adjusting servo %s to PWM value: [01;36m[K%d[m[K", servo_name, position);
+[11.999s]       |                                                                           [01;36m[K~^[m[K
+[12.000s]       |                                                                            [01;36m[K|[m[K
+[12.000s]       |                                                                            [01;36m[Kint[m[K
+[12.001s]       |                                                                           [32m[K%f[m[K
+[12.001s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In member function ‘[01m[Kvoid ServoNode::publish_servo_motor_state_change(std::string, double)[m[K’:
+[12.002s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:81:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot_msgs[m[K’ has not been declared
+[12.002s]    81 |         auto message = [01;31m[Kmy_robot_msgs[m[K::msg::ServoMotorState(servo_name, value);
+[12.003s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[12.013s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[12.014s]    83 |         [01;31m[Kpublisher_[m[K->publish(message);
+[12.014s]       |         [01;31m[K^~~~~~~~~~[m[K
+[12.015s]       |         [32m[Krmw_publisher_t[m[K
+[20.788s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[20.789s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[20.790s] gmake: *** [Makefile:146: all] Error 2
+[20.795s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': AMENT_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/blakepi/ros2_ws/install/interface:/home/blakepi/ros2_ws/install/robot_arm:/home/blakepi/ros2_ws/install/python_pkgs:/opt/ros/humble LD_LIBRARY_PATH=/home/blakepi/ros2_ws/install/interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/blakepi/ros2_ws/install/interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

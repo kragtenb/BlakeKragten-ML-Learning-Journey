@@ -1,0 +1,115 @@
+[0.056s] Invoking command in '/home/blakepi/ros2_ws/build/robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target bluetooth_node[0m
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target servo_node[0m
+[0.363s] [ 33%] Built target servo_publisher_node
+[0.393s] [ 66%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_controller.cpp.o[0m
+[0.396s] [ 66%] [32mBuilding CXX object CMakeFiles/bluetooth_node.dir/src/bluetooth_node.cpp.o[0m
+[13.918s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:45:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.919s]    45 |     struct sockaddr_rc rem_addr = { 0 [01;35m[K}[m[K;
+[13.920s]       |                                       [01;35m[K^[m[K
+[13.920s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:45:39:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.940s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:[m[K In member function ‘[01m[Kvoid BluetoothNode::initializeBluetooth()[m[K’:
+[13.941s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:68:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_bdaddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.942s]    68 |         struct sockaddr_rc local_addr = { 0 [01;35m[K}[m[K;
+[13.942s]       |                                             [01;35m[K^[m[K
+[13.943s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/bluetooth_node.cpp:68:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ksockaddr_rc::rc_channel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.343s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:[m[K In static member function ‘[01m[Kstatic void ServoNode::servoMotoStateCallback(interface::msg::ServoMotorState_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.344s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:43:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KServoNode::servo_current_position_[m[K’ in static member function
+[14.347s]    43 |         if ([01;31m[Kservo_current_position_[m[K.count(msg->name) == 0) {
+[14.350s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.351s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:92:45:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.354s]    92 |     std::unordered_map<std::string, double> [01;36m[Kservo_current_position_[m[K;
+[14.356s]       |                                             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.356s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.360s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.361s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.362s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.363s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.380s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.380s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[14.381s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.382s]    44 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.382s]       |                         [01;31m[K^~~~[m[K
+[14.383s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.384s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.384s]    44 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.385s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[14.386s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.386s]    44 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.387s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[14.388s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.388s]    44 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.389s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[14.389s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.391s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.404s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.406s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.406s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.407s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.408s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.408s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.409s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.410s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.410s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[14.420s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.421s]    44 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.421s]       |                         [01;31m[K^~~~[m[K
+[14.422s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:44:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.423s]    44 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Invalid servo state change request seen. Servo %s is not found.", msg->name.c_str());
+[14.423s]       |                         [01;31m[K^~~~[m[K
+[14.424s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.424s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.425s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.425s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.426s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.427s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.427s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.428s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.428s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.429s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.429s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[14.430s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.430s]    47 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.431s]       |                     [01;31m[K^~~~[m[K
+[14.444s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.444s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.445s]    47 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.446s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[14.446s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.447s]    47 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.447s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[14.448s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.448s]    47 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.449s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[14.450s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.450s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.453s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.453s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.454s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.454s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.455s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.468s]                  from [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:1[m[K:
+[14.469s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.469s]    47 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.470s]       |                     [01;31m[K^~~~[m[K
+[14.471s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[14.471s]    47 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Received servo state update for %s: '%f'", msg->name.c_str(), msg->degree);
+[14.472s]       |                     [01;31m[K^~~~[m[K
+[14.473s] [01m[K/home/blakepi/ros2_ws/src/robot_arm/src/servo_controller.cpp:48:20:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid ServoNode::adjustServo(std::string, int, double)[m[K’ without object
+[14.473s]    48 |         [01;31m[KadjustServo(msg->name, servo_gpio_map.at(msg->name), msg->degree)[m[K;
+[14.474s]       |         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.524s] [ 83%] [32m[1mLinking CXX executable bluetooth_node[0m
+[27.232s] [ 83%] Built target bluetooth_node
+[28.197s] gmake[2]: *** [CMakeFiles/servo_node.dir/build.make:76: CMakeFiles/servo_node.dir/src/servo_controller.cpp.o] Error 1
+[28.199s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/servo_node.dir/all] Error 2
+[28.200s] gmake: *** [Makefile:146: all] Error 2
+[28.206s] Invoked command in '/home/blakepi/ros2_ws/build/robot_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/blakepi/ros2_ws/install/python_pkgs:/home/blakepi/ros2_ws/install/bluetooth_communication:/opt/ros/humble /usr/bin/cmake --build /home/blakepi/ros2_ws/build/robot_arm -- -j4 -l4

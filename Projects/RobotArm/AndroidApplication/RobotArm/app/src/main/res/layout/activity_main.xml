@@ -24,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <!-- Repeat this block for each servo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,7 +90,34 @@
             android:layout_height="wrap_content"
             android:max="180" />
 
-        <!-- Add similar blocks for other servos: Shoulder, Wrist, etc. -->
+        <!-- ImageView for Camera Feed -->
+        <TextView
+            android:id="@+id/camera_feed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_feed"
+            android:paddingTop="16dp"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/camera_feed"
+            android:background="#000"/>
+
+        <!-- TextView for Distance Updates -->
+        <TextView
+            android:id="@+id/distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:paddingTop="16dp"/>
+        <TextView
+            android:id="@+id/distance_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/distance_value_na"/>
+
     </LinearLayout>
 
 </RelativeLayout>
