@@ -4,6 +4,10 @@
 
 The end goal of this project is to have a robot arm be able to grab my daughterâ€™s different shaped blocks and move them into the corresponding holes that the block fits in. 
 
+# 07/01 Demo
+ - [Android Screen Recording ](https://drive.google.com/file/d/1_n_BL7S4Z5jAQlqZ_Yptc92PD86K9Nm2/view?usp=sharing)
+ - [Video Recording](https://drive.google.com/file/d/1mE7n4JF-AdyxDxL35CmeQN_0uFCiRvsM/view?usp=sharing)
+
 # Project Milestones:
 1. Find and print the 3D printed parts for the robot arm (Completed)
 2. Assemble Robot arm with servo motors and raspberry pi. (Completed)
@@ -12,7 +16,7 @@ The end goal of this project is to have a robot arm be able to grab my daughterâ
 	2. Bluetooth node that will create an RFCOMM server that will listen to bluetooth messages and will publish messages to change servo motors if a change servo message is detected. 
 4. Implement an Android application to control the servo motors through bluetooth. (Completed)
 5. Redesign part of the robotic arm to add a camera and ultrasonic sensor. (Completed)
-6. Implement new ROS nodes: (In progress)
+6. Implement new ROS nodes: (Completed)
 	1. Camera node will capture and processing images and publish it to the camera topic
 	2. Ultrasonic node will read distance data from the sensor and publish this data to the ultrasonic topic
 7. Develop a computer vision model to identify blocks and block holes by fine-tuning a pre-trained CNN.
