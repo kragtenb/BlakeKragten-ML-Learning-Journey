@@ -19,9 +19,9 @@ The end goal of this project is to have a robot arm be able to grab my daughterâ
 6. Implement new ROS nodes: (Completed)
 	1. Camera node will capture and processing images and publish it to the camera topic
 	2. Ultrasonic node will read distance data from the sensor and publish this data to the ultrasonic topic
-7. Develop a computer vision model to identify blocks and block holes by fine-tuning a pre-trained CNN.
+7. Develop motion planning and control algorithms. (In-progress)
 8. Determine position and orientation data based off of camera and ultrasonic sensor.
-9. Develop motion planning and control algorithms.
+9. Develop a computer vision model to identify blocks and block holes by fine-tuning a pre-trained CNN.
 10. Setup simulation environment of the robot arm to start reinforcement learning to allow the robot arm to understand how to find, pick up and deposit the specific blocks.
 11. Integration and testing
 12. (Stretch goal) Fine tune LLM to enable the robot arm to perceive and interact with more items than just children blocks and increase the task completion without teaching again using reinforcement learning.
